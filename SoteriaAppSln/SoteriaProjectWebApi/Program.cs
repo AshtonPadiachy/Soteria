@@ -1,6 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+using SoteriaProjectWebApi.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<SoteriaContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("SoteriaConnectionString")));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
