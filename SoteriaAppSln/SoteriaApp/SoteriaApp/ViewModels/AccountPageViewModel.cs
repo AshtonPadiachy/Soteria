@@ -4,15 +4,14 @@ using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace SoteriaApp.ViewModels
 {
-    public class MainPageViewModel : ViewModelBase
+    public class AccountPageViewModel : ViewModelBase
     {
-        public MainPageViewModel(INavigationService navigationService) : base(navigationService)
+        public AccountPageViewModel(INavigationService nav) : base(nav)
         {
-            Title = "Main Page";
+            Title = "Account";
         }
     }
 }

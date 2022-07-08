@@ -19,7 +19,7 @@ namespace SoteriaApp
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/MainPage");
+            await NavigationService.NavigateAsync("NavigationPage/LandingTabbedPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -27,7 +27,10 @@ namespace SoteriaApp
             containerRegistry.RegisterSingleton<IAppInfo, AppInfoImplementation>();
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
-            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<LandingTabbedPage, LandingTabbedPageViewModel>();
+            containerRegistry.RegisterForNavigation<CommunityChat, CommunityChatViewModel>();
+            containerRegistry.RegisterForNavigation<InsightsPage, InsightsPageViewModel>();
+            containerRegistry.RegisterForNavigation<AccountPage, AccountPageViewModel>();
         }
     }
 }
