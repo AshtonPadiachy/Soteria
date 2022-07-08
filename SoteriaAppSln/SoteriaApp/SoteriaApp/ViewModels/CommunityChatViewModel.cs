@@ -11,7 +11,7 @@ namespace SoteriaApp.ViewModels
     {
         public CommunityChatViewModel(INavigationService nav) : base(nav)
         {
-            Title = "Community Chat";
+            Title = "Community";
         }
     } 
 }

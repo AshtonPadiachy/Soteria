@@ -11,7 +11,7 @@ namespace SoteriaApp.ViewModels
     {
         public AccountPageViewModel(INavigationService nav) : base(nav)
         {
-            Title = "Account";
+            Title = "Profile";
         }
     }
 }
