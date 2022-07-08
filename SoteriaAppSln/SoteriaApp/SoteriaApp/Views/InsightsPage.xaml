@@ -4,5 +4,77 @@
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SoteriaApp.Views.InsightsPage" Title="{Binding Title}" IconImageSource="InsightsIcon">
+
+    <StackLayout>
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200," />
+                <RowDefinition  Height="200"/>
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                
+            </Grid.ColumnDefinitions>
+
+            <BoxView Color="#A9DFE2" CornerRadius="10" Margin="10,15,0,5"   />
+            <Label Text="What is 
+                          it?"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" 
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="White"
+                   FontSize="Title"/>
+            <BoxView Grid.Column="1"
+                 Color="#5C6898" CornerRadius="10" Margin="5,15,10,5"   />
+            <Label Grid.Column="1"
+               Text="Various 
+                      Types"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="White"
+                   FontSize="Title" />
+            <BoxView Grid.Row="1"
+                 Color="#5C6898" CornerRadius="10"  Margin="10,5,0,15"    />
+            <Label Grid.Row="1"
+               Text="Signs and Symptoms"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"
+                   FontSize="Title"/>
+            <BoxView Grid.Row="1"
+                 Grid.Column="1"
+                 Color="#A9DFE2" CornerRadius="10"  Margin="5,5,10,15" />
+            <Label Grid.Row="1"
+               Grid.Column="1"
+               Text="Influences"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="White"
+                   FontSize="Title"/>
+            
+            <BoxView Grid.Row="2"
+                 Grid.ColumnSpan="2"
+                 Color="#A9DFE2" CornerRadius="10" Margin="9,0,9,0" />
+            <Label Grid.Row="2"
+               Grid.ColumnSpan="2"
+               Text="Solutions"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="White"
+                   FontSize="Title"/>
+           
+        </Grid>
+    </StackLayout>
   
 </ContentPage>
