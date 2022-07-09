@@ -9,6 +9,7 @@ namespace SoteriaProjectWebApi.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ProfileTypeId { get; set; }
-        [ForeignKey("")]
+        public string Description { get; set; }
+     
     }
 }
