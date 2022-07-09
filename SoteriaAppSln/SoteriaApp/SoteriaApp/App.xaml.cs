@@ -19,7 +19,7 @@ namespace SoteriaApp
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/LandingTabbedPage");
+            await NavigationService.NavigateAsync("NavigationPage/TutorialPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -31,6 +31,7 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<CommunityChat, CommunityChatViewModel>();
             containerRegistry.RegisterForNavigation<InsightsPage, InsightsPageViewModel>();
             containerRegistry.RegisterForNavigation<AccountPage, AccountPageViewModel>();
+            containerRegistry.RegisterForNavigation<TutorialPage, TutorialPageViewModel>();
         }
     }
 }
