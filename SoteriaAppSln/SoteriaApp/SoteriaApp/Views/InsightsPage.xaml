@@ -28,6 +28,7 @@
                VerticalOptions="Center" 
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
+                   FontFamily="NexaBold"
                    TextColor="White"
                    FontSize="Title"
                    Padding="10,25,5,10"/>
@@ -41,6 +42,7 @@
                VerticalOptions="Center"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
+                   FontFamily="NexaBold"
                    TextColor="White"
                    FontSize="Title"
                    Padding="0,20,9,10"/>
@@ -52,6 +54,7 @@
                HorizontalOptions="Center"
                VerticalOptions="Center"
                    HorizontalTextAlignment="Center"
+                   FontFamily="NexaBold"
                    TextColor="White"
                    FontSize="Title"
                    Padding="0,0,-5,10"/>
@@ -64,6 +67,7 @@
                Text="Influences"
                HorizontalOptions="Center"
                VerticalOptions="Center"
+                   FontFamily="NexaBold"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
                    TextColor="White"
@@ -78,6 +82,7 @@
                Text="Solutions"
                HorizontalOptions="Center"
                VerticalOptions="Center"
+                   FontFamily="NexaBold"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
                    TextColor="White"

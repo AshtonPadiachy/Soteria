@@ -5,11 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\Nexa Bold.otf" />
+    <None Remove="Fonts\Nexa Light.otf" />
+    <None Remove="Fonts\SourceSansPro-Bold.ttf" />
     <None Remove="SansSerifExbFLF.otf" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="SansSerifExbFLF.otf" />
+    <EmbeddedResource Include="Fonts\Nexa Bold.otf" />
+    <EmbeddedResource Include="Fonts\Nexa Light.otf" />
+    <EmbeddedResource Include="Fonts\SansSerifExbFLF.otf" />
+    <EmbeddedResource Include="Fonts\SourceSansPro-Bold.ttf" />
   </ItemGroup>
 
   <ItemGroup>
