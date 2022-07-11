@@ -20,7 +20,7 @@
                                     <Label Text="{Binding Title}" HorizontalTextAlignment="Center" TextColor="#A9DFE2" FontSize="25" FontAttributes="None"  
                                            FontFamily="OpenSans-Semibold.ttf"/>
                                     <Label Text="{Binding Content}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Medium" TextColor="White" 
-                                           FontFamily="OpenSans-Regular.ttf"/>
+                                           FontFamily="OpenSans-Regular.ttf" TextType="Html"/>
                                 </StackLayout>
                                 
                             </Frame>
@@ -29,7 +29,7 @@
 
                                  
                                 <Image Source="{Binding Pictures}" HeightRequest="450" Aspect="AspectFit"
-                                           HorizontalOptions="Start" Margin="-150,-40,0,0"/>
+                                           HorizontalOptions="Start" Margin="-150,-60,0,0"/>
                                 
 
                             </StackLayout>
@@ -46,8 +46,8 @@
                     <views:CarouselItem Title="Introduction"  Content="KidReady is a Mental Health app that focuses on the mental wellbeing of children in the early childhood development phase." Pictures="DepressedChild.png" />
                     <views:CarouselItem Title="Insight" Content="Discover more on Mental Health in early childhood development. " />
                     <views:CarouselItem Title="Report" Content="Stay informed on your child's daily performance and behaviors." />
-                    <views:CarouselItem Title="Zones of Regulation" Content=" Blue, green,yellow, and Red are the 4 colours of alertness and emotion that assists educators to identify the feelings and level of alertness in children." />
-
+                    <views:CarouselItem Title="Zones of Regulation" Content=" Blue, Green,Yellow, and Red are the 4 colours of alertness and emotion that assists educators to identify the feelings and level of alertness in children."  />
+                    
                 </x:Array>
             </CarouselView.ItemsSource>
         </CarouselView>
