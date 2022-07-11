@@ -28,7 +28,7 @@
                VerticalOptions="Center" 
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
-                   FontFamily="NexaBold"
+                   FontFamily="Nexa Bold.otf"
                    TextColor="White"
                    FontSize="Title"
                    Padding="10,25,5,10"/>

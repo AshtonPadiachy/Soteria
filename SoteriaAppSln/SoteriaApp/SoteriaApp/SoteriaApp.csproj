@@ -7,6 +7,11 @@
   <ItemGroup>
     <None Remove="Fonts\Nexa Bold.otf" />
     <None Remove="Fonts\Nexa Light.otf" />
+    <None Remove="Fonts\Nunito-Bold.ttf" />
+    <None Remove="Fonts\Nunito-ExtraLight.ttf" />
+    <None Remove="Fonts\Nunito-Light.ttf" />
+    <None Remove="Fonts\Nunito-Medium.ttf" />
+    <None Remove="Fonts\Nunito-Regular.ttf" />
     <None Remove="Fonts\SourceSansPro-Bold.ttf" />
     <None Remove="SansSerifExbFLF.otf" />
   </ItemGroup>
@@ -14,6 +19,11 @@
   <ItemGroup>
     <EmbeddedResource Include="Fonts\Nexa Bold.otf" />
     <EmbeddedResource Include="Fonts\Nexa Light.otf" />
+    <EmbeddedResource Include="Fonts\Nunito-Bold.ttf" />
+    <EmbeddedResource Include="Fonts\Nunito-ExtraLight.ttf" />
+    <EmbeddedResource Include="Fonts\Nunito-Light.ttf" />
+    <EmbeddedResource Include="Fonts\Nunito-Medium.ttf" />
+    <EmbeddedResource Include="Fonts\Nunito-Regular.ttf" />
     <EmbeddedResource Include="Fonts\SansSerifExbFLF.otf" />
     <EmbeddedResource Include="Fonts\SourceSansPro-Bold.ttf" />
   </ItemGroup>
