@@ -4,28 +4,49 @@
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
               xmlns:views="clr-namespace:SoteriaApp.Views"
-             x:Class="SoteriaApp.Views.TutorialPage">
+             x:Class="SoteriaApp.Views.TutorialPage" NavigationPage.HasNavigationBar="False">
     <StackLayout>
 
         <CarouselView>
             <CarouselView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout Padding="20" Background="white" VerticalOptions="CenterAndExpand">
-                        <Frame BackgroundColor="AliceBlue" Padding="12" CornerRadius="0">
-                            <Label Text="{Binding Title}" />
-                        </Frame>
-                        <Frame BackgroundColor="AliceBlue" Padding="12" CornerRadius="0">
-                            <Label Text="{Binding Content}" />
-                        </Frame>
-                    </StackLayout>
+                    <Frame >
+
+                        <StackLayout Padding="20" Background="white" VerticalOptions="CenterAndExpand" 
+                                     HorizontalOptions="CenterAndExpand">
+
+                            <Frame BackgroundColor="Black" CornerRadius="25" >
+                                <StackLayout>
+                                    <Label Text="{Binding Title}" HorizontalTextAlignment="Center" TextColor="#A9DFE2" FontSize="25" FontAttributes="None"  
+                                           FontFamily="OpenSans-Semibold.ttf"/>
+                                    <Label Text="{Binding Content}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Medium" TextColor="White" 
+                                           FontFamily="OpenSans-Regular.ttf"/>
+                                </StackLayout>
+                                
+                            </Frame>
+                            
+                            <StackLayout Orientation="Horizontal">
+
+                                 
+                                <Image Source="{Binding Pictures}" HeightRequest="450" Aspect="AspectFit"
+                                           HorizontalOptions="Start" Margin="-150,-40,0,0"/>
+                                
+
+                            </StackLayout>
+
+
+                        </StackLayout>
+
+                    </Frame>
+                    
                 </DataTemplate>
             </CarouselView.ItemTemplate>
             <CarouselView.ItemsSource>
                 <x:Array Type="{x:Type views:CarouselItem}">
-                    <views:CarouselItem Title="Introduction" Content="Aware is a Mental HealthApp that focuses on the mental wellbeing of children in the early childhood development phase" />
-                    <views:CarouselItem Title="Insight" Content="Discover more on Mental Health in early childhood development" />
-                    <views:CarouselItem Title="Report" Content="Stay informed onyour child's daily performance and behaviors." />
-                    <views:CarouselItem Title="Zones of Regulation" Content=" Blue, green,yellow, and red are the 4 colours  of alertness and emotion that assists educators to identify the feelings and level of alertness in children." />
+                    <views:CarouselItem Title="Introduction"  Content="KidReady is a Mental Health app that focuses on the mental wellbeing of children in the early childhood development phase." Pictures="DepressedChild.png" />
+                    <views:CarouselItem Title="Insight" Content="Discover more on Mental Health in early childhood development. " />
+                    <views:CarouselItem Title="Report" Content="Stay informed on your child's daily performance and behaviors." />
+                    <views:CarouselItem Title="Zones of Regulation" Content=" Blue, green,yellow, and Red are the 4 colours of alertness and emotion that assists educators to identify the feelings and level of alertness in children." />
 
                 </x:Array>
             </CarouselView.ItemsSource>
