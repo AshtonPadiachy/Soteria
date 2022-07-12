@@ -9,6 +9,6 @@
  
     <views:CommunityChat/>
     <views:InsightsPage/>
-    <views:AccountPage/>
+    <views:ProfilePage/>
     
 </TabbedPage>
