@@ -3,14 +3,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SoteriaProjectWebApi.Models
 {
-    public class Authentication
+    public class Zone
     {
         [Required]
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int AuthenticationId { get; set; }  
-        public string Email { get; set; }
-        public string Password { get; set; }    
-        public bool Enabled { get; set; }
+
+        public int ZoneId { get; set; }
+
+        public string Description { get; set; }
     }
 }

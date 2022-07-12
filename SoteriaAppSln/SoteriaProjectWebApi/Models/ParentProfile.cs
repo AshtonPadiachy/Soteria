@@ -16,7 +16,7 @@ namespace SoteriaProjectWebApi.Models
         [ForeignKey("Authentication")]
 
         public int AuthenticationId { get; set; }
-        public  Authentication Authentications { get; set; }
+        public  Authentication? Authentications { get; set; }
         public ICollection<TeacherProfile> TeacherProfiles { get; set; }
          
 

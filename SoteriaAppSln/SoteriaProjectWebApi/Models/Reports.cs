@@ -11,13 +11,9 @@ namespace SoteriaProjectWebApi.Models
 
         public string ReportsId { get; set; }
 
-        public Enum Zones { get; set; }
+       
 
-        public string CommentOnZones { get; set; }
-
-        public string Date { get; set; }
-
-        public string Time { get; set; }
+        public DateTime DateOfReport { get; set; }
 
         [ForeignKey("LearnerProfile")]
         public string LearnerId { get; set; }
@@ -31,7 +27,17 @@ namespace SoteriaProjectWebApi.Models
         public string CommentOnCreativitySkills { get; set; }
         public string Tips { get; set; }
 
-        public ICollection<TeacherProfile>Teachers { get; set; }
+        [ForeignKey("Zone")]
+
+        public int ZoneId { get; set; } 
+
+        public Zone? Zone { get; set; }  
+
+
+        public ICollection<Zone> Zones { get; set; }    
+        public ICollection<TeacherProfile> Teachers { get; set; }
+
+       
 
 
 
