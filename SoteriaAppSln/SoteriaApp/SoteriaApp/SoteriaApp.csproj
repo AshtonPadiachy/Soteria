@@ -5,6 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\AntipastoPro-DemiBold_trial.ttf" />
+    <None Remove="Fonts\AntipastoPro-Light_trial.ttf" />
+    <None Remove="Fonts\AntipastoPro-Medium_trial.ttf" />
     <None Remove="Fonts\Nexa Bold.otf" />
     <None Remove="Fonts\Nexa Light.otf" />
     <None Remove="Fonts\Nunito-Bold.ttf" />
@@ -12,11 +15,20 @@
     <None Remove="Fonts\Nunito-Light.ttf" />
     <None Remove="Fonts\Nunito-Medium.ttf" />
     <None Remove="Fonts\Nunito-Regular.ttf" />
+    <None Remove="Fonts\OpenSans-Bold.ttf" />
+    <None Remove="Fonts\OpenSans-Light.ttf" />
+    <None Remove="Fonts\OpenSans-Regular.ttf" />
+    <None Remove="Fonts\OpenSans-Semibold.ttf" />
     <None Remove="Fonts\SourceSansPro-Bold.ttf" />
+    <None Remove="Fonts\Typo_Round_Light_Demo.otf" />
+    <None Remove="Fonts\Typo_Round_Regular_Demo.otf" />
     <None Remove="SansSerifExbFLF.otf" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Fonts\AntipastoPro-DemiBold_trial.ttf" />
+    <EmbeddedResource Include="Fonts\AntipastoPro-Light_trial.ttf" />
+    <EmbeddedResource Include="Fonts\AntipastoPro-Medium_trial.ttf" />
     <EmbeddedResource Include="Fonts\Nexa Bold.otf" />
     <EmbeddedResource Include="Fonts\Nexa Light.otf" />
     <EmbeddedResource Include="Fonts\Nunito-Bold.ttf" />
@@ -24,8 +36,13 @@
     <EmbeddedResource Include="Fonts\Nunito-Light.ttf" />
     <EmbeddedResource Include="Fonts\Nunito-Medium.ttf" />
     <EmbeddedResource Include="Fonts\Nunito-Regular.ttf" />
-    <EmbeddedResource Include="Fonts\SansSerifExbFLF.otf" />
+    <EmbeddedResource Include="Fonts\OpenSans-Bold.ttf" />
+    <EmbeddedResource Include="Fonts\OpenSans-Light.ttf" />
+    <EmbeddedResource Include="Fonts\OpenSans-Regular.ttf" />
+    <EmbeddedResource Include="Fonts\OpenSans-Semibold.ttf" />
     <EmbeddedResource Include="Fonts\SourceSansPro-Bold.ttf" />
+    <EmbeddedResource Include="Fonts\Typo_Round_Light_Demo.otf" />
+    <EmbeddedResource Include="Fonts\Typo_Round_Regular_Demo.otf" />
   </ItemGroup>
 
   <ItemGroup>
