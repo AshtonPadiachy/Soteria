@@ -34,7 +34,11 @@
 
                             </StackLayout>
                             <StackLayout>
-                                <Button x:Name="SkipButton" Text="Skip" HorizontalOptions="EndAndExpand" Clicked="SkipButton_Clicked"/>
+                                <ImageButton x:Name="Skip" Source="skipbutton.png" HorizontalOptions="End" Clicked="Skip_Clicked"/>
+                                 
+
+
+
                             </StackLayout>
 
 

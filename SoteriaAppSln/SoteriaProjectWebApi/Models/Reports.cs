@@ -15,7 +15,7 @@ namespace SoteriaProjectWebApi.Models
 
         public string CommentOnZones { get; set; }
 
-        public string Date { get; set; }
+        public string Date { get; set; } 
 
         public string Time { get; set; }
 
@@ -31,7 +31,7 @@ namespace SoteriaProjectWebApi.Models
         public string CommentOnCreativitySkills { get; set; }
         public string Tips { get; set; }
 
-        public ICollection<TeacherProfile>Teachers { get; set; }
+        public ICollection<TeacherProfile> Teachers { get; set; }
 
 
 
