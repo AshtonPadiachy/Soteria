@@ -11,9 +11,13 @@ namespace SoteriaProjectWebApi.Models
 
         public string ReportsId { get; set; }
 
-       
+        public Enum Zones { get; set; }
 
-        public DateTime DateOfReport { get; set; }
+        public string CommentOnZones { get; set; }
+
+        public string Date { get; set; } 
+
+        public string Time { get; set; }
 
         [ForeignKey("LearnerProfile")]
         public string LearnerId { get; set; }

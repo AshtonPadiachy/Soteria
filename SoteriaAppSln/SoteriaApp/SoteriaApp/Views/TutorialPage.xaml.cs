@@ -13,6 +13,11 @@ namespace SoteriaApp.Views
         {
             Navigation.PushAsync(new LandingTabbedPage());
         }
+
+        private void Skip_Clicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new LandingTabbedPage());
+        }
     }
     class CarouselItem
     {

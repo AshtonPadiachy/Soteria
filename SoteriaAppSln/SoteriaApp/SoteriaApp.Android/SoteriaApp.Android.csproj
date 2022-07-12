@@ -125,5 +125,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Thinking1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\skipbutton.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
