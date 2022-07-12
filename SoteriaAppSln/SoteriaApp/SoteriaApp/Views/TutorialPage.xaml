@@ -34,11 +34,8 @@
 
                             </StackLayout>
                             <StackLayout>
-                                <ImageButton x:Name="Skip" Source="skipbutton.png" HorizontalOptions="End" Clicked="Skip_Clicked"/>
+                                <ImageButton x:Name="Skip" Source="skipbutton.png" HorizontalOptions="End" Clicked="Skip_Clicked" Margin="-180,60,-12,-8"/>
                                  
-
-
-
                             </StackLayout>
 
 
@@ -52,7 +49,7 @@
                 <x:Array Type="{x:Type views:CarouselItem}">
                    
                     <views:CarouselItem Title="Introduction" Content="KidReady is a Mental Health app that focuses on the mental wellbeing of children in the early childhood development phase." Pictures="DepressedChild.png" />
-                    <views:CarouselItem Title="Insight" Content="Discover more on Mental Health in early childhood development. " />
+                    <views:CarouselItem Title="Insights" Content="Discover more on Mental Health in early childhood development. " />
                     <views:CarouselItem Title="Report" Content="Stay informed on your child's daily performance and behaviors." />
                     <views:CarouselItem Title="Zones of Regulation" Content="&lt;span style=&quot;color: blue;&quot;&gt;Blue&lt;/span&gt; ,&lt;span style=&quot;color: green;&quot;&gt;Green&lt;/span&gt;,&lt;span style=&quot;color: Yellow;&quot;&gt;Yellow&lt;/span&gt;, and &lt;span style=&quot;color: Red;&quot;&gt;Red&lt;/span&gt; are the 4 colours of alertness and emotion that assists educators to identify the feelings and level of alertness in children."  />
 
