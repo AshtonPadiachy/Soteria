@@ -11,8 +11,7 @@ namespace SoteriaProjectWebApi.Models
 
         public string ReportsId { get; set; }
 
-        public Enum Zones { get; set; }
-
+       
         public string CommentOnZones { get; set; }
 
         public string Date { get; set; } 
