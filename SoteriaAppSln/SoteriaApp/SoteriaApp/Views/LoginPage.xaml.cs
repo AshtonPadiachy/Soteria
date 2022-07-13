@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 
 namespace SoteriaApp.Views
 {
@@ -6,7 +7,13 @@ namespace SoteriaApp.Views
     {
         public LoginPage()
         {
-            InitializeComponent();
+            
+           
+                InitializeComponent();
+
+            
+            
+
         }
     }
 }

@@ -3,6 +3,75 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="SoteriaApp.Views.LoginPage">
-  
+             x:Class="SoteriaApp.Views.LoginPage"
+             NavigationPage.HasBackButton="False">
+
+
+    <ContentPage.Content>
+
+        <StackLayout>
+
+            <Image Source="KidReadyLogo.png" />
+
+            <Grid 
+                
+                ColumnDefinitions="Auto, Auto"
+                Margin="20, 0, 0, 10"
+                HorizontalOptions="Start">
+                
+                <Label
+                    
+                    Grid.Column="1"
+                    Margin="10, 0, 0, 0"
+                    VerticalOptions="Center">
+                    
+                </Label>
+                
+            </Grid>
+
+            <Label
+                HorizontalTextAlignment="Center"
+                Margin="20, 0, 20, 30"
+                >
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span>
+
+                            
+
+
+
+                        </Span>
+
+                        <Span>
+
+                            
+
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </StackLayout>
+
+
+
+
+    </ContentPage.Content>
 </ContentPage>
