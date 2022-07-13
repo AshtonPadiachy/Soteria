@@ -7,39 +7,36 @@
              x:Class="SoteriaApp.Views.TutorialPage" NavigationPage.HasNavigationBar="False">
     <StackLayout>
 
-        <CarouselView>
-            <CarouselView.ItemTemplate>
+        <CarouselView IndicatorView="{x:Reference monkeysIndicator}">
+            
+            <CarouselView.ItemTemplate >
+                
                 <DataTemplate>
+                    
                     <Frame >
+                        
 
                         <StackLayout Padding="20" Background="white" VerticalOptions="CenterAndExpand" 
                                      HorizontalOptions="CenterAndExpand">
 
-                            <Frame BackgroundColor="#323749" CornerRadius="25" >
+                            <Frame BackgroundColor="#000000" CornerRadius="25" >
                                 <StackLayout>
                                     <Label Text="{Binding Title}" HorizontalTextAlignment="Center" TextColor="#A9DFE2" FontSize="25" FontAttributes="None"  
                                            FontFamily="OpenSans-Semibold.ttf"/>
                                     <Label Text="{Binding Content}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Medium" TextColor="White" 
                                            FontFamily="OpenSans-Regular.ttf" TextType="Html"/>
+                                    <Image Source="{Binding Pictures}" HeightRequest="340" Aspect="AspectFit"
+                                           HorizontalOptions="Start" Margin="0,-60,0,0"/>
                                 </StackLayout>
 
                             </Frame>
 
-                            <StackLayout Orientation="Horizontal">
+                           
+                                <ImageButton x:Name="Skip" Source="skipbutton.png" HorizontalOptions="End" Clicked="Skip_Clicked" Margin="-180,110,-12,-8"/>
 
 
-                                <Image Source="{Binding Pictures}" HeightRequest="450" Aspect="AspectFit"
-                                           HorizontalOptions="Start" Margin="-150,-60,0,0"/>
-
-
-                            </StackLayout>
-                            <StackLayout>
-                                <ImageButton x:Name="Skip" Source="skipbutton.png" HorizontalOptions="End" Clicked="Skip_Clicked" Margin="-180,60,-12,-8"/>
-                                
-
-                            </StackLayout>
-
-
+                            
+                           
                         </StackLayout>
 
                     </Frame>
@@ -57,7 +54,9 @@
                 </x:Array>
             </CarouselView.ItemsSource>
         </CarouselView>
-        
+        <IndicatorView x:Name="monkeysIndicator" IndicatorColor="LightGray" SelectedIndicatorColor="DarkGray" IndicatorsShape="Circle" Margin="0,50,0,15" />
+
+
 
     </StackLayout>
 
