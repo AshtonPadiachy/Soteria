@@ -11,7 +11,10 @@
 
         <StackLayout>
 
-            <Image Source="KidReadyLogo.png" />
+
+            <Frame CornerRadius="360">
+            <Image Source="KidReadyLogo.png" HeightRequest="300"/>
+            </Frame>
 
             <Grid 
                 
