@@ -22,20 +22,21 @@
                                     <Label Text="{Binding Content}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Medium" TextColor="White" 
                                            FontFamily="OpenSans-Regular.ttf" TextType="Html"/>
                                 </StackLayout>
-                                
+
                             </Frame>
-                            
+
                             <StackLayout Orientation="Horizontal">
 
-                                 
+
                                 <Image Source="{Binding Pictures}" HeightRequest="450" Aspect="AspectFit"
                                            HorizontalOptions="Start" Margin="-150,-60,0,0"/>
-                                
+
 
                             </StackLayout>
                             <StackLayout>
                                 <ImageButton x:Name="Skip" Source="skipbutton.png" HorizontalOptions="End" Clicked="Skip_Clicked" Margin="-180,60,-12,-8"/>
-                                 
+                                
+
                             </StackLayout>
 
 
@@ -56,7 +57,7 @@
                 </x:Array>
             </CarouselView.ItemsSource>
         </CarouselView>
-
+        
 
     </StackLayout>
 
