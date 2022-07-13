@@ -2,7 +2,7 @@
 <FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SoteriaApp.Views.ProfilePage"
-             xmlns:pages="clr-namespace:SoteriaApp.Views" Title="Profile">
+             xmlns:pages="clr-namespace:SoteriaApp.Views" Title="Profile" IconImageSource="ProfileIcon.png">
   <FlyoutPage.Flyout>
     <pages:ProfilePageFlyout x:Name="FlyoutPage" />
   </FlyoutPage.Flyout>
