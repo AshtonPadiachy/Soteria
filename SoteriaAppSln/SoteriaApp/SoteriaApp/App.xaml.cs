@@ -32,6 +32,9 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<InsightsPage, InsightsPageViewModel>();
             containerRegistry.RegisterForNavigation<AccountPage, AccountPageViewModel>();
             containerRegistry.RegisterForNavigation<TutorialPage, TutorialPageViewModel>();
+            containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
+            containerRegistry.RegisterForNavigation<SettingPage, SettingPageViewModel>();
+            containerRegistry.RegisterForNavigation<HelplinePage, HelplinePageViewModel>();
         }
     }
 }

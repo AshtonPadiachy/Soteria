@@ -15,7 +15,7 @@
                         <StackLayout Padding="20" Background="white" VerticalOptions="CenterAndExpand" 
                                      HorizontalOptions="CenterAndExpand">
 
-                            <Frame BackgroundColor="Black" CornerRadius="25" >
+                            <Frame BackgroundColor="#323749" CornerRadius="25" >
                                 <StackLayout>
                                     <Label Text="{Binding Title}" HorizontalTextAlignment="Center" TextColor="#A9DFE2" FontSize="25" FontAttributes="None"  
                                            FontFamily="OpenSans-Semibold.ttf"/>

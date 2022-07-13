@@ -1,8 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SoteriaProjectWebApi.Models;
 
 namespace SoteriaProjectWebApi.Data
 {
-    public class SoteriaContext 
+    public class SoteriaContext
         : DbContext
     {
         public SoteriaContext(DbContextOptions options)
@@ -10,5 +11,13 @@ namespace SoteriaProjectWebApi.Data
         {
 
         }
+        public DbSet<TeacherProfile> TeacherProfiles { get; set; }
+        public DbSet<ParentProfile> ParentProfiles { get; set; }
+        public DbSet<LearnerProfile> learnerProfiles { get; set; }
+        public DbSet<Authentication> Authentications { get; set; }
+        public DbSet<Reports> Reports { get; set; } 
+
+
     }
 }
+ 

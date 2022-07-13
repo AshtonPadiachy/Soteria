@@ -11,9 +11,9 @@ namespace SoteriaProjectWebApi.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int TeacherProfileId { get; set; }
         public string UserName { get; set; }
-        public string Name { get; set; }
-        public string Surname { get; set; }
-        public string PhoneNumber { get; set; }
+        public string   TeacherName { get; set; }
+        public string TeacherSurname { get; set; }
+        public string TeacherCellNumber { get; set; }
 
         [ForeignKey("Authentication")]
 
