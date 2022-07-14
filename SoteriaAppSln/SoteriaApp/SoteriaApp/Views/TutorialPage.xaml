@@ -19,7 +19,7 @@
                         <StackLayout Padding="20" Background="white" VerticalOptions="CenterAndExpand" 
                                      HorizontalOptions="CenterAndExpand">
 
-                            <Frame BackgroundColor="#000000" CornerRadius="25" >
+                            <Frame BackgroundColor="Black" CornerRadius="25" >
                                 <StackLayout>
                                     <Label Text="{Binding Title}" HorizontalTextAlignment="Center" TextColor="#A9DFE2" FontSize="25" FontAttributes="None"  
                                            FontFamily="OpenSans-Semibold.ttf"/>
@@ -31,12 +31,7 @@
 
                             </Frame>
 
-                           
-                                <ImageButton x:Name="Skip" Source="skipbutton.png" HorizontalOptions="End" Clicked="Skip_Clicked" Margin="-180,110,-12,-8"/>
-
-
-                            
-                           
+                            <ImageButton x:Name="Skip" Source="skipbutton.png" HorizontalOptions="End" Clicked="Skip_Clicked" Margin="-180,110,-12,-8"/>
                         </StackLayout>
 
                     </Frame>
