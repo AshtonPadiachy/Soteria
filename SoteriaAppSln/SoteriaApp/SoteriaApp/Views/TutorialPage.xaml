@@ -35,9 +35,10 @@
                             </Frame>
 
                             <StackLayout>
-                                <ImageButton Source="Skipbutton.png" x:Name="SkipOption"  
+                                <ImageButton  x:Name="SkipOption"  Source="Skipbutton.png"
                                              HorizontalOptions="End" Clicked="SkipOption_Clicked" 
-                                             HeightRequest="60"/>
+                                             HeightRequest="40" WidthRequest="70" Margin="0,410,0,0" 
+                                             BackgroundColor="Transparent"/>
 
 
                             </StackLayout>
@@ -62,7 +63,7 @@
                 </x:Array>
             </CarouselView.ItemsSource>
         </CarouselView>
-        <IndicatorView x:Name="tutorialIndicator" IndicatorColor="#323749" SelectedIndicatorColor="DarkGray" 
+        <IndicatorView x:Name="tutorialIndicator" IndicatorColor="#323749" SelectedIndicatorColor="LightGray" 
                        IndicatorsShape="Circle" Margin="0,50,0,35" />
 
 
