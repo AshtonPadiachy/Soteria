@@ -7,23 +7,26 @@
              x:Class="SoteriaApp.Views.TutorialPage" NavigationPage.HasNavigationBar="False">
     <StackLayout>
 
-        <CarouselView IndicatorView="{x:Reference tutorialIndicator}">
+        <CarouselView IndicatorView="{x:Reference tutorialIndicator}" >
             
             <CarouselView.ItemTemplate >
                 
                 <DataTemplate>
                     
-                    <Frame >
+                    <Frame BackgroundColor="Transparent">
                         
 
-                        <StackLayout Padding="20" Background="white" VerticalOptions="CenterAndExpand" 
+                        <StackLayout Padding="20"  VerticalOptions="CenterAndExpand" 
                                      HorizontalOptions="CenterAndExpand">
 
-                            <Frame BackgroundColor="Black" CornerRadius="25" >
+                            <Frame BackgroundColor="Transparent" CornerRadius="25" HeightRequest="150">
                                 <StackLayout>
-                                    <Label Text="{Binding Title}" HorizontalTextAlignment="Center" TextColor="#A9DFE2" FontSize="25" FontAttributes="None"  
+                                    <Label Text="{Binding Title}" HorizontalTextAlignment="Center" 
+                                           TextColor="#323749" FontSize="25" FontAttributes="Bold"  
                                            FontFamily="OpenSans-Semibold.ttf"/>
-                                    <Label Text="{Binding Content}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Medium" TextColor="White" 
+                                    <Label Text="{Binding Content}" VerticalTextAlignment="Center" 
+                                           HorizontalTextAlignment="Center" FontSize="Medium" TextColor="#323749
+"
                                            FontFamily="OpenSans-Regular.ttf" TextType="Html"/>
                                     <Image Source="{Binding Pictures}" HeightRequest="340" Aspect="AspectFit"
                                            HorizontalOptions="Start" Margin="0,-60,0,0"/>
@@ -31,7 +34,18 @@
 
                             </Frame>
 
-                            <ImageButton x:Name="Skip" Source="skipbutton.png" HorizontalOptions="End" Clicked="Skip_Clicked" Margin="-180,110,-12,-8"/>
+                            <Frame BackgroundColor="Transparent">
+
+
+                                <ImageButton x:Name="Skip" Source="Skipbutton.png" 
+                                             HorizontalOptions="End" Clicked="Skip_Clicked" 
+                                             
+                                             Padding="0,0,-240,-450" BackgroundColor="Transparent"/>
+
+                            </Frame>
+                            
+                            
+                            
                         </StackLayout>
 
                     </Frame>
@@ -49,7 +63,8 @@
                 </x:Array>
             </CarouselView.ItemsSource>
         </CarouselView>
-        <IndicatorView x:Name="tutorialIndicator" IndicatorColor="LightGray" SelectedIndicatorColor="DarkGray" IndicatorsShape="Circle" Margin="0,50,0,15" />
+        <IndicatorView x:Name="tutorialIndicator" IndicatorColor="#323749" SelectedIndicatorColor="DarkGray" 
+                       IndicatorsShape="Circle" Margin="0,50,0,35" />
 
 
 

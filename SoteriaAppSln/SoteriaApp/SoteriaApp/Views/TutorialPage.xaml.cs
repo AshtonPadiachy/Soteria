@@ -9,11 +9,6 @@ namespace SoteriaApp.Views
             InitializeComponent();
         }
 
-        private void SkipButton_Clicked(object sender, System.EventArgs e)
-        {
-            Navigation.PushAsync(new LandingTabbedPage());
-        }
-
         private void Skip_Clicked(object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new LandingTabbedPage());

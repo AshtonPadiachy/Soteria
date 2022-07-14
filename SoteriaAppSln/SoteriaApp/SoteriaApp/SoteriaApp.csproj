@@ -32,10 +32,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Controls\LogInControl.xaml">
+    <EmbeddedResource Update="Views\Controls\LogInControl.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Controls\SignUpControl.xaml">
+    <EmbeddedResource Update="Views\Controls\SignUpControl.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\HelplinePage.xaml">
