@@ -7,7 +7,7 @@
              x:Class="SoteriaApp.Views.TutorialPage" NavigationPage.HasNavigationBar="False">
     <StackLayout>
 
-        <CarouselView IndicatorView="{x:Reference monkeysIndicator}">
+        <CarouselView IndicatorView="{x:Reference tutorialIndicator}">
             
             <CarouselView.ItemTemplate >
                 
@@ -49,7 +49,7 @@
                 </x:Array>
             </CarouselView.ItemsSource>
         </CarouselView>
-        <IndicatorView x:Name="monkeysIndicator" IndicatorColor="LightGray" SelectedIndicatorColor="DarkGray" IndicatorsShape="Circle" Margin="0,50,0,15" />
+        <IndicatorView x:Name="tutorialIndicator" IndicatorColor="LightGray" SelectedIndicatorColor="DarkGray" IndicatorsShape="Circle" Margin="0,50,0,15" />
 
 
 

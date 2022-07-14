@@ -11,50 +11,35 @@
 
         <StackLayout>
 
-            <Image Source="KidReadyLogo.png" />
 
-            <Grid 
-                
-                ColumnDefinitions="Auto, Auto"
-                Margin="20, 0, 0, 10"
-                HorizontalOptions="Start">
-                
-                <Label
-                    
-                    Grid.Column="1"
-                    Margin="10, 0, 0, 0"
-                    VerticalOptions="Center">
+            <StackLayout>
+            <Image Source="KidReadyA.png" Margin="0,-65,0,0"
+                   HorizontalOptions="Center" VerticalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout>
+
+                <Label Text="Welcome to "
+                       TextColor="#5C6898" FontAttributes="Bold"
+                       FontSize="25" HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       FontFamily="OpenSans-Bold.ttf"
+                       Margin="0,-20,0,0"/>
+
+                <Label Text="KidReady"
+                       TextColor="#5C6898" FontAttributes="Bold"
+                       FontSize="25" HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       FontFamily="OpenSans-Bold.ttf"
+                       Margin="0,-5,0,0">
                     
                 </Label>
-                
-            </Grid>
 
-            <Label
-                HorizontalTextAlignment="Center"
-                Margin="20, 0, 20, 30"
-                >
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span>
+            </StackLayout>
 
-                            
+            
 
-
-
-                        </Span>
-
-                        <Span>
-
-                            
-
-                        </Span>
-                    </FormattedString>
-                </Label.FormattedText>
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer NumberOfTapsRequired="1"></TapGestureRecognizer>
-                </Label.GestureRecognizers>
-            </Label>
-
+            
 
 
 
