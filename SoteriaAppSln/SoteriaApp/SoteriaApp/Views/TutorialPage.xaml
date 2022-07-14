@@ -34,21 +34,20 @@
 
                             </Frame>
 
-                            <Frame BackgroundColor="Transparent">
+                            <StackLayout>
+                                <ImageButton Source="Skipbutton.png" x:Name="SkipOption"  
+                                             HorizontalOptions="End" Clicked="SkipOption_Clicked" 
+                                             HeightRequest="60"/>
 
 
-                                <ImageButton x:Name="Skip" Source="Skipbutton.png" 
-                                             HorizontalOptions="End" Clicked="Skip_Clicked" 
-                                             
-                                             Padding="0,0,-240,-450" BackgroundColor="Transparent"/>
-
-                            </Frame>
-                            
+                            </StackLayout>
                             
                             
                         </StackLayout>
 
                     </Frame>
+                    
+                    
                     
                 </DataTemplate>
             </CarouselView.ItemTemplate>
