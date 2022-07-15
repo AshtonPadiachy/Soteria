@@ -7,6 +7,15 @@ namespace SoteriaApp.Views
         public LandingTabbedPage()
         {
             InitializeComponent();
+
+            
         }
+
     }
+       
+    
+
+
 }
+    
+

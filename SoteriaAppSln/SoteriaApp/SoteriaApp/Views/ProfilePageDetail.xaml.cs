@@ -15,6 +15,8 @@ namespace SoteriaApp.Views
         public ProfilePageDetail()
         {
             InitializeComponent();
+
+
         }
     }
 }

@@ -4,12 +4,12 @@
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
               xmlns:views="clr-namespace:SoteriaApp.Views"
-             x:Class="SoteriaApp.Views.TutorialPage" NavigationPage.HasNavigationBar="False">
+             x:Class="SoteriaApp.Views.TutorialPage" NavigationPage.HasNavigationBar="False" >
     <StackLayout>
 
-        <CarouselView IndicatorView="{x:Reference tutorialIndicator}" >
+        <CarouselView IndicatorView="{x:Reference tutorialIndicator}" BackgroundColor="Transparent" >
             
-            <CarouselView.ItemTemplate >
+            <CarouselView.ItemTemplate  >
                 
                 <DataTemplate>
                     
@@ -26,12 +26,11 @@
                                     <Label Text="{Binding Title}" HorizontalTextAlignment="Center" 
                                            TextColor="#5C6898" FontSize="25" FontAttributes="Bold"  
                                            FontFamily="OpenSans-Semibold.ttf"/>
+                                    
                                     <Label Text="{Binding Content}" VerticalTextAlignment="Center" 
                                            HorizontalTextAlignment="Center" FontSize="Medium" TextColor="#5C6898" 
                                            FontFamily="OpenSans-Regular.ttf" TextType="Html"/>
                                     
-                                    <Image Source="{Binding Pictures}" HeightRequest="340" Aspect="AspectFit"
-                                           HorizontalOptions="Start" Margin="0,0,0,60"/>
                                 </StackLayout>
 
                             </Frame>
@@ -41,7 +40,7 @@
                                 <StackLayout>
 
                                     <Image Source="{Binding Pictures}" HeightRequest="240" Aspect="AspectFill"
-                                           HorizontalOptions="Start" Margin="0,20,0,30" VerticalOptions="CenterAndExpand"
+                                           HorizontalOptions="Start" Margin="0,0,15,40" VerticalOptions="CenterAndExpand"
                                            />
 
 
@@ -50,15 +49,7 @@
   
                             </Frame>
 
-                            <StackLayout>
-                                
-                                <ImageButton  x:Name="SkipOption"  Source="Skipbutton.png"
-                                             HorizontalOptions="End" Clicked="SkipOption_Clicked" 
-                                             HeightRequest="40" WidthRequest="70" Margin="0,70,0,500" 
-                                             BackgroundColor="Transparent"/>
-
-
-                            </StackLayout>
+                            
                             
                             
                         </StackLayout>
@@ -68,22 +59,30 @@
                     
                     
                 </DataTemplate>
-            </CarouselView.ItemTemplate>
+            </CarouselView.ItemTemplate >
             <CarouselView.ItemsSource>
                 <x:Array Type="{x:Type views:CarouselItem}">
                    
                     <views:CarouselItem Title="Introduction" Content="KidReady is a Mental Health app that focuses on the mental wellbeing of children in the early childhood development phase." Pictures="DepressedChild.png" />
                     <views:CarouselItem Title="Insights" Content="Discover more on Mental Health in early childhood development. " />
                     <views:CarouselItem Title="Report" Content="Stay informed on your child's daily performance and behaviors." />
-                    <views:CarouselItem Title="Zones of Regulation" Content="&lt;span style=&quot;color: blue;&quot;&gt;Blue&lt;/span&gt; ,&lt;span style=&quot;color:#16B900;&quot;&gt;Green&lt;/span&gt;,&lt;span style=&quot;color: #EBEB00;&quot;&gt;Yellow&lt;/span&gt;, and &lt;span style=&quot;color: #8b0000;&quot;&gt;Red&lt;/span&gt; are the 4 colours of alertness and emotion that assists educators to identify the feelings and level of alertness in children."  />
+                    <views:CarouselItem Title="Zones of Regulation" Content="&lt;span style=&quot;color: blue;&quot;&gt;Blue&lt;/span&gt; ,&lt;span style=&quot;color:#16B900;&quot;&gt;Green&lt;/span&gt;,&lt;span style=&quot;color: #EBEB00;&quot;&gt;Yellow&lt;/span&gt;, and &lt;span style=&quot;color: Red;&quot;&gt;Red&lt;/span&gt; are the 4 colours of alertness and emotion that assists educators to identify the feelings and level of alertness in children."  />
 
                 </x:Array>
             </CarouselView.ItemsSource>
         </CarouselView>
-        <IndicatorView x:Name="tutorialIndicator" IndicatorColor="#5C6898" SelectedIndicatorColor="LightGray" 
-                       IndicatorsShape="Circle" Margin="0,50,0,35" />
+        <IndicatorView x:Name="tutorialIndicator" IndicatorColor="#A9DFE2" SelectedIndicatorColor="#5C6898" 
+                       IndicatorsShape="Circle" Margin="0,0,0,150" BackgroundColor="Transparent"/>
+
+        <StackLayout>
+
+            <ImageButton  x:Name="SkipOption"  Source="Skipbutton.png"
+                                             HorizontalOptions="End" Clicked="SkipOption_Clicked" 
+                                             HeightRequest="40" WidthRequest="70" Padding="-55,0,0,0" Margin="0,0,0,30"
+                                             BackgroundColor="Transparent"/>
 
 
+        </StackLayout>
 
     </StackLayout>
 
