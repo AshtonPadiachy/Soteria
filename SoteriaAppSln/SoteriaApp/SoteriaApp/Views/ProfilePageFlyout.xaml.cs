@@ -33,7 +33,7 @@ namespace SoteriaApp.Views
             {
                 MenuItems = new ObservableCollection<ProfilePageFlyoutMenuItem>(new[]
                 {
-                    new ProfilePageFlyoutMenuItem { Id = 0, Title = "Setting" ,TargetType = typeof(SettingPage)},
+                    new ProfilePageFlyoutMenuItem { Id = 0, Title = "Settings" ,TargetType = typeof(SettingPage)},
                     new ProfilePageFlyoutMenuItem { Id = 1, Title = "Helpline" ,TargetType = typeof(HelplinePage)},
                     new ProfilePageFlyoutMenuItem { Id = 1, Title = "Profile" ,TargetType = typeof(ProfilePageDetail)},
 

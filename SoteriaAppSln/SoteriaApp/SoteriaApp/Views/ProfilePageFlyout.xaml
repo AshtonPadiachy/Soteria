@@ -4,42 +4,65 @@
              x:Class="SoteriaApp.Views.ProfilePageFlyout"
              Title="Flyout" >
 
-   <StackLayout>
-       
-         <Frame 
+    <StackLayout>
+
+        <Frame BackgroundColor="Transparent" Margin="0,-95,5,0">
+
+            <Image Source="KidReadyA">
+
+
+            </Image>
+            
+        </Frame>
+
+        
+
+
+
+        <Frame 
            BackgroundColor="Transparent"
-            Margin="0,202,0,0">
+            Margin="0,-50,0,0">
+            
+           
              
              <ListView x:Name="MenuItemsListView"
               SeparatorVisibility="Default"
-              HasUnevenRows="true"
+              SeparatorColor="#5C6898"
+              HasUnevenRows="False"
               ItemsSource="{Binding MenuItems}">
+                 
+                 
                  
                 <ListView.Header>
                     
-                   <Grid BackgroundColor="White">
+                   <Grid BackgroundColor="Transparent">
          
                    </Grid>
                     
                 </ListView.Header>
                  
+                 
                   <ListView.ItemTemplate>
                       
                        <DataTemplate>
                      
-                            <ViewCell>
+                            <ViewCell >
+
+                               
                                 
+                             
                                  <StackLayout  Padding="15,15,0,10" 
-                                               HorizontalOptions="FillAndExpand" >
-                
-                                     <Label VerticalOptions="FillAndExpand" 
+                                           HorizontalOptions="FillAndExpand" >
+                                      <Label VerticalOptions="FillAndExpand" 
                                             VerticalTextAlignment="Center" 
                                             Text="{Binding Title}" 
                                             FontSize="24" 
                                             TextColor="#5C6898" 
-                                            FontFamily="OpenSans-Regular.ttf"/>
+                                            FontFamily="OpenSans-Regular.ttf"
+                                            />
 
                                  </StackLayout>
+                                
 
                             </ViewCell>
                            
@@ -49,6 +72,9 @@
                  
                  
              </ListView>
-         </Frame>
-   </StackLayout>
+          
+      </Frame>
+
+    </StackLayout>
+
 </ContentPage>
