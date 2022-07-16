@@ -8,7 +8,7 @@ namespace SoteriaApp.Views
         {
             InitializeComponent();
 
-            
+            CurrentPage = Children[1];
         }
 
     }
