@@ -78,7 +78,7 @@
 
             <ImageButton  x:Name="SkipOption"  Source="Skipbutton.png"
                                              HorizontalOptions="End" Clicked="SkipOption_Clicked" 
-                                             HeightRequest="40" WidthRequest="70" Padding="-55,0,0,0" Margin="0,0,0,30"
+                                             HeightRequest="40" WidthRequest="70" Padding="-80,0,0,0" Margin="0,0,0,35"
                                              BackgroundColor="Transparent"/>
 
 

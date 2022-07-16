@@ -28,7 +28,7 @@
              <ListView x:Name="MenuItemsListView"
               SeparatorVisibility="Default"
               SeparatorColor="#5C6898"
-              HasUnevenRows="False"
+              HasUnevenRows="True"
               ItemsSource="{Binding MenuItems}">
                  
                  
@@ -45,14 +45,16 @@
                   <ListView.ItemTemplate>
                       
                        <DataTemplate>
-                     
+                           
+                           
                             <ViewCell >
-
-                               
                                 
-                             
-                                 <StackLayout  Padding="15,15,0,10" 
-                                           HorizontalOptions="FillAndExpand" >
+
+                                 <StackLayout  Padding="0,15,0,15" 
+                                           HorizontalOptions="FillAndExpand">
+
+                                         
+                                     
                                       <Label VerticalOptions="FillAndExpand" 
                                             VerticalTextAlignment="Center" 
                                             Text="{Binding Title}" 
@@ -62,6 +64,7 @@
                                             />
 
                                  </StackLayout>
+                                
                                 
 
                             </ViewCell>

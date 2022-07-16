@@ -4,5 +4,78 @@
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SoteriaApp.Views.SettingPage">
+   
+    <Frame>
+        
+        <StackLayout BackgroundColor="Transparent"
+               Margin="0,150,0,0"
+               VerticalOptions="Center"
+               HorizontalOptions="Fill">
+
+            <Frame BackgroundColor="Transparent" 
+                   BorderColor="#5C6898"
+                   CornerRadius="10"
+                   HasShadow="True"
+                   >
+
+                <Label Text="Account" 
+                       TextColor="#5C6898"
+                       HorizontalTextAlignment="Center"
+                       FontFamily="OpenSans-Regular.ttf"
+                       FontSize="Medium"/>
+
+            </Frame>
+
+            <Frame BackgroundColor="Transparent" 
+                   BorderColor="#5C6898"
+                   CornerRadius="10"
+                   HasShadow="True"
+                   >
+
+                <Label Text="Support" 
+                       TextColor="#5C6898"
+                       HorizontalTextAlignment="Center"
+                       FontFamily="OpenSans-Regular.ttf"
+                       FontSize="Medium"/>
+
+            </Frame>
+
+            <Frame BackgroundColor="Transparent" 
+                   BorderColor="#5C6898"
+                   CornerRadius="10"
+                   HasShadow="True"
+                   >
+                
+                <Label Text=" Privacy and Policy " 
+                       TextColor="#5C6898"
+                       HorizontalTextAlignment="Center"
+                       FontFamily="OpenSans-Regular.ttf"
+                       FontSize="Medium"/>
+
+            </Frame>
+
+            <Frame BackgroundColor="Transparent" 
+                   BorderColor="#5C6898"
+                   CornerRadius="10"
+                   HasShadow="True"
+                   >
+
+                <Label Text="About Us" 
+                       TextColor="#5C6898"
+                       HorizontalTextAlignment="Center"
+                       FontFamily="OpenSans-Regular.ttf"
+                       FontSize="Medium"/>
+
+
+            </Frame>
+
+
+        </StackLayout>
+
+
+
+
+
+    </Frame>
   
 </ContentPage>
