@@ -112,8 +112,7 @@
                    TextColor="#5C6898"
                        HorizontalOptions="CenterAndExpand"
                        HorizontalTextAlignment="Center"
-                       VerticalOptions="Center"
-                       >
+                       VerticalOptions="Center">
 
 
             </Label>
