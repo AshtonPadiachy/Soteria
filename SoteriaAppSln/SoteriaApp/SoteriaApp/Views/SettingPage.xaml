@@ -3,18 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="SoteriaApp.Views.SettingPage">
-   
-    <Frame>
-        
+             x:Class="SoteriaApp.Views.SettingPage" >
+
+    <Frame BackgroundColor="Transparent" Margin="0,50,0,0" >
+
+
         <StackLayout BackgroundColor="Transparent"
-               Margin="0,150,0,0"
+                     Spacing="10"
+               
                VerticalOptions="Center"
                HorizontalOptions="Fill">
 
             <Frame BackgroundColor="Transparent" 
                    BorderColor="#5C6898"
-                   CornerRadius="10"
+                   CornerRadius="50"
                    HasShadow="True"
                    >
 
@@ -22,13 +24,15 @@
                        TextColor="#5C6898"
                        HorizontalTextAlignment="Center"
                        FontFamily="OpenSans-Regular.ttf"
-                       FontSize="Medium"/>
+                       FontSize="Medium"
+                       />
+
 
             </Frame>
 
             <Frame BackgroundColor="Transparent" 
                    BorderColor="#5C6898"
-                   CornerRadius="10"
+                   CornerRadius="50"
                    HasShadow="True"
                    >
 
@@ -42,10 +46,10 @@
 
             <Frame BackgroundColor="Transparent" 
                    BorderColor="#5C6898"
-                   CornerRadius="10"
+                   CornerRadius="50"
                    HasShadow="True"
                    >
-                
+
                 <Label Text=" Privacy and Policy " 
                        TextColor="#5C6898"
                        HorizontalTextAlignment="Center"
@@ -56,7 +60,7 @@
 
             <Frame BackgroundColor="Transparent" 
                    BorderColor="#5C6898"
-                   CornerRadius="10"
+                   CornerRadius="50"
                    HasShadow="True"
                    >
 
@@ -66,16 +70,63 @@
                        FontFamily="OpenSans-Regular.ttf"
                        FontSize="Medium"/>
 
-
             </Frame>
+
+            <Grid Margin="0,25,0,0" BackgroundColor="Transparent"
+                  HorizontalOptions="StartAndExpand" 
+                  >
+                   <CheckBox IsChecked="{Binding AlwaysShowTutorial}"
+                          VerticalOptions="StartAndExpand"
+                          Color="#5C6898"
+                            />
+                
+                   <Label Text="Rewatch tutorial when starting up?"
+                       TextColor="#5C6898"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center" >
+                    
+                   </Label>
+
+            </Grid>
+            
+            <Frame
+                
+  
+                BackgroundColor="#5C6898" 
+                   Margin="0,25,0,40"
+                   CornerRadius="10"
+                   HasShadow="False">
+
+                <Label Text="Sign Out" 
+                       
+                       TextColor="white"
+                       HorizontalTextAlignment="Center"
+                       FontFamily="OpenSans-Regular.ttf"
+                       FontSize="Medium"
+                       />
+                
+            </Frame>
+
+            <Label Text=" Delete Account " 
+                   FontFamily="OpenSans-Regular.ttf"
+                   TextColor="#5C6898"
+                       HorizontalOptions="CenterAndExpand"
+                       HorizontalTextAlignment="Center"
+                       VerticalOptions="Center"
+                       >
+
+
+            </Label>
+
+
+            
+
+            
+
 
 
         </StackLayout>
-
-
-
-
-
+        
     </Frame>
-  
+
 </ContentPage>

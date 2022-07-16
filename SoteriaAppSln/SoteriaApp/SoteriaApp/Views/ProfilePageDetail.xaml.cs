@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace SoteriaApp.Views
@@ -15,8 +9,14 @@ namespace SoteriaApp.Views
         public ProfilePageDetail()
         {
             InitializeComponent();
+        }
 
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
 
+            if (!lazyView.IsLoaded)
+                await lazyView.LoadViewAsync();
         }
     }
 }

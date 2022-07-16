@@ -8,5 +8,13 @@ namespace SoteriaApp.Views
         {
             InitializeComponent();
         }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+           //   if (!lazyView.IsLoaded)
+               //  await lazyView.LoadViewAsync(); //
+        }
     }
 }

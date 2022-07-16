@@ -19,12 +19,20 @@ namespace SoteriaApp
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/TutorialPage");
+            var prefs = Container.Resolve<IPreferences>();
+            var tracking = Container.Resolve<IVersionTracking>();
+
+            if (prefs.Get("AlwaysShowTutorial", true) || tracking.IsFirstLaunchForCurrentVersion)
+                await NavigationService.NavigateAsync("TutorialPage");
+            else
+                await NavigationService.NavigateAsync("LandingTabbedPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterSingleton<IAppInfo, AppInfoImplementation>();
+            containerRegistry.RegisterSingleton<IVersionTracking, VersionTrackingImplementation>();
+            containerRegistry.RegisterSingleton<IPreferences, PreferencesImplementation>();
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<LandingTabbedPage, LandingTabbedPageViewModel>();

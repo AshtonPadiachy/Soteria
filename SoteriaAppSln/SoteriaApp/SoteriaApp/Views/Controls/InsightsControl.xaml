@@ -1,14 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:prism="http://prismlibrary.com"
-             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-             xmlns:controls="clr-namespace:SoteriaApp.Views.Controls"
-             prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="SoteriaApp.Views.InsightsPage" Title="{Binding Title}" 
-             IconImageSource="InsightsIcon"
-             >
-    <!--<xct:LazyView x:Name="lazyView" x:TypeArguments="controls:InsightsControl" />-->
+             x:Class="SoteriaApp.Views.Controls.InsightsControl">
+
     <Grid  VerticalOptions="Center">
 
         <Grid.RowDefinitions>
@@ -92,6 +86,4 @@
 
     </Grid>
 
-
-
-</ContentPage>
+</ContentView>

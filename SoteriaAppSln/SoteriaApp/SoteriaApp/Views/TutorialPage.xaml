@@ -2,35 +2,36 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
+             xmlns:views="clr-namespace:SoteriaApp.Views"
+             x:Class="SoteriaApp.Views.TutorialPage"
              prism:ViewModelLocator.AutowireViewModel="True"
-              xmlns:views="clr-namespace:SoteriaApp.Views"
-             x:Class="SoteriaApp.Views.TutorialPage" NavigationPage.HasNavigationBar="False" >
+             NavigationPage.HasNavigationBar="False">
     <StackLayout>
 
+        <!-- Tutorial Carousel -->
+
         <CarouselView IndicatorView="{x:Reference tutorialIndicator}" BackgroundColor="Transparent" >
-            
-            <CarouselView.ItemTemplate  >
-                
+            <CarouselView.ItemTemplate>
                 <DataTemplate>
-                    
+
                     <Frame BackgroundColor="Transparent">
-                        
+
 
                         <StackLayout Padding="20"  VerticalOptions="CenterAndExpand" 
                                      HorizontalOptions="CenterAndExpand">
 
                             <Frame BackgroundColor="Transparent" CornerRadius="25" HeightRequest="150">
-                                
+
                                 <StackLayout>
 
                                     <Label Text="{Binding Title}" HorizontalTextAlignment="Center" 
                                            TextColor="#5C6898" FontSize="25" FontAttributes="Bold"  
                                            FontFamily="OpenSans-Semibold.ttf"/>
-                                    
+
                                     <Label Text="{Binding Content}" VerticalTextAlignment="Center" 
                                            HorizontalTextAlignment="Center" FontSize="Medium" TextColor="#5C6898" 
                                            FontFamily="OpenSans-Regular.ttf" TextType="Html"/>
-                                    
+
                                 </StackLayout>
 
                             </Frame>
@@ -46,23 +47,24 @@
 
                                 </StackLayout>
 
-  
+
                             </Frame>
 
-                            
-                            
-                            
+
+
+
                         </StackLayout>
 
                     </Frame>
-                    
-                    
-                    
+
+
+
                 </DataTemplate>
-            </CarouselView.ItemTemplate >
+            </CarouselView.ItemTemplate>
+
             <CarouselView.ItemsSource>
                 <x:Array Type="{x:Type views:CarouselItem}">
-                   
+
                     <views:CarouselItem Title="Introduction" Content="KidReady is a Mental Health app that focuses on the mental wellbeing of children in the early childhood development phase." Pictures="DepressedChild.png" />
                     <views:CarouselItem Title="Insights" Content="Discover more on Mental Health in early childhood development. " />
                     <views:CarouselItem Title="Report" Content="Stay informed on your child's daily performance and behaviors." />
@@ -71,18 +73,21 @@
                 </x:Array>
             </CarouselView.ItemsSource>
         </CarouselView>
+        
         <IndicatorView x:Name="tutorialIndicator" IndicatorColor="#A9DFE2" SelectedIndicatorColor="#5C6898" 
                        IndicatorsShape="Circle" Margin="0,0,0,150" BackgroundColor="Transparent"/>
 
-        <StackLayout>
+        <!-- Skip Button -->
+
+        
 
             <ImageButton  x:Name="SkipOption"  Source="Skipbutton.png"
-                                             HorizontalOptions="End" Clicked="SkipOption_Clicked" 
-                                             HeightRequest="40" WidthRequest="70" Padding="-80,0,0,0" Margin="0,0,0,35"
-                                             BackgroundColor="Transparent"/>
+                            HorizontalOptions="End" Command="{Binding SkipCommand}" 
+                            HeightRequest="50" WidthRequest="90" Padding="5" Margin="0,0,35,50"
+                            BackgroundColor="Transparent"/>
 
 
-        </StackLayout>
+        
 
     </StackLayout>
 

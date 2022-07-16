@@ -10,12 +10,5 @@ namespace SoteriaApp.Views
 
             CurrentPage = Children[1];
         }
-
     }
-       
-    
-
-
 }
-    
-
