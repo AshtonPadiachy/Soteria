@@ -19,7 +19,7 @@ namespace SoteriaApp
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/SignInPage");
+            await NavigationService.NavigateAsync("AccountDetails");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
