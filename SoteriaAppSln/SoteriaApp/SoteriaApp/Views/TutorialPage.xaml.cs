@@ -27,3 +27,4 @@ namespace SoteriaApp.Views
         public string Pictures { get; set; }
     }
 }
+
