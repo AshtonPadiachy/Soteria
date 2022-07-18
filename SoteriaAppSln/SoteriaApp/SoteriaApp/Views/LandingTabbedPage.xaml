@@ -5,8 +5,13 @@
             prism:ViewModelLocator.AutowireViewModel="True"
             x:Class="SoteriaApp.Views.LandingTabbedPage"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
-    android:TabbedPage.ToolbarPlacement="Bottom">
- 
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            NavigationPage.HasNavigationBar="True" 
+            BarBackgroundColor="White"
+            SelectedTabColor="DarkSlateGray"
+            UnselectedTabColor="#5C6898"
+            BarTextColor="#5C6898">
+
     <views:CommunityChat/>
     <views:InsightsPage/>
     <views:ProfilePage/>

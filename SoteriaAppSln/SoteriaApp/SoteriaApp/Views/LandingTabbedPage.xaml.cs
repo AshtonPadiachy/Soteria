@@ -7,6 +7,8 @@ namespace SoteriaApp.Views
         public LandingTabbedPage()
         {
             InitializeComponent();
+
+            CurrentPage = Children[1];
         }
     }
 }

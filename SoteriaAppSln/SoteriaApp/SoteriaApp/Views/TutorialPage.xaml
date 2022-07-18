@@ -2,56 +2,92 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
+             xmlns:views="clr-namespace:SoteriaApp.Views"
+             x:Class="SoteriaApp.Views.TutorialPage"
              prism:ViewModelLocator.AutowireViewModel="True"
-              xmlns:views="clr-namespace:SoteriaApp.Views"
-             x:Class="SoteriaApp.Views.TutorialPage" NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False">
     <StackLayout>
 
-        <CarouselView IndicatorView="{x:Reference tutorialIndicator}">
-            
-            <CarouselView.ItemTemplate >
-                
-                <DataTemplate>
-                    
-                    <Frame >
-                        
+        <!-- Tutorial Carousel -->
 
-                        <StackLayout Padding="20" Background="white" VerticalOptions="CenterAndExpand" 
+        <CarouselView IndicatorView="{x:Reference tutorialIndicator}" BackgroundColor="Transparent" >
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+
+                    <Frame BackgroundColor="Transparent">
+
+
+                        <StackLayout Padding="20"  VerticalOptions="CenterAndExpand" 
                                      HorizontalOptions="CenterAndExpand">
 
-                            <Frame BackgroundColor="Black" CornerRadius="25" >
+                            <Frame BackgroundColor="Transparent" CornerRadius="25" HeightRequest="150">
+
                                 <StackLayout>
-                                    <Label Text="{Binding Title}" HorizontalTextAlignment="Center" TextColor="#A9DFE2" FontSize="25" FontAttributes="None"  
+
+                                    <Label Text="{Binding Title}" HorizontalTextAlignment="Center" 
+                                           TextColor="#5C6898" FontSize="25" FontAttributes="Bold"  
                                            FontFamily="OpenSans-Semibold.ttf"/>
-                                    <Label Text="{Binding Content}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Medium" TextColor="White" 
+
+                                    <Label Text="{Binding Content}" VerticalTextAlignment="Center" 
+                                           HorizontalTextAlignment="Center" FontSize="Medium" TextColor="#5C6898" 
                                            FontFamily="OpenSans-Regular.ttf" TextType="Html"/>
-                                    <Image Source="{Binding Pictures}" HeightRequest="340" Aspect="AspectFit"
-                                           HorizontalOptions="Start" Margin="0,-60,0,0"/>
+
                                 </StackLayout>
 
                             </Frame>
 
-                            <ImageButton x:Name="Skip" Source="skipbutton.png" HorizontalOptions="End" Clicked="Skip_Clicked" Margin="-180,110,-12,-8"/>
+                            <Frame BackgroundColor="Transparent">
+
+                                <StackLayout>
+
+                                    <Image Source="{Binding Pictures}" HeightRequest="240" Aspect="AspectFill"
+                                           HorizontalOptions="Start" Margin="0,0,15,40" VerticalOptions="CenterAndExpand"
+                                           />
+
+
+                                </StackLayout>
+
+
+                            </Frame>
+
+
+
+
                         </StackLayout>
 
                     </Frame>
-                    
+
+
+
                 </DataTemplate>
             </CarouselView.ItemTemplate>
+
             <CarouselView.ItemsSource>
                 <x:Array Type="{x:Type views:CarouselItem}">
-                   
-                    <views:CarouselItem Title="Introduction" Content="KidReady is a Mental Health app that focuses on the mental wellbeing of children in the early childhood development phase." Pictures="DepressedChild.png" />
-                    <views:CarouselItem Title="Insights" Content="Discover more on Mental Health in early childhood development. " />
+
+                    <views:CarouselItem Title="Introduction" Content="KidReady is a Mental Health app that focuses on the mental wellbeing of children in the early childhood development phase." Pictures="DepressedChildmdpi.png" />
+                    <views:CarouselItem Title="Insights" Content="Discover more on Mental Health in early childhood development. "  Pictures="InsightsTutorialmdpi.png" />
                     <views:CarouselItem Title="Report" Content="Stay informed on your child's daily performance and behaviors." />
-                    <views:CarouselItem Title="Zones of Regulation" Content="&lt;span style=&quot;color: blue;&quot;&gt;Blue&lt;/span&gt; ,&lt;span style=&quot;color: green;&quot;&gt;Green&lt;/span&gt;,&lt;span style=&quot;color: Yellow;&quot;&gt;Yellow&lt;/span&gt;, and &lt;span style=&quot;color: Red;&quot;&gt;Red&lt;/span&gt; are the 4 colours of alertness and emotion that assists educators to identify the feelings and level of alertness in children."  />
+                    <views:CarouselItem Title="Zones of Regulation" Content="&lt;span style=&quot;color: blue;&quot;&gt;Blue&lt;/span&gt; ,&lt;span style=&quot;color:#16B900;&quot;&gt;Green&lt;/span&gt;,&lt;span style=&quot;color: #EBEB00;&quot;&gt;Yellow&lt;/span&gt;, and &lt;span style=&quot;color: Red;&quot;&gt;Red&lt;/span&gt; are the 4 colours of alertness and emotion that assists educators to identify the feelings and level of alertness in children."  />
 
                 </x:Array>
             </CarouselView.ItemsSource>
         </CarouselView>
-        <IndicatorView x:Name="tutorialIndicator" IndicatorColor="LightGray" SelectedIndicatorColor="DarkGray" IndicatorsShape="Circle" Margin="0,50,0,15" />
+        
+        <IndicatorView x:Name="tutorialIndicator" IndicatorColor="#A9DFE2" SelectedIndicatorColor="#5C6898" 
+                       IndicatorsShape="Circle" Margin="0,0,0,150" BackgroundColor="Transparent"/>
+
+        <!-- Skip Button -->
+
+        
+
+            <ImageButton  x:Name="SkipOption"  Source="Skipbutton.png"
+                            HorizontalOptions="End" Command="{Binding SkipCommand}" 
+                            HeightRequest="50" WidthRequest="90" Padding="5" Margin="0,0,35,50"
+                            BackgroundColor="Transparent"/>
 
 
+        
 
     </StackLayout>
 
