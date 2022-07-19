@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\FredokaOne-Regular.ttf" />
     <None Remove="Fonts\Montserrat-Black.ttf" />
     <None Remove="Fonts\Montserrat-Bold.ttf" />
     <None Remove="Fonts\Montserrat-ExtraBold.ttf" />
@@ -12,10 +13,16 @@
     <None Remove="Fonts\Montserrat-Regular.ttf" />
     <None Remove="Fonts\Montserrat-SemiBold.ttf" />
     <None Remove="Fonts\Montserrat-Thin.ttf" />
+    <None Remove="Fonts\NotoSans-Bold.ttf" />
+    <None Remove="Fonts\NotoSans-Regular.ttf" />
     <None Remove="Fonts\OpenSans-Bold.ttf" />
     <None Remove="Fonts\OpenSans-Light.ttf" />
     <None Remove="Fonts\OpenSans-Regular.ttf" />
     <None Remove="Fonts\OpenSans-Semibold.ttf" />
+    <None Remove="Fonts\Roboto-Bold.ttf" />
+    <None Remove="Fonts\Roboto-Light.ttf" />
+    <None Remove="Fonts\Roboto-Medium.ttf" />
+    <None Remove="Fonts\Roboto-Regular.ttf" />
     <None Remove="Fonts\SourceSansPro-Bold.ttf" />
     <None Remove="Fonts\Typo_Round_Light_Demo.otf" />
     <None Remove="Fonts\Typo_Round_Regular_Demo.otf" />
@@ -23,6 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Fonts\FredokaOne-Regular.ttf" />
     <EmbeddedResource Include="Fonts\Montserrat-Black.ttf" />
     <EmbeddedResource Include="Fonts\Montserrat-Bold.ttf" />
     <EmbeddedResource Include="Fonts\Montserrat-ExtraBold.ttf" />
@@ -30,10 +38,16 @@
     <EmbeddedResource Include="Fonts\Montserrat-Regular.ttf" />
     <EmbeddedResource Include="Fonts\Montserrat-SemiBold.ttf" />
     <EmbeddedResource Include="Fonts\Montserrat-Thin.ttf" />
+    <EmbeddedResource Include="Fonts\NotoSans-Bold.ttf" />
+    <EmbeddedResource Include="Fonts\NotoSans-Regular.ttf" />
     <EmbeddedResource Include="Fonts\OpenSans-Bold.ttf" />
     <EmbeddedResource Include="Fonts\OpenSans-Light.ttf" />
     <EmbeddedResource Include="Fonts\OpenSans-Regular.ttf" />
     <EmbeddedResource Include="Fonts\OpenSans-Semibold.ttf" />
+    <EmbeddedResource Include="Fonts\Roboto-Bold.ttf" />
+    <EmbeddedResource Include="Fonts\Roboto-Light.ttf" />
+    <EmbeddedResource Include="Fonts\Roboto-Medium.ttf" />
+    <EmbeddedResource Include="Fonts\Roboto-Regular.ttf" />
     <EmbeddedResource Include="Fonts\SourceSansPro-Bold.ttf" />
     <EmbeddedResource Include="Fonts\Typo_Round_Light_Demo.otf" />
     <EmbeddedResource Include="Fonts\Typo_Round_Regular_Demo.otf" />
