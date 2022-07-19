@@ -12,3 +12,8 @@ using Xamarin.Forms.Xaml;
 [assembly: ExportFont("FredokaOne-Regular.ttf", Alias = "FredokaOne-Regular")]
 [assembly: ExportFont("Montserrat-Medium.ttf", Alias = "Montserrat-Medium")]
 [assembly: ExportFont("Montserrat-Bold.ttf", Alias = "Montserrat-Bold")]
+[assembly: ExportFont("Montserrat-ExtraBold.ttf", Alias = "Montserrat-ExtraBold")]
+[assembly: ExportFont("Montserrat-Black.ttf", Alias = "Montserrat-Black")]
+[assembly: ExportFont("Montserrat-Regular.ttf", Alias = "Montserrat-Regular")]
+[assembly: ExportFont("Montserrat-SemiBold.ttf", Alias = "Montserrat-SemiBold")]
+[assembly: ExportFont("Montserrat-Thin.ttf", Alias = "Montserrat-Thin")]
