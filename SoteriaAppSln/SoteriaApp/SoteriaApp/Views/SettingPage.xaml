@@ -5,127 +5,98 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SoteriaApp.Views.SettingPage" >
 
-    <Frame BackgroundColor="Transparent" Margin="0,50,0,0" >
-
-
+    <Frame BackgroundColor="Transparent">
         <StackLayout BackgroundColor="Transparent"
-                     Spacing="10"
-               
-               VerticalOptions="Center"
-               HorizontalOptions="Fill">
-
-            <Frame BackgroundColor="Transparent" 
+                         VerticalOptions="Center"
+                         Padding="0,40,0,0"
+                         Spacing="12"
+                         Margin="15"
+                         HorizontalOptions="Center">
+            <!-- Account -->
+            <Frame BackgroundColor="Transparent"
                    BorderColor="#5C6898"
                    CornerRadius="50"
-                   HasShadow="True"
-                   >
-
-                <Label Text="Account" 
+                   HasShadow="True">
+                <Label Text=" Account "
                        TextColor="#5C6898"
                        HorizontalTextAlignment="Center"
                        FontFamily="OpenSans-Regular.ttf"
                        FontSize="Medium"
                        />
-
-
             </Frame>
-
-            <Frame BackgroundColor="Transparent" 
+            <!-- Support -->
+            <Frame BackgroundColor="Transparent"
                    BorderColor="#5C6898"
                    CornerRadius="50"
                    HasShadow="True"
                    >
-
-                <Label Text="Support" 
+                <Label Text=" Support "
                        TextColor="#5C6898"
                        HorizontalTextAlignment="Center"
                        FontFamily="OpenSans-Regular.ttf"
                        FontSize="Medium"/>
-
             </Frame>
-
-            <Frame BackgroundColor="Transparent" 
+            <!-- Privacy & Policy -->
+            <Frame BackgroundColor="Transparent"
+                   BorderColor="#5C6898"
+                   CornerRadius="50"
+                   HasShadow="True">
+                <Label Text=" Privacy and Policy "
+                       TextColor="#5C6898"
+                       HorizontalTextAlignment="Center"
+                       FontFamily="OpenSans-Regular.ttf"
+                       FontSize="Medium"
+                       />
+            </Frame>
+            <!-- About Us -->
+            <Frame BackgroundColor="Transparent"
                    BorderColor="#5C6898"
                    CornerRadius="50"
                    HasShadow="True"
                    >
-
-                <Label Text=" Privacy and Policy " 
+                <Label Text=" About Us "
                        TextColor="#5C6898"
                        HorizontalTextAlignment="Center"
                        FontFamily="OpenSans-Regular.ttf"
                        FontSize="Medium"/>
-
             </Frame>
-
-            <Frame BackgroundColor="Transparent" 
-                   BorderColor="#5C6898"
-                   CornerRadius="50"
-                   HasShadow="True"
-                   >
-
-                <Label Text="About Us" 
-                       TextColor="#5C6898"
-                       HorizontalTextAlignment="Center"
-                       FontFamily="OpenSans-Regular.ttf"
-                       FontSize="Medium"/>
-
-            </Frame>
-
-            <Grid Margin="0,25,0,0" BackgroundColor="Transparent"
-                  HorizontalOptions="StartAndExpand" 
+            <!-- Checkbox in order replay tutorial -->
+            <Grid Margin="0,0,-12,0" BackgroundColor="Transparent"
+                  HorizontalOptions="StartAndExpand" Padding="0,15,0,0"
                   >
-                   <CheckBox IsChecked="{Binding AlwaysShowTutorial}"
-                          VerticalOptions="StartAndExpand"
+                <CheckBox IsChecked="{Binding AlwaysShowTutorial}"
+                          VerticalOptions="Start"
                           Color="#5C6898"
                             />
-                
-                   <Label Text="Rewatch tutorial when starting up?"
+                <Label Text="Rewatch tutorial when starting up?"
                        TextColor="#5C6898"
-                       VerticalOptions="Center"
-                       HorizontalOptions="Center" >
-                    
-                   </Label>
-
-            </Grid>
-            
-            <Frame
-                
-  
-                BackgroundColor="#5C6898" 
-                   Margin="0,25,0,40"
-                   CornerRadius="10"
-                   HasShadow="False">
-
-                <Label Text="Sign Out" 
-                       
-                       TextColor="white"
-                       HorizontalTextAlignment="Center"
-                       FontFamily="OpenSans-Regular.ttf"
-                       FontSize="Medium"
-                       />
-                
-            </Frame>
-
-            <Label Text=" Delete Account " 
-                   FontFamily="OpenSans-Regular.ttf"
-                   TextColor="#5C6898"
+                       VerticalOptions="CenterAndExpand"
                        HorizontalOptions="CenterAndExpand"
-                       HorizontalTextAlignment="Center"
-                       VerticalOptions="Center">
-
-
-            </Label>
-
-
-            
-
-            
-
-
-
+                           >
+                </Label>
+            </Grid>
+            <!-- Sign Out -->
+            <StackLayout BackgroundColor="Transparent"
+                              Padding="0,1,0,0">
+                <Frame BackgroundColor="Transparent"
+                             Margin="0"
+                             Padding="0,1,0,0"
+                             CornerRadius="10"
+                             HasShadow="False"
+                             HeightRequest="60"
+                             WidthRequest="50" >
+                    <Button Text="Sign Out"
+                                    TextColor="white"
+                                    FontFamily="OpenSans-Regular.ttf"
+                                    FontSize="Medium"
+                                    BackgroundColor="#5C6898"/>
+                </Frame>
+                <!-- Delete Account -->
+                <Label Text=" Delete Account"
+                               TextColor="#5C6898"
+                                Padding="0,10,0,0">
+                </Label>
+            </StackLayout>
         </StackLayout>
-        
     </Frame>
-
 </ContentPage>

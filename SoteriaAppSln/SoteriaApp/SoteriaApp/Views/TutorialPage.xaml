@@ -6,7 +6,8 @@
              x:Class="SoteriaApp.Views.TutorialPage"
              prism:ViewModelLocator.AutowireViewModel="True"
              NavigationPage.HasNavigationBar="False">
-    <StackLayout>
+    
+    <StackLayout BackgroundColor="Transparent">
 
         <!-- Tutorial Carousel -->
 
@@ -19,6 +20,7 @@
 
                         <StackLayout Padding="20"  VerticalOptions="CenterAndExpand" 
                                      HorizontalOptions="CenterAndExpand">
+                            
 
                             <Frame BackgroundColor="Transparent" CornerRadius="25" HeightRequest="150">
 
@@ -32,7 +34,13 @@
                                            HorizontalTextAlignment="Center" FontSize="Medium" TextColor="#5C6898" 
                                            FontFamily="OpenSans-Regular.ttf" TextType="Html"/>
 
+                                    <Label Text=" " HeightRequest="240"
+                                           HorizontalOptions="CenterAndExpand" Margin="0,0,15,40" VerticalOptions="CenterAndExpand"
+                                           />
+
                                 </StackLayout>
+                                
+
 
                             </Frame>
 
@@ -40,8 +48,8 @@
 
                                 <StackLayout>
 
-                                    <Image Source="{Binding Pictures}" HeightRequest="240" Aspect="AspectFill"
-                                           HorizontalOptions="Start" Margin="0,0,15,40" VerticalOptions="CenterAndExpand"
+                                    <Image Source="{Binding Pictures}" HeightRequest="225" Aspect="AspectFill"
+                                           HorizontalOptions="CenterAndExpand" Margin="0,-15,8,40" VerticalOptions="CenterAndExpand"
                                            />
 
 
