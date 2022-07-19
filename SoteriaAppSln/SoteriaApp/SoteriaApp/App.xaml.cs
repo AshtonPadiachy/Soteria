@@ -44,6 +44,7 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<SettingPage, SettingPageViewModel>();
             containerRegistry.RegisterForNavigation<HelplinePage, HelplinePageViewModel>();
             containerRegistry.RegisterForNavigation<SignInPage, SignInPageViewModel>();
+            containerRegistry.RegisterForNavigation<ChooseProfileType, ChooseProfileTypeViewModel>();
         }
     }
 }
