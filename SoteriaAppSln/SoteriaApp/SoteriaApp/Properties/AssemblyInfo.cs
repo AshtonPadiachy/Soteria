@@ -9,3 +9,6 @@ using Xamarin.Forms.Xaml;
 [assembly: ExportFont("OpenSans-Light.ttf", Alias = "OpenSans-Light")]
 [assembly: ExportFont("OpenSans-Regular.ttf", Alias = "OpenSans-Regular")]
 [assembly: ExportFont("OpenSans-Semibold.ttf", Alias = "OpenSans-Semibold")]
+[assembly: ExportFont("FredokaOne-Regular.ttf", Alias = "FredokaOne-Regular")]
+[assembly: ExportFont("Montserrat-Medium.ttf", Alias = "Montserrat-Medium")]
+[assembly: ExportFont("Montserrat-Bold.ttf", Alias = "Montserrat-Bold")]

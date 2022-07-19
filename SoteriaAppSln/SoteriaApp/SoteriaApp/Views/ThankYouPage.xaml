@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="SoteriaApp.Views.ThankYouPage">
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+
+        <Image Source="KidReadyA.png" Margin="0,-80,0,-100">
+
+        </Image>
+
+
+        <Label Text=" Today we start caring about our kids Health." HorizontalTextAlignment="Center"  Padding="60,40,60,20"
+                                           TextColor="#5C6898" FontSize="35" 
+                                           FontFamily="FredokaOne-Regular.ttf"/>
+
+        <Label Text=" Thank you for signing up to KidReady" HorizontalTextAlignment="Center" Margin="0,-50,0,50"  Padding="30,30,35,20"
+                                           TextColor="#5C6898" FontSize="20" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text=" Before we move on, just a couple of things" HorizontalTextAlignment="Center" Margin="0,-50,0,50"  Padding="0"
+                                           TextColor="#5C6898" FontSize="15" 
+                                           FontFamily="Montserrat-Medium.ttf"/>
+
+
+        <Grid  BackgroundColor="Transparent"
+                  HorizontalOptions="StartAndExpand" Padding="60,-30,60,15"
+                  >
+            <CheckBox IsChecked="{Binding AlwaysShowTutorial}"
+                          VerticalOptions="Start" 
+                          Color="#5C6898"
+                            />
+            <Label Text="Notify me for updates and features?"
+                       TextColor="#5C6898" FontSize="13"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand" 
+                   
+                           >
+
+            </Label>
+        </Grid>
+
+        <Frame BackgroundColor="Transparent"
+                             Margin="50,10,50,10"
+                             Padding="0,1,0,0"
+                             CornerRadius="50"
+                             HasShadow="False"
+                             HeightRequest="60"
+                             WidthRequest="50" >
+            <Button Text="Start Now"
+                                    TextColor="white"
+                                    FontFamily="Montserrat-Medium.ttf"
+                                    FontSize="Medium"
+                                    BackgroundColor="#5C6898"/>
+        </Frame>
+
+    </StackLayout>
+
+</ContentPage>

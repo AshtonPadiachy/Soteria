@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\Montserrat-Black.ttf" />
+    <None Remove="Fonts\Montserrat-Bold.ttf" />
+    <None Remove="Fonts\Montserrat-ExtraBold.ttf" />
+    <None Remove="Fonts\Montserrat-Medium.ttf" />
+    <None Remove="Fonts\Montserrat-Regular.ttf" />
+    <None Remove="Fonts\Montserrat-SemiBold.ttf" />
+    <None Remove="Fonts\Montserrat-Thin.ttf" />
     <None Remove="Fonts\OpenSans-Bold.ttf" />
     <None Remove="Fonts\OpenSans-Light.ttf" />
     <None Remove="Fonts\OpenSans-Regular.ttf" />
@@ -16,6 +23,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Fonts\Montserrat-Black.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat-Bold.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat-ExtraBold.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat-Medium.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat-Regular.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat-SemiBold.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat-Thin.ttf" />
     <EmbeddedResource Include="Fonts\OpenSans-Bold.ttf" />
     <EmbeddedResource Include="Fonts\OpenSans-Light.ttf" />
     <EmbeddedResource Include="Fonts\OpenSans-Regular.ttf" />
@@ -62,6 +76,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\SignInPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ThankYouPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\TutorialPage.xaml">
