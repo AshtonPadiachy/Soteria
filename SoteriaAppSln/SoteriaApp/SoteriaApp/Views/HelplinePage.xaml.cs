@@ -8,5 +8,15 @@ namespace SoteriaApp.Views
         {
             InitializeComponent();
         }
+
+        private void EmergencyLineButton_Clicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new EmergencyLinesPage());
+        }
+
+        private void SupportGroupsButton_Clicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new SupportGroupsPage());
+        }
     }
 }

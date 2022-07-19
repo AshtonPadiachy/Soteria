@@ -4,5 +4,47 @@
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SoteriaApp.Views.HelplinePage">
-  
+    <StackLayout>
+        <Frame BackgroundColor="Transparent">
+            <StackLayout BackgroundColor="Transparent"
+                         VerticalOptions="Center"
+                         Padding="0,200,0,0"
+                         Spacing="15"
+                         Margin="20"
+                         HorizontalOptions="Center">
+                <!--Emergency lines-->
+                <Frame
+                   BorderColor="#5C6898"
+                   CornerRadius="10"
+                    
+                     BackgroundColor="Transparent"
+                   HasShadow="True">
+                    <Button x:Name="EmergencyLineButton" Text=" Emergency lines"
+                       TextColor="#5C6898"
+                        BackgroundColor="White"
+                       FontFamily="OpenSans-Regular.ttf"
+                       FontSize="Medium"
+                            Clicked="EmergencyLineButton_Clicked"
+                       />
+                </Frame>
+
+                <!--Support Groups-->
+                <Frame 
+                        BorderColor="#5C6898"
+                        CornerRadius="10"
+                       
+                       BackgroundColor="Transparent"
+                        HasShadow="True">
+                    <Button x:Name="SupportGroupsButton" Text=" Support Groups "
+                       TextColor="#5C6898"
+                        BackgroundColor="White"
+                       FontFamily="OpenSans-Regular.ttf"
+                       FontSize="Medium"
+                            Clicked="SupportGroupsButton_Clicked"
+                       />
+                </Frame>
+            </StackLayout>
+            </Frame>
+    </StackLayout>
+
 </ContentPage>

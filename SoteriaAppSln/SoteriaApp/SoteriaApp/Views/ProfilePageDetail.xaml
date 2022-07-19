@@ -4,7 +4,7 @@
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              xmlns:controls="clr-namespace:SoteriaApp.Views.Controls"
              x:Class="SoteriaApp.Views.ProfilePageDetail"
-             Title="Detail" >
+             Title="Profile" >
     
     <xct:LazyView x:Name="lazyView" x:TypeArguments="controls:ProfileDetailControl" />
 

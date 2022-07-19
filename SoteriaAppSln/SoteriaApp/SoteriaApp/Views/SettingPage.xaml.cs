@@ -8,5 +8,10 @@ namespace SoteriaApp.Views
         {
             InitializeComponent();
         }
+
+        private void AccountButton_Clicked(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
