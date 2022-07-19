@@ -5,12 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\Controls\**" />
-    <EmbeddedResource Remove="Views\Controls\**" />
-    <None Remove="Views\Controls\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove="Fonts\OpenSans-Bold.ttf" />
     <None Remove="Fonts\OpenSans-Light.ttf" />
     <None Remove="Fonts\OpenSans-Regular.ttf" />
