@@ -9,7 +9,7 @@ namespace SoteriaApp.Views
             InitializeComponent();
         }
 
-        protected override async void OnAppearing()
+        protected override void OnAppearing()
         {
             base.OnAppearing();
 
