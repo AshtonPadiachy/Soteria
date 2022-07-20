@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="SoteriaApp.Views.BlueZonesPage">
+
+    <StackLayout BackgroundColor="#E6ECF6">
+
+
+        <Label Text=" Blue Zone " HorizontalTextAlignment="Center"  Padding="0,50,0,0"
+                                           TextColor="#1F4FB1" FontSize="40" 
+                                           FontFamily="FredokaOne-Regular.ttf"/>
+
+
+
+        <Label Text="Used to describe a low state of alertness" HorizontalTextAlignment="Center"  Padding="60,0,60,50"
+                                           TextColor="#5C6898" FontSize="15" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+    </StackLayout>
+
+</ContentPage>

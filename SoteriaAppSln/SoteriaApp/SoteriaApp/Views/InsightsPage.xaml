@@ -22,16 +22,16 @@
 
         </Grid.ColumnDefinitions>
 
-        <BoxView Color="#A9DFE2" CornerRadius="20" Margin="10,15,0,5"  />
+        <BoxView Color="#5C6898" CornerRadius="20" Margin="10,15,0,5"  />
         <Label Text="What is 
                            it?"
                HorizontalOptions="Center"
                VerticalOptions="Center" 
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
-                   FontFamily="OpenSans-Regular.ttf"
+                   FontFamily="Montserrat-SemiBold.ttf"
                    TextColor="White"
-                   FontSize="Title"
+                   FontSize="20"
                    Padding="10,25,5,10"/>
 
         <BoxView Grid.Column="1"
@@ -43,9 +43,9 @@
                VerticalOptions="Center"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
-                   FontFamily="OpenSans-Regular.ttf"
+                   FontFamily="Montserrat-SemiBold.ttf"
                    TextColor="White"
-                   FontSize="Title"
+                   FontSize="20"
                    Padding="0,20,9,10"/>
 
         <BoxView Grid.Row="1"
@@ -55,39 +55,39 @@
                HorizontalOptions="Center"
                VerticalOptions="Center"
                    HorizontalTextAlignment="Center"
-                   FontFamily="OpenSans-Regular.ttf"
+                   FontFamily="Montserrat-SemiBold.ttf"
                    TextColor="White"
-                   FontSize="Title"
+                   FontSize="20"
                    Padding="0,0,-5,10"/>
 
         <BoxView Grid.Row="1"
                  Grid.Column="1"
-                 Color="#A9DFE2" CornerRadius="20"  Margin="5,5,10,15" />
+                 Color="#5C6898" CornerRadius="20"  Margin="5,5,10,15" />
         <Label Grid.Row="1"
                Grid.Column="1"
                Text="Influences"
                HorizontalOptions="Center"
                VerticalOptions="Center"
-                   FontFamily="OpenSans-Regular.ttf"
+                   FontFamily="Montserrat-SemiBold.ttf"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
                    TextColor="White"
-                   FontSize="Title"
+                   FontSize="20"
                    Padding="0,0,0,10"/>
 
         <BoxView Grid.Row="2"
                  Grid.ColumnSpan="2"
-                 Color="#A9DFE2" CornerRadius="20" Margin="9,-5,9,10"  />
+                 Color="#5C6898" CornerRadius="20" Margin="9,-5,9,10"  />
         <Label Grid.Row="2"
                Grid.ColumnSpan="2"
                Text="Solutions"
                HorizontalOptions="Center"
                VerticalOptions="Center"
-                   FontFamily="OpenSans-Regular.ttf"
+                   FontFamily="Montserrat-SemiBold.ttf"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
                    TextColor="White"
-                   FontSize="Title"
+                   FontSize="20"
                    Padding="0,0,2,15"/>
 
     </Grid>

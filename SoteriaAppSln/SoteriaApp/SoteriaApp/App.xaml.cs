@@ -46,6 +46,9 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<SignInPage, SignInPageViewModel>();
             containerRegistry.RegisterForNavigation<ChooseProfileType, ChooseProfileTypeViewModel>();
             containerRegistry.RegisterForNavigation<ThankYouPage, ThankYouPageViewModel>();
+            containerRegistry.RegisterForNavigation<BlueZonesPage, BlueZonesPageViewModel>();
+            containerRegistry.RegisterForNavigation<GreenZonesPage, GreenZonesPageViewModel>();
+            containerRegistry.RegisterForNavigation<RedZonesPage, RedZonesPageViewModel>();
         }
     }
 }
