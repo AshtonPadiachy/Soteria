@@ -10,11 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace SoteriaApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AccountDetails : ContentPage
+    public partial class RegistrationPage : ContentPage
     {
-        public AccountDetails()
+        public RegistrationPage()
         {
-            AccountDetails accountDetails = new AccountDetails();
+            RegistrationPage accountDetails = new RegistrationPage();
             InitializeComponent();
         }
 
@@ -22,7 +22,7 @@ namespace SoteriaApp.Views
         {
             
 
-           // var item = new AccountDetailsItem();
+           var item = new RegistrationPage();
             {
                // UserName = EntryUserName;
                // FullName = EntryFullName;
