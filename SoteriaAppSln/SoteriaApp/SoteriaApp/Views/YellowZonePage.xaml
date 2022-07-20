@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="SoteriaApp.Views.PrismContentPage1">
+
+
+    <StackLayout BackgroundColor="#ffffe8">
+        <Label Text=" Yellow Zone " HorizontalTextAlignment="Center"  Padding="0,50,0,0"
+                                           TextColor="#ECBD00" FontSize="40" 
+                                           FontFamily="FredokaOne-Regular.ttf"/>
+
+
+
+        <Label Text="Used to describe a heightened state of alertness" HorizontalTextAlignment="Center"  Padding="60,0,60,50"
+                                           TextColor="#5C6898" FontSize="15" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+
+
+
+        <Image Source="angel.png" HorizontalOptions="Start" Margin="50,0,50,0" >
+
+        </Image>
+        <Label Text="An Angel"         HorizontalTextAlignment="Start" Margin="60,0,50,0"
+                                           TextColor="#5C6898" FontSize="15" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Image Source="crazy.png" HorizontalOptions="Center">
+
+        </Image>
+        <Label Text="Acting silly in class"         HorizontalTextAlignment="Center"  Padding="0,10,0,30"
+                                           TextColor="#5C6898" FontSize="15" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+
+
+       
+    </StackLayout>
+</ContentPage>
