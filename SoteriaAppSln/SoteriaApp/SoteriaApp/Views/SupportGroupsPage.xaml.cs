@@ -15,6 +15,7 @@ namespace SoteriaApp.Views
         public SupportGroupsPage()
         {
             InitializeComponent();
+            BrowserLink.Source = "https://www.sadag.org/";
         }
     }
 }

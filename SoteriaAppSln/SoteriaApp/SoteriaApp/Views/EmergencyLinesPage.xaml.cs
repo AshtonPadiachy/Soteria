@@ -15,6 +15,9 @@ namespace SoteriaApp.Views
         public EmergencyLinesPage()
         {
             InitializeComponent();
+            BrowserLink.Source = "https://www.mhc.wa.gov.au/";
         }
+
+       
     }
 }
