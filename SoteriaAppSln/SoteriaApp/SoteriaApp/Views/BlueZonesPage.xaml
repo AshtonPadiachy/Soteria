@@ -9,14 +9,44 @@
 
 
         <Label Text=" Blue Zone " HorizontalTextAlignment="Center"  Padding="0,50,0,0"
-                                           TextColor="#1F4FB1" FontSize="40" 
+                                           TextColor="#1F4FB1" FontSize="45" 
                                            FontFamily="FredokaOne-Regular.ttf"/>
 
-
-
         <Label Text="Used to describe a low state of alertness" HorizontalTextAlignment="Center"  Padding="60,0,60,50"
-                                           TextColor="#5C6898" FontSize="15" 
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-Bold.ttf"/>
+
+
+
+
+        <Label Text="Tired" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
                                            FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Sadness" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Greater withdrawal from others" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Not interactive in class" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Plays alone" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Not friendly" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Less attentive" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
 
     </StackLayout>
 

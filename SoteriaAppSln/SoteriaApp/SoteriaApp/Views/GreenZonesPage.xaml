@@ -9,13 +9,40 @@
 
 
         <Label Text=" Green Zone " HorizontalTextAlignment="Center"  Padding="0,50,0,0"
-                                           TextColor="#5A9C75" FontSize="40" 
+                                           TextColor="#5A9C75" FontSize="45" 
                                            FontFamily="FredokaOne-Regular.ttf"/>
 
+       <Label Text="Used to describe the ideal state of alertness" HorizontalTextAlignment="Center"  Padding="60,0,60,60"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-Bold.ttf"/>
 
 
-        <Label Text="Used to describe the ideal state of alertness" HorizontalTextAlignment="Center"  Padding="60,0,60,50"
-                                           TextColor="#5C6898" FontSize="15" 
+        <Label Text="Child is in a state of happiness" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Excited to learn and creative" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Focused" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Good Attention Span" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Playful with other kids" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Interactive in Class" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Expressive" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
                                            FontFamily="Montserrat-SemiBold.ttf"/>
     </StackLayout>
 
