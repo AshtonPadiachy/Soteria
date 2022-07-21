@@ -3,6 +3,11 @@ namespace SoteriaProjectWebApi.Models
 {
     public class RegistrationTable
     {
+        public RegistrationTable(string userName)
+        {
+            UserName = userName;
+        }
+
         public Guid Id { get; set; }
         public string UserName { get; set; }
         public string FullName{ get; set; }
