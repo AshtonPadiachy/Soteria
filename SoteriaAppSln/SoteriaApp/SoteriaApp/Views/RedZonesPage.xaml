@@ -7,7 +7,7 @@
 
 
 
-    <StackLayout BackgroundColor="#F6E3DE"
+    <StackLayout BackgroundColor="#F6E3DE">
 
 
         <Label Text=" Red Zone" HorizontalTextAlignment="Center"  Padding="0,50,0,0"
