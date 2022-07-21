@@ -13,7 +13,7 @@
                                            FontFamily="FredokaOne-Regular.ttf"/>
 
         <Label Text="Used to describe a low state of alertness" HorizontalTextAlignment="Center"  Padding="60,0,60,50"
-                                           TextColor="#5C6898" FontSize="16" 
+                                           TextColor="#5C6898" FontSize="17" 
                                            FontFamily="Montserrat-Bold.ttf"/>
 
 
