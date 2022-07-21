@@ -23,7 +23,7 @@ namespace SoteriaApp
             var tracking = Container.Resolve<IVersionTracking>();
 
             if (prefs.Get("AlwaysShowTutorial", true) || tracking.IsFirstLaunchForCurrentVersion)
-                await NavigationService.NavigateAsync("RegistrationPage");
+                await NavigationService.NavigateAsync("TutorialPage");
             else
                 await NavigationService.NavigateAsync("LandingTabbedPage");
         }
@@ -49,7 +49,6 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<BlueZonesPage, BlueZonesPageViewModel>();
             containerRegistry.RegisterForNavigation<GreenZonesPage, GreenZonesPageViewModel>();
             containerRegistry.RegisterForNavigation<RedZonesPage, RedZonesPageViewModel>();
-            containerRegistry.RegisterForNavigation<RegistrationPage, RegistrationPageViewModel>();
         }
     }
 }

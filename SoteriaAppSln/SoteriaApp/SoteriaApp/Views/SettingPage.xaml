@@ -13,52 +13,58 @@
                          Margin="15"
                          HorizontalOptions="Center">
             <!-- Account -->
-            <Frame BackgroundColor="Transparent"
+            <Frame
                    BorderColor="#5C6898"
                    CornerRadius="50"
                    HasShadow="True">
-                <Label Text=" Account "
+                <Button Text=" Account" x:Name="Account"
                        TextColor="#5C6898"
-                       HorizontalTextAlignment="Center"
+                       BackgroundColor="White"
                        FontFamily="OpenSans-Regular.ttf"
                        FontSize="Medium"
+                        Clicked="AccountButton_Clicked"
                        />
             </Frame>
             <!-- Support -->
-            <Frame BackgroundColor="Transparent"
+            <Frame
                    BorderColor="#5C6898"
                    CornerRadius="50"
                    HasShadow="True"
                    >
-                <Label Text=" Support "
+                <Button Text=" Support " x:Name="Support"
                        TextColor="#5C6898"
-                       HorizontalTextAlignment="Center"
+                      BackgroundColor="White"
                        FontFamily="OpenSans-Regular.ttf"
-                       FontSize="Medium"/>
+                       FontSize="Medium"
+                        Clicked="Support_Clicked"/>
             </Frame>
             <!-- Privacy & Policy -->
-            <Frame BackgroundColor="Transparent"
+            <Frame 
                    BorderColor="#5C6898"
                    CornerRadius="50"
                    HasShadow="True">
-                <Label Text=" Privacy and Policy "
+                <Button Text=" Privacy and Policy"
+                        x:Name="PrivacyAndPolicy"
                        TextColor="#5C6898"
-                       HorizontalTextAlignment="Center"
+                       BackgroundColor="White"
                        FontFamily="OpenSans-Regular.ttf"
                        FontSize="Medium"
+                        Clicked="PrivacyAndPolicy_Clicked"
                        />
             </Frame>
             <!-- About Us -->
-            <Frame BackgroundColor="Transparent"
+            <Frame 
                    BorderColor="#5C6898"
                    CornerRadius="50"
                    HasShadow="True"
                    >
-                <Label Text=" About Us "
+                <Button Text=" About Us "
+                        x:Name="AboutUs"
                        TextColor="#5C6898"
-                       HorizontalTextAlignment="Center"
+                       BackgroundColor="White"
                        FontFamily="OpenSans-Regular.ttf"
-                       FontSize="Medium"/>
+                       FontSize="Medium"
+                        Clicked="AboutUs_Clicked"/>
             </Frame>
             <!-- Checkbox in order replay tutorial -->
             <Grid Margin="0,0,-12,0" BackgroundColor="Transparent"

@@ -14,16 +14,15 @@
                          HorizontalOptions="Center">
                 <!--Emergency lines-->
                 <Frame
-                   BorderColor="#5C6898"
-                   CornerRadius="10"
-                    
+                     BorderColor="#5C6898"
+                     CornerRadius="10"
                      BackgroundColor="Transparent"
-                   HasShadow="True">
+                     HasShadow="False">
                     <Button x:Name="EmergencyLineButton" Text=" Emergency lines"
-                       TextColor="#5C6898"
-                        BackgroundColor="White"
-                       FontFamily="OpenSans-Regular.ttf"
-                       FontSize="Medium"
+                               TextColor="#5C6898"
+                                BackgroundColor="Transparent"
+                                FontFamily="OpenSans-Regular.ttf"
+                                FontSize="Medium"
                             Clicked="EmergencyLineButton_Clicked"
                        />
                 </Frame>
@@ -32,14 +31,13 @@
                 <Frame 
                         BorderColor="#5C6898"
                         CornerRadius="10"
-                       
-                       BackgroundColor="Transparent"
-                        HasShadow="True">
+                        BackgroundColor="Transparent"
+                        HasShadow="False">
                     <Button x:Name="SupportGroupsButton" Text=" Support Groups "
-                       TextColor="#5C6898"
-                        BackgroundColor="White"
-                       FontFamily="OpenSans-Regular.ttf"
-                       FontSize="Medium"
+                            TextColor="#5C6898"
+                            BackgroundColor="Transparent"
+                            FontFamily="OpenSans-Regular.ttf"
+                            FontSize="Medium"
                             Clicked="SupportGroupsButton_Clicked"
                        />
                 </Frame>

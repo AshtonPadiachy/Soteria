@@ -7,35 +7,46 @@
 
 
     <StackLayout BackgroundColor="#ffffe8">
+            
         <Label Text=" Yellow Zone " HorizontalTextAlignment="Center"  Padding="0,50,0,0"
-                                           TextColor="#ECBD00" FontSize="40" 
+                                           TextColor="#ECBD00" FontSize="45" 
                                            FontFamily="FredokaOne-Regular.ttf"/>
+        
 
 
 
         <Label Text="Used to describe a heightened state of alertness" HorizontalTextAlignment="Center"  Padding="60,0,60,50"
-                                           TextColor="#5C6898" FontSize="15" 
+                                           TextColor="#5C6898" FontSize="17" 
+                                           FontFamily="Montserrat-Bold.ttf"/>
+
+
+        <Label Text="Frustration" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
                                            FontFamily="Montserrat-SemiBold.ttf"/>
 
-
-
-
-        <Image Source="angel.png" HorizontalOptions="Start" Margin="50,0,50,0" >
-
-        </Image>
-        <Label Text="An Angel"         HorizontalTextAlignment="Start" Margin="60,0,50,0"
-                                           TextColor="#5C6898" FontSize="15" 
+        <Label Text="Hyper Active" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
                                            FontFamily="Montserrat-SemiBold.ttf"/>
 
-        <Image Source="crazy.png" HorizontalOptions="Center">
-
-        </Image>
-        <Label Text="Acting silly in class"         HorizontalTextAlignment="Center"  Padding="0,10,0,30"
-                                           TextColor="#5C6898" FontSize="15" 
+        <Label Text="Little Attention span" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
                                            FontFamily="Montserrat-SemiBold.ttf"/>
 
+        <Label Text="Easily Distracted" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
 
+        <Label Text="Silly In Class" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
 
-       
+        <Label Text="Attention Seeking" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Loss Of Some Control" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
     </StackLayout>
 </ContentPage>
