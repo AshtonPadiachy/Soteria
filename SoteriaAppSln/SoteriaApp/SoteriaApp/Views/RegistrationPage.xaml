@@ -7,50 +7,54 @@
 
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout>
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                    </Grid.RowDefinitions>
+            
+            <StackLayout Padding="0,100,0,0">
 
-                    <StackLayout Grid.Row="0">
-                        <Entry Placeholder="UserName" FontSize="16" x:Name="EntryUserName" />
-                        <Label Text="{Binding UserName}" TextColor="Black" HorizontalOptions="Center"/>
-                    </StackLayout>
+                <Frame BackgroundColor="Transparent">
+                    <Image Source="KidReadyA.png" Margin="0,-190,0,-100"/>
 
-                    <StackLayout Grid.Row="1">
-                        <Entry Placeholder="FullName" FontSize="16" x:Name="EntryFullName" />
-                        <Label Text="{Binding FullName}" TextColor="Black" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame BackgroundColor="Transparent">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
 
-                    </StackLayout>
-                    <StackLayout Grid.Row="2">
-                        <Entry Placeholder="Surname" FontSize="16" x:Name="EntrySurname" />
-                        <Label Text="{Binding Surname}" TextColor="Black" HorizontalOptions="Center"/>
+                        <StackLayout Grid.Row="0">
+                            <Entry Placeholder="Full Name" FontSize="18" FontAttributes="None" x:Name="EntryFullName" Margin="0,50,0,-10"/>
+                            <Label Text="{Binding FullName}" TextColor="Black" HorizontalOptions="Center" />
 
-                    </StackLayout>
-                    <StackLayout Grid.Row="3">
-                        <Entry Placeholder="Email" FontSize="16" x:Name="EntryEmail" />
-                        <Label Text="{Binding Email}" TextColor="Black" HorizontalOptions="Center"/>
-                    </StackLayout>
-                    <StackLayout Grid.Row="4">
-                        <Entry Placeholder="Password" FontSize="16" x:Name="EntryPassword" />
-                        <Label Text="{Binding Password}" TextColor="Black" HorizontalOptions="Center"/>
-                    </StackLayout>
-                   <!-- <StackLayout Grid.Row="5 ">
-                        <Entry Placeholder="ConfirmPassword" FontSize="16" x:Name="EntryConfirmPassword" />
-                        <Label Text="{Binding ConfirmPassword }" TextColor="Black" HorizontalOptions="Center"/>
-                    </StackLayout>-->
-                    <StackLayout Grid.Row="6">
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" HeightRequest="50">
+                            <Entry Placeholder="Surname" FontSize="18" FontAttributes="None" x:Name="EntrySurname" />
+                            <Label Text="{Binding Surname}" TextColor="Black" HorizontalOptions="Center"/>
 
-                        <Button Text="Register" HorizontalOptions="CenterAndExpand" WidthRequest="100" TextColor="White" BackgroundColor="DeepSkyBlue" Clicked="Button_Clicked"/>
-                    </StackLayout>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2">
+                            <Entry Placeholder="Email" FontSize="18" FontAttributes="None" x:Name="EntryEmail" />
+                            <Label Text="{Binding Email}" TextColor="Black" HorizontalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="3">
+                            <Entry Placeholder="Password" FontSize="18" FontAttributes="None" x:Name="EntryPassword" />
+                            <Label Text="{Binding Password}" TextColor="Black" HorizontalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="4">
+                            <Entry Placeholder="Confirm Password" FontSize="18" FontAttributes="None" x:Name="EntryConfirmPassword" />
+                            <Label Text="{Binding ConfirmPassword }" TextColor="Black" HorizontalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="5">
 
-                </Grid>
+                            <Button Text="Register" HorizontalOptions="CenterAndExpand" WidthRequest="100" TextColor="White" BackgroundColor="DeepSkyBlue" Clicked="Button_Clicked"/>
+                        </StackLayout>
+
+                    </Grid>
+
+                </Frame>
+                
             </StackLayout>
         </ScrollView>
 
