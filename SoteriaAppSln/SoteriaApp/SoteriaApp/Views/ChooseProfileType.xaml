@@ -48,9 +48,9 @@
                                  Padding="-6,-6,-6,-6"
                                  Margin="-19,120,0,0"
                                  >
+
                         
-                        
-                        
+
                     </ImageButton>
                     
                 </Frame>
@@ -71,7 +71,7 @@
                                  CornerRadius="360"
                                  VerticalOptions="CenterAndExpand"
                                  HorizontalOptions="Center"         
-                                 BackgroundColor="#FDB3CA"
+                                 BackgroundColor="#D1D5FA"
                                  Padding="-6,-6,-6,0"
                                  Margin="-21,120,-25,0"
                                  >
@@ -106,11 +106,11 @@
                                  CornerRadius="360"
                                  VerticalOptions="CenterAndExpand"
                                  HorizontalOptions="End"         
-                                 BackgroundColor="#D1D5FA"
+                                 BackgroundColor="#FDB3CA"
                                  Padding="-6,-6,0,-6"
                                  Margin="0,120,2,0"
                                  >
-
+                    
                 </ImageButton>
 
                 <Label Text=" Guest " 
