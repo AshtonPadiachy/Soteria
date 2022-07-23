@@ -15,7 +15,7 @@
 
                 </Frame>
                 <Frame BackgroundColor="Transparent">
-                    <Grid>
+                    <Grid Margin="0,-33,0,0">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
@@ -24,32 +24,46 @@
                             <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
 
-                        <StackLayout Grid.Row="0">
-                            <Entry Placeholder="Full Name" FontSize="18" FontAttributes="None" x:Name="EntryFullName" Margin="0,50,0,-10"/>
+                        <StackLayout Grid.Row="0" Margin="0,10,0,0" Spacing="10" HeightRequest="100">
+                            <Entry Placeholder ="Full Name" FontSize="18" FontAttributes="None" x:Name="EntryFullName" Margin="0,50,0,-10" 
+                                   TextColor="DarkSlateGray" PlaceholderColor="#5C6898"/>
                             <Label Text="{Binding FullName}" TextColor="Black" HorizontalOptions="Center" />
 
                         </StackLayout>
-                        <StackLayout Grid.Row="1" HeightRequest="50">
-                            <Entry Placeholder="Surname" FontSize="18" FontAttributes="None" x:Name="EntrySurname" />
+
+                        <StackLayout Grid.Row="1" Margin="0,10,0,0" Spacing="10" HeightRequest="50">
+                            <Entry Placeholder="Surname" FontSize="18" FontAttributes="None" x:Name="EntrySurname" 
+                                    TextColor="DarkSlateGray" PlaceholderColor="#5C6898"/>
                             <Label Text="{Binding Surname}" TextColor="Black" HorizontalOptions="Center"/>
 
                         </StackLayout>
-                        <StackLayout Grid.Row="2">
-                            <Entry Placeholder="Email" FontSize="18" FontAttributes="None" x:Name="EntryEmail" />
+
+                        <StackLayout Grid.Row="2" Margin="0,10,0,0"  Spacing="10" HeightRequest="50">
+                            <Entry Placeholder="Email" FontSize="18" FontAttributes="None" x:Name="EntryEmail" 
+                                   PlaceholderColor="#5C6898" TextColor="DarkSlateGray" />
                             <Label Text="{Binding Email}" TextColor="Black" HorizontalOptions="Center"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="3">
-                            <Entry Placeholder="Password" FontSize="18" FontAttributes="None" x:Name="EntryPassword" />
+
+                        <StackLayout Grid.Row="3" Margin="0,10,0,0" Spacing="10" HeightRequest="50">
+                            <Entry Placeholder="Password" FontSize="18" FontAttributes="None" x:Name="EntryPassword"
+                                   PlaceholderColor="#5C6898" TextColor="DarkSlateGray" />
                             <Label Text="{Binding Password}" TextColor="Black" HorizontalOptions="Center"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="4">
-                            <Entry Placeholder="Confirm Password" FontSize="18" FontAttributes="None" x:Name="EntryConfirmPassword" />
+
+                        <StackLayout Grid.Row="4" Margin="0,10,0,0" Spacing="10" HeightRequest="90">
+                            <Entry Placeholder="Confirm Password" FontSize="18" FontAttributes="None" x:Name="EntryConfirmPassword" 
+                                   PlaceholderColor="#5C6898" TextColor="DarkSlateGray" />
                             <Label Text="{Binding ConfirmPassword }" TextColor="Black" HorizontalOptions="Center"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="5">
 
-                            <Button Text="Register" HorizontalOptions="CenterAndExpand" WidthRequest="100" TextColor="White" BackgroundColor="DeepSkyBlue" Clicked="Button_Clicked"/>
-                        </StackLayout>
+                        <Frame HasShadow="True" BackgroundColor="Transparent" Grid.Row="5" Margin="0,-16,0,0" >
+
+                            <Button Text="Register"
+                            HeightRequest="50" BackgroundColor="#5C6898"
+                            TextColor="White" CornerRadius="5" FontFamily="Roboto-Regular.ttf"
+                            HorizontalOptions="Center" WidthRequest="320" Clicked="Button_Clicked"
+                            />
+                        </Frame>
 
                     </Grid>
 

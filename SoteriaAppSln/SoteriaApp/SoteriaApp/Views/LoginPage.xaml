@@ -8,53 +8,56 @@
 
 
     <ContentPage.Content>
-
-        <StackLayout>
-
-
+        <StackLayout BackgroundColor="Transparent">
             <StackLayout>
-            <Image Source="KidReadyA.png" Margin="0,-65,0,0"
+                <Image Source="KidReadyA.png" Margin="0,-65,0,0"
                    HorizontalOptions="Center" VerticalOptions="Center"/>
             </StackLayout>
-
-            <StackLayout>
-
+            <StackLayout BackgroundColor="Transparent" Margin="0,-35,0,-20">
                 <Label Text="Welcome to "
                        TextColor="#5C6898" FontAttributes="Bold"
                        FontSize="25" HorizontalOptions="Center"
                        HorizontalTextAlignment="Center"
                        FontFamily="OpenSans-Bold.ttf"
                        Margin="0,-20,0,0"/>
-
                 <Label Text="KidReady"
                        TextColor="#5C6898" FontAttributes="Bold"
                        FontSize="25" HorizontalOptions="Center"
                        HorizontalTextAlignment="Center"
                        FontFamily="OpenSans-Bold.ttf"
                        Margin="0,-5,0,0">
-                    
                 </Label>
-
-                
-
             </StackLayout>
-
-      
-
-
-
-
-
-
-
-
-
-
-
+            <StackLayout BackgroundColor="Transparent" Padding="40" Spacing="20" Margin="0,0,0,0">
+                <Grid BackgroundColor="Transparent">
+                    <Entry Placeholder="Email address" HeightRequest="60"
+                       TextColor="DarkSlateGray" PlaceholderColor="#5C6898" />
+                    <Image Source="emailicon" Margin="265,0,0,0">
+                    </Image>
+                </Grid>
+                <Grid>
+                    <Entry Placeholder="Password" HeightRequest="60"
+                       TextColor="DarkSlateGray" PlaceholderColor="#5C6898"/>
+                    <Image Source="Hiddenicon" Margin="265,0,0,0">
+                    </Image>
+                </Grid>
+                <Button Text="Log in" HeightRequest="50" BackgroundColor="#5C6898"
+                        TextColor="White" CornerRadius="5"
+                        FontFamily="Roboto-Regular.ttf" />
+                <Label Text="Forgot password?" TextColor="#5C6898" HorizontalOptions="Center"
+                           FontFamily="Roboto-Regular.ttf" FontSize="Medium" />
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <BoxView BackgroundColor="#5C6898" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HeightRequest="1" />
+                    <Label Text="OR" TextColor="#5C6898" HorizontalOptions="Center"
+                           VerticalOptions="Center" FontSize="Medium" FontFamily="Roboto-Regular.ttf" />
+                    <BoxView BackgroundColor="#5C6898" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HeightRequest="1"  />
+                </StackLayout>
+                <Button Text="Register"
+                            HeightRequest="50" BackgroundColor="#5C6898"
+                            TextColor="White" CornerRadius="5" FontFamily="Roboto-Regular.ttf"
+                            HorizontalOptions="Center" WidthRequest="320" Clicked="Button_Clicked" />
+            </StackLayout>
         </StackLayout>
-
-
-
-
     </ContentPage.Content>
+
 </ContentPage>
