@@ -9,47 +9,74 @@
         <StackLayout BackgroundColor="Transparent"
                          VerticalOptions="Center"
                          Padding="0,40,0,0"
-                         Spacing="12"
+                         Spacing="15"
                          Margin="15"
                          HorizontalOptions="Center">
+            
+            
             <!-- Account -->
-            <Frame CornerRadius="50" >
+            
+            <Frame CornerRadius="10"
+                   BackgroundColor="Transparent"
+                             Margin="0"
+                             Padding="0,1,0,0"
+                             HasShadow="False"
+                             HeightRequest="60"
+                             WidthRequest="50" 
+                               >
                 <Button Text=" Account" x:Name="Account"
-                       TextColor="#5C6898"
-                       BackgroundColor="White"
+                       TextColor="White"
+                       BackgroundColor="#D1D5FA"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
                         Clicked="AccountButton_Clicked"
                        />
             </Frame>
             <!-- Support -->
-            <Frame CornerRadius="50" >
+            <Frame CornerRadius="10"
+                   BackgroundColor="Transparent"
+                             Margin="0"
+                             Padding="0,1,0,0"
+                             HasShadow="False"
+                             HeightRequest="60"
+                             WidthRequest="50"  >
                 <Button Text=" Support " x:Name="Support"
-                       TextColor="#5C6898"
-                      BackgroundColor="White"
+                       TextColor="White"
+                       BackgroundColor="#A9DFE2"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
                         Clicked="Support_Clicked"/>
             </Frame>
             <!-- Privacy & Policy -->
-            <Frame CornerRadius="50"
-                   >
+            <Frame CornerRadius="10"
+                   BackgroundColor="Transparent"
+                             Margin="0"
+                             Padding="0,1,0,0"
+                             HasShadow="False"
+                             HeightRequest="60"
+                             WidthRequest="50" >
+                
                 <Button Text=" Privacy and Policy"
                         x:Name="PrivacyAndPolicy"
-                       TextColor="#5C6898"
-                       BackgroundColor="White"
+                       TextColor="White"
+                       BackgroundColor="#D1D5FA"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
                         Clicked="PrivacyAndPolicy_Clicked"
                        />
             </Frame>
             <!-- About Us -->
-            <Frame  CornerRadius="50"     
-                                >
+            <Frame CornerRadius="10"
+                   BackgroundColor="Transparent"
+                             Margin="0"
+                             Padding="0,1,0,0"
+                             HasShadow="False"
+                             HeightRequest="60"
+                             WidthRequest="50"  >
                 <Button Text=" About Us "
                         x:Name="AboutUs"
-                       TextColor="#5C6898"
-                       BackgroundColor="White"
+                       TextColor="White"
+                       BackgroundColor="#A9DFE2"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
                         Clicked="AboutUs_Clicked"/>
@@ -83,7 +110,7 @@
                                     TextColor="white"
                                     FontFamily="Roboto-Regular.ttf"
                                     FontSize="Medium"
-                                    BackgroundColor="#5C6898"/>
+                                    BackgroundColor="#D1D5FA"/>
                 </Frame>
                 <!-- Delete Account -->
                 <Label Text=" Delete Account"
