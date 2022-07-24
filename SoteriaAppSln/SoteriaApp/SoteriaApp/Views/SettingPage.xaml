@@ -13,56 +13,44 @@
                          Margin="15"
                          HorizontalOptions="Center">
             <!-- Account -->
-            <Frame
-                   BorderColor="#5C6898"
-                   CornerRadius="50"
-                   HasShadow="True">
+            <Frame CornerRadius="50" >
                 <Button Text=" Account" x:Name="Account"
                        TextColor="#5C6898"
                        BackgroundColor="White"
-                       FontFamily="OpenSans-Regular.ttf"
+                       FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
                         Clicked="AccountButton_Clicked"
                        />
             </Frame>
             <!-- Support -->
-            <Frame
-                   BorderColor="#5C6898"
-                   CornerRadius="50"
-                   HasShadow="True"
-                   >
+            <Frame CornerRadius="50" >
                 <Button Text=" Support " x:Name="Support"
                        TextColor="#5C6898"
                       BackgroundColor="White"
-                       FontFamily="OpenSans-Regular.ttf"
+                       FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
                         Clicked="Support_Clicked"/>
             </Frame>
             <!-- Privacy & Policy -->
-            <Frame 
-                   BorderColor="#5C6898"
-                   CornerRadius="50"
-                   HasShadow="True">
+            <Frame CornerRadius="50"
+                   >
                 <Button Text=" Privacy and Policy"
                         x:Name="PrivacyAndPolicy"
                        TextColor="#5C6898"
                        BackgroundColor="White"
-                       FontFamily="OpenSans-Regular.ttf"
+                       FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
                         Clicked="PrivacyAndPolicy_Clicked"
                        />
             </Frame>
             <!-- About Us -->
-            <Frame 
-                   BorderColor="#5C6898"
-                   CornerRadius="50"
-                   HasShadow="True"
-                   >
+            <Frame  CornerRadius="50"     
+                                >
                 <Button Text=" About Us "
                         x:Name="AboutUs"
                        TextColor="#5C6898"
                        BackgroundColor="White"
-                       FontFamily="OpenSans-Regular.ttf"
+                       FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
                         Clicked="AboutUs_Clicked"/>
             </Frame>
@@ -93,7 +81,7 @@
                              WidthRequest="50" >
                     <Button Text="Sign Out"
                                     TextColor="white"
-                                    FontFamily="OpenSans-Regular.ttf"
+                                    FontFamily="Roboto-Regular.ttf"
                                     FontSize="Medium"
                                     BackgroundColor="#5C6898"/>
                 </Frame>
