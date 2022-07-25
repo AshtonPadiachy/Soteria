@@ -32,6 +32,14 @@ namespace SoteriaApp.Droid
         {
             // Register any platform specific implementations
         }
+        // public App()
+        // {
+        //  MainPage = new NavigationPage(new Page1Xaml());
+        // }
+        // async void OnNextPageButtonClicked(object sender, EventArgs e)
+        // {
+        //await Navigation.PushAsync(new Page2Xaml());
+        // }
     }
 }
 
