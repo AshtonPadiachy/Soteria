@@ -45,19 +45,21 @@
                    FontSize="20"
                    Padding="10,25,5,10"/>
 
+        <!--Various Type Page-->
         <BoxView Grid.Column="1"
                  Color="#5C6898" CornerRadius="20" Margin="5,15,10,5"   />
-        <Label Grid.Column="1"
+        <Button Grid.Column="1"
+                x:Name="VariousTypeBtn"
                Text="Various 
                       Types"
                HorizontalOptions="Center"
                VerticalOptions="Center"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
+                 BackgroundColor="Transparent"
                    FontFamily="Montserrat-SemiBold.ttf"
                    TextColor="White"
                    FontSize="20"
-                   Padding="0,20,9,10"/>
+                   Padding="0,20,9,10"
+                Command="{Binding VariousTypeBtnCommand}"/>
 
         <BoxView Grid.Row="1"
                  Color="#5C6898" CornerRadius="20"  Margin="10,5,0,15"    />

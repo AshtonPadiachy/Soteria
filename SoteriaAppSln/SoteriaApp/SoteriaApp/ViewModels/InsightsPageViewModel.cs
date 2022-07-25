@@ -4,6 +4,8 @@ using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace SoteriaApp.ViewModels
 {
@@ -12,6 +14,15 @@ namespace SoteriaApp.ViewModels
         public InsightsPageViewModel(INavigationService nav) : base(nav)
         {
             Title = "Insights";
+            //button navigation for varioustypepage
+            VariousTypeBtnCommand = new Command(OnVariousTypeBtn);
+        }
+
+        public ICommand VariousTypeBtnCommand { get; }
+
+        private void OnVariousTypeBtn()
+        {
+            NavigationService.NavigateAsync("VariousTypePage");
         }
     }
 }
