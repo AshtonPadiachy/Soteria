@@ -29,56 +29,43 @@
 
 
             <BoxView Color="#ffffe8" CornerRadius="20" Margin="10,15,0,5"  />
-            <Label Text="Yellow"
-               HorizontalOptions="Center"
-               VerticalOptions="Center" 
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
-                   FontFamily="Montserrat-SemiBold.ttf"
-                   TextColor="#ECBD00"
-                   FontSize="20"
-                   Padding="10,25,5,10"/>
-
-
-            <BoxView Grid.Column="1"
-                 Color="#EAF2F0" CornerRadius="20" Margin="5,15,10,5"   />
-            <Label Grid.Column="1"
-               Text="Green"
+            <Image Source="angel.png"
                HorizontalOptions="Center"
                VerticalOptions="Center"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
-                   FontFamily="Montserrat-SemiBold.ttf"
-                   TextColor="#5A9C75"
-                   FontSize="20"
-                   Padding="0,20,9,10"/>
+               Margin="55,15,45,0"/>
+
+
+
+
+            <BoxView Grid.Column="1" 
+                 Color="#EAF2F0" CornerRadius="20" Margin="5,15,10,5"   />
+            <Image Grid.Column="1"
+               Source="happy.png"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Margin="50,15,55,0"></Image>
+
+
 
             <BoxView Grid.Row="1"
                  Color="#E6ECF6" CornerRadius="20"  Margin="10,5,0,15"    />
-            <Label Grid.Row="1"
-               Text="Blue"
+            <Image Grid.Row="1"
+               Source="sleepy.png"
                HorizontalOptions="Center"
                VerticalOptions="Center"
-                   HorizontalTextAlignment="Center"
-                   FontFamily="Montserrat-SemiBold.ttf"
-                   TextColor="#1F4FB1"
-                   FontSize="20"
-                   Padding="0,0,-5,10"/>
+               Margin="55,-10,45,0"></Image>
+
 
             <BoxView Grid.Row="1"
                  Grid.Column="1"
                  Color="#F6E3DE" CornerRadius="20"  Margin="5,5,10,15" />
-            <Label Grid.Row="1"
+            <Image Grid.Row="1"
                Grid.Column="1"
-               Text="Red"
+               Source="angry.png"
                HorizontalOptions="Center"
                VerticalOptions="Center"
-                   FontFamily="Montserrat-SemiBold.ttf"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
-                   TextColor="#E9311A "
-                   FontSize="20"
-                   Padding="0,0,0,10"/>
+               Margin="50,-5,55,0"></Image>
+
 
 
         </Grid>
