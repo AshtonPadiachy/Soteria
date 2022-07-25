@@ -61,7 +61,7 @@
                             <Button x:Name="Registration"  Text="Register"
                             HeightRequest="50" BackgroundColor="#5C6898"
                             TextColor="White" CornerRadius="5" FontFamily="Roboto-Regular.ttf"
-                            HorizontalOptions="Center" WidthRequest="320" Command="{}"
+                            HorizontalOptions="Center" WidthRequest="320" Command="{Binding RegisterPageBtnCommand}"
                             />
                         </Frame>
 
