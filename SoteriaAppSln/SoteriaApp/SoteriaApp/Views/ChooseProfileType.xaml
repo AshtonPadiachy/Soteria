@@ -38,7 +38,7 @@
 
                 <Frame BackgroundColor="Transparent" >
 
-                    <ImageButton Source="Educator" 
+                    <ImageButton x:Name="Educator"  Source="Educator"
                                  HeightRequest="80"
                                  WidthRequest="80"
                                  CornerRadius="360"
@@ -47,7 +47,7 @@
                                  BackgroundColor="#A9DFE2"
                                  Padding="-6,-6,-6,-6"
                                  Margin="-19,120,0,0"
-                                 >
+                                 Command="{Binding EducatorCommand}">
 
                         
 
@@ -55,12 +55,13 @@
                     
                 </Frame>
 
-                <Label Text=" Educator " 
+                <Label Text=" Educator "
                        Margin="5,290,0,0"
                        FontFamily="Roboto-Regular.ttf"
                        HorizontalOptions="StartAndExpand"
                        FontSize="Subtitle"
-                       TextColor="#5C6898">
+                       TextColor="#5C6898"
+                       >
                     
                     
                 </Label>

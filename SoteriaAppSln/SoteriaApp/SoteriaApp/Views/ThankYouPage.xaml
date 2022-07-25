@@ -49,11 +49,12 @@
                              HasShadow="False"
                              HeightRequest="60"
                              WidthRequest="50" >
-            <Button Text="Start Now"
+            <Button x:Name="StartNow" Text="Start Now"
                                     TextColor="white"
                                     FontFamily="Montserrat-Medium.ttf"
                                     FontSize="Medium"
-                                    BackgroundColor="#5C6898"/>
+                                    BackgroundColor="#5C6898"
+                                    Command="{Binding ThankYouPageBtnCommand}"/>
         </Frame>
 
     </StackLayout>

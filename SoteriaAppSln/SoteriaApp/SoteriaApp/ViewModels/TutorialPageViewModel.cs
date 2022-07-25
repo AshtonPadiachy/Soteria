@@ -21,7 +21,7 @@ namespace SoteriaApp.ViewModels
 
         private void OnSkip()
         {
-            NavigationService.NavigateAsync("LandingTabbedPage");
+            NavigationService.NavigateAsync("ChooseProfileType");
         }
     }
 }
