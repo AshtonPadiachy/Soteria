@@ -52,6 +52,9 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<RegistrationPage, RegistrationPageViewModel>();
 
             containerRegistry.RegisterForNavigation<VariousTypePage, VariousTypePageViewModel>();
+            containerRegistry.RegisterForNavigation<AnxietyTypesPage, AnxietyTypesPageViewModel>();
+            containerRegistry.RegisterForNavigation<DepressionTypePage, DepressionTypePageViewModel>();
+containerRegistry.RegisterForNavigation<PtsdTypePage, PtsdTypePageViewModel>(); containerRegistry.RegisterForNavigation<DbdTypePage, DbdTypePageViewModel>();
         }
     }
 }

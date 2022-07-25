@@ -2,13 +2,11 @@
 
 namespace SoteriaApp.Views
 {
-    public partial class VariousTypePage : ContentPage
+    public partial class DepressionTypePage : ContentPage
     {
-        public VariousTypePage()
+        public DepressionTypePage()
         {
             InitializeComponent();
         }
-
-       
     }
 }
