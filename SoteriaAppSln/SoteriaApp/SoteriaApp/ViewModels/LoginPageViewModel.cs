@@ -16,10 +16,23 @@ namespace SoteriaApp.ViewModels
     {
         public LoginPageViewModel(INavigationService nav) : base(nav)
         {
+
+            LoginPageBtnCommand = new Command(OnLoginPageBtn);
             RegistrationPageBtnCommand = new Command(OnRegistrationPageBtn);
+            
         }
-        
+
+        public ICommand LoginPageBtnCommand { get; }
+
         public ICommand RegistrationPageBtnCommand { get; }
+
+        
+        private void OnLoginPageBtn()
+        {
+            NavigationService.NavigateAsync("InsightsPage");
+        }
+
+
         private void OnRegistrationPageBtn()
         {
 

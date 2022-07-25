@@ -41,9 +41,9 @@
                     <Image Source="Hiddenicon" Margin="265,0,0,0">
                     </Image>
                 </Grid>
-                <Button Text="Log in" HeightRequest="50" BackgroundColor="#5C6898"
+                <Button x:Name="Login" Text="Log in" HeightRequest="50" BackgroundColor="#5C6898"
                         TextColor="White" CornerRadius="5"
-                        FontFamily="Roboto-Regular.ttf"  />
+                        FontFamily="Roboto-Regular.ttf" Command="{Binding LoginPageBtnCommand}"  />
                 <Label Text="Forgot password?" TextColor="#5C6898" HorizontalOptions="Center"
                            FontFamily="Roboto-Regular.ttf" FontSize="Medium" />
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
