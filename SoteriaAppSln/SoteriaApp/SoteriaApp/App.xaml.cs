@@ -23,9 +23,9 @@ namespace SoteriaApp
             var tracking = Container.Resolve<IVersionTracking>();
 
             if (prefs.Get("AlwaysShowTutorial", true) || tracking.IsFirstLaunchForCurrentVersion)
-                await NavigationService.NavigateAsync("TutorialPage");
+                await NavigationService.NavigateAsync("LoginPage");
             else
-                await NavigationService.NavigateAsync("LandingTabbedPage");
+                await NavigationService.NavigateAsync("LoginPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
