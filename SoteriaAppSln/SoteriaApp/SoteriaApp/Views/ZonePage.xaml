@@ -29,10 +29,10 @@
 
 
             <BoxView Color="#ffffe8" CornerRadius="20" Margin="10,15,0,5"  />
-            <Image Source="angel.png"
+            <ImageButton x:Name="Yellow Zone" Source="angel.png"
                HorizontalOptions="Center"
                VerticalOptions="Center"
-               Margin="55,15,45,0"/>
+               Margin="55,15,45,0" Command="{Binding YellowZonesPageCommand}"/>
 
 
 
