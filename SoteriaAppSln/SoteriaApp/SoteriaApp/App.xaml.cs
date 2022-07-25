@@ -23,9 +23,15 @@ namespace SoteriaApp
             var tracking = Container.Resolve<IVersionTracking>();
 
             if (prefs.Get("AlwaysShowTutorial", true) || tracking.IsFirstLaunchForCurrentVersion)
+<<<<<<< HEAD
                 await NavigationService.NavigateAsync("ZonePage");
             else
                 await NavigationService.NavigateAsync("ZonePage");
+=======
+                await NavigationService.NavigateAsync("LoginPage");
+            else
+                await NavigationService.NavigateAsync("LoginPage");
+>>>>>>> 71fd4c4fef36c5a469705a8049cb752cb780c6e7
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -52,6 +58,9 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<RegistrationPage, RegistrationPageViewModel>();
 
             containerRegistry.RegisterForNavigation<VariousTypePage, VariousTypePageViewModel>();
+            containerRegistry.RegisterForNavigation<AnxietyTypesPage, AnxietyTypesPageViewModel>();
+            containerRegistry.RegisterForNavigation<DepressionTypePage, DepressionTypePageViewModel>();
+containerRegistry.RegisterForNavigation<PtsdTypePage, PtsdTypePageViewModel>(); containerRegistry.RegisterForNavigation<DbdTypePage, DbdTypePageViewModel>();
         }
     }
 }

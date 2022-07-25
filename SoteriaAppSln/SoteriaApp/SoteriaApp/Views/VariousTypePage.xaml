@@ -25,6 +25,7 @@
                        BackgroundColor="#FDB3CA"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
+                            Command="{Binding PtsdTypeBtnCommand}"
                             
                        />
                 </Frame>
@@ -42,6 +43,7 @@
                        BackgroundColor="#FDB3CA"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
+                          Command="{Binding AnxietyTypeBtnCommand}"
                            
                        />
                 </Frame>
@@ -59,6 +61,7 @@
                        BackgroundColor="#FDB3CA"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
+                            Command="{Binding DepressionTypeBtnCommand}"
                            
                        />
                 </Frame>
@@ -75,6 +78,7 @@
                        BackgroundColor="#FDB3CA"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
+                            Command="{Binding DbdTypeBtnCommand}"
                            
                        />
                 </Frame>
