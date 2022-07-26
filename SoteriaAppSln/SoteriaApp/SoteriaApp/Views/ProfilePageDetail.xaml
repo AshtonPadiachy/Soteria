@@ -5,7 +5,14 @@
              xmlns:controls="clr-namespace:SoteriaApp.Views.Controls"
              x:Class="SoteriaApp.Views.ProfilePageDetail"
              Title="Profile" >
-    
+
+    <StackLayout>
     <xct:LazyView x:Name="lazyView" x:TypeArguments="controls:ProfileDetailControl" />
+    
+        <Label Text="" />
+
+
+    </StackLayout>
+
 
 </ContentPage>

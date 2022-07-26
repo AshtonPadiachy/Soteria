@@ -66,6 +66,8 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<ProfilePage, ProfilePageViewModel>();
 
             containerRegistry.RegisterForNavigation<ProfilePageFlyout, ProfilePageFlyoutViewModel>();
+            containerRegistry.RegisterForNavigation<ReportsPage, ReportsPageViewModel>();
+            containerRegistry.RegisterForNavigation<LearnersPage, LearnersPageViewModel>();
         }
     }
 }

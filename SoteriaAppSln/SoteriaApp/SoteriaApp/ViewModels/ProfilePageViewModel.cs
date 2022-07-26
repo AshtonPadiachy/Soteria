@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace SoteriaApp.ViewModels
 {
@@ -26,13 +28,32 @@ namespace SoteriaApp.ViewModels
         public ObservableCollection<ProfilePageFlyoutMenuItem> MenuItems { get; set; }
         public ProfilePageViewModel(INavigationService navigationService) : base(navigationService)
         {
+            ReportsPageBtnCommand = new Command(OnReportsPageBtn);
+            LearnersPageBtnCommand = new Command(OnLearnersPageBtn);
+
+
             MenuItems = new ObservableCollection<ProfilePageFlyoutMenuItem>(new[]
-          {
-                    new ProfilePageFlyoutMenuItem { Id = 0, Title = "Settings" ,TargetType = typeof(SettingPage)},
+            {
+                     new ProfilePageFlyoutMenuItem { Id = 0, Title = "Settings" ,TargetType = typeof(SettingPage)},
                     new ProfilePageFlyoutMenuItem { Id = 1, Title = "Helpline" ,TargetType = typeof(HelplinePage)},
                     new ProfilePageFlyoutMenuItem { Id = 1, Title = "Profile" ,TargetType = typeof(ProfilePageDetail)},
 
-                });
+            });
         }
+
+        public ICommand ReportsPageBtnCommand { get; }
+        public ICommand LearnersPageBtnCommand { get; }
+
+        private void OnLearnersPageBtn()
+        {
+            NavigationService.NavigateAsync("LearnersPage");
+        }
+
+        private void OnReportsPageBtn()
+        {
+            NavigationService.NavigateAsync("ReportsPage");
+        }
+
+
     }
 }

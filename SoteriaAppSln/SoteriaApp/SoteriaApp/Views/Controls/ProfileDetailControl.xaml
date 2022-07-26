@@ -4,8 +4,20 @@
              x:Class="SoteriaApp.Views.Controls.ProfileDetailControl"
              >
 
-    <StackLayout Padding="10">
-        <Label Text="This is a detail page. To get the 'triple' line icon on each platform add a icon to each platform and update the 'Flyout' page with an Icon that references it."/>
+    <StackLayout>
+
+        <Button x:Name="Learners"  Text="Learners"
+                            HeightRequest="50" BackgroundColor="#5C6898"
+                            TextColor="White" CornerRadius="5" FontFamily="Roboto-Regular.ttf"
+                            HorizontalOptions="Center" WidthRequest="320" Command="{Binding LearnersPageBtnCommand}"
+                Margin="0,300,0,20"/>
+
+        <Button x:Name="Reports"  Text="Reports"
+                            HeightRequest="50" BackgroundColor="#5C6898"
+                            TextColor="White" CornerRadius="5" FontFamily="Roboto-Regular.ttf"
+                            HorizontalOptions="Center" WidthRequest="320" Command="{Binding ReportsPageBtnCommand}"
+             />
     </StackLayout>
     
 </ContentView>
+    
