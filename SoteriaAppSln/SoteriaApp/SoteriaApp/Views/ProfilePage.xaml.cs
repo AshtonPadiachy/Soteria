@@ -15,22 +15,8 @@ namespace SoteriaApp.Views
         public ProfilePage()
         {
             InitializeComponent();
-            FlyoutPage.ListView.ItemSelected += ListView_ItemSelected;
         }
 
-        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            var item = e.SelectedItem as ProfilePageFlyoutMenuItem;
-            if (item == null)
-                return;
-
-            var page = (Page)Activator.CreateInstance(item.TargetType);
-            page.Title = item.Title;
-
-            Detail = new NavigationPage(page);
-            IsPresented = false;
-
-            FlyoutPage.ListView.SelectedItem = null;
-        }
+      
     }
 }

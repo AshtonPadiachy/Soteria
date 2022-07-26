@@ -60,7 +60,12 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<VariousTypePage, VariousTypePageViewModel>();
             containerRegistry.RegisterForNavigation<AnxietyTypesPage, AnxietyTypesPageViewModel>();
             containerRegistry.RegisterForNavigation<DepressionTypePage, DepressionTypePageViewModel>();
-containerRegistry.RegisterForNavigation<PtsdTypePage, PtsdTypePageViewModel>(); containerRegistry.RegisterForNavigation<DbdTypePage, DbdTypePageViewModel>();
+            containerRegistry.RegisterForNavigation<PtsdTypePage, PtsdTypePageViewModel>(); 
+            containerRegistry.RegisterForNavigation<DbdTypePage, DbdTypePageViewModel>();
+       
+            containerRegistry.RegisterForNavigation<ProfilePage, ProfilePageViewModel>();
+
+            containerRegistry.RegisterForNavigation<ProfilePageFlyout, ProfilePageFlyoutViewModel>();
         }
     }
 }
