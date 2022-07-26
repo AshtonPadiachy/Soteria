@@ -16,10 +16,21 @@ namespace SoteriaApp.ViewModels
             Title = "Insights";
             //button navigation for varioustypepage
             VariousTypeBtnCommand = new Command(OnVariousTypeBtn);
+
+            //button navigation for solutionspage
+            SolutionsBtnCommand = new Command(OnSolutionsBtn);
         }
 
+        
         public ICommand VariousTypeBtnCommand { get; }
 
+        public ICommand SolutionsBtnCommand { get; }
+
+
+        private void OnSolutionsBtn()
+        {
+            NavigationService.NavigateAsync("SolutionsPage");
+        }
         private void OnVariousTypeBtn()
         {
             NavigationService.NavigateAsync("VariousTypePage");

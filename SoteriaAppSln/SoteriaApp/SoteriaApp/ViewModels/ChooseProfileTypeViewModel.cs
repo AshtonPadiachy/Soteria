@@ -15,13 +15,28 @@ namespace SoteriaApp.ViewModels
             : base(navigationService)
         {
             EducatorCommand = new Command(OnEducartor);
+            ParentCommand = new Command(OnParent);
+            GuestCommand = new Command(OnGuest);
         }
 
         public ICommand EducatorCommand { get; }
 
+        public ICommand ParentCommand { get; }
+
+        public ICommand GuestCommand { get; }
         private void OnEducartor()
         {
             NavigationService.NavigateAsync("LoginPage");
+        }
+
+        private void OnParent()
+        {
+            NavigationService.NavigateAsync("LandingTabbedPage");
+        }
+
+        private void OnGuest()
+        {
+            NavigationService.NavigateAsync("LandingTabbedPage");
         }
     }
 }
