@@ -68,7 +68,7 @@
                     
                 </Label>
 
-                <ImageButton Source="Family" 
+                <ImageButton x:Name="Parents" Source="Family" 
                                  HeightRequest="80"
                                  WidthRequest="80"
                                  CornerRadius="360"
@@ -77,7 +77,7 @@
                                  BackgroundColor="#D1D5FA"
                                  Padding="-6,-6,-6,0"
                                  Margin="-21,120,-25,0"
-                                 >
+                                 Command="{Binding ParentCommand}">
 
                 </ImageButton>
 
@@ -103,7 +103,7 @@
                     
                 </Label>
 
-                <ImageButton Source="Guest" 
+                <ImageButton x:Name="Guest" Source="Guest"
                                  HeightRequest="80"
                                  WidthRequest="80"
                                  CornerRadius="360"
@@ -112,7 +112,7 @@
                                  BackgroundColor="#FDB3CA"
                                  Padding="-6,-6,0,-6"
                                  Margin="0,120,2,0"
-                                 >
+                                 Command="{Binding GuestCommand}">
                     
                 </ImageButton>
 
