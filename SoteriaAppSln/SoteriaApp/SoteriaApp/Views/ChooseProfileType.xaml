@@ -15,7 +15,7 @@
                    HorizontalTextAlignment="Center"
                    FontSize="Title"
                    TextColor="#5C6898"
-                       FontFamily="Roboto-Bold.ttf"
+                       FontFamily="FredokaOne-Regular.ttf"
                        CharacterSpacing="0.1">
 
                 </Label>
@@ -28,7 +28,7 @@
                    HorizontalTextAlignment="Center"
                    FontSize="Title"
                    TextColor="#5C6898"
-                   FontFamily="Roboto-Bold.ttf"
+                   FontFamily="FredokaOne-Regular.ttf"
                        CharacterSpacing="0.1">
 
                 </Label>
@@ -44,11 +44,11 @@
                                  HeightRequest="80"
                                  WidthRequest="80"
                                  CornerRadius="360"
-                                 VerticalOptions="CenterAndExpand"
-                                 HorizontalOptions="StartAndExpand"
-                                 BackgroundColor="#A9DFE2"
+                                 VerticalOptions="StartAndExpand"
+                                 HorizontalOptions="CenterAndExpand"
+                                 BackgroundColor="#AAE1EB"
                                  Padding="-6,-6,-6,-6"
-                                 Margin="-19,120,0,0"
+                                 Margin="-19,0,0,120"
                                  Command="{Binding EducatorCommand}">
 
                         
@@ -58,9 +58,10 @@
                 </Frame>
 
                 <Label Text=" Educator "
-                       Margin="5,290,0,0"
+                       Margin="-19,0,0,20"
                        FontFamily="Roboto-Regular.ttf"
-                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="CenterAndExpand"
                        FontSize="Subtitle"
                        TextColor="#5C6898"
                        >
@@ -74,7 +75,7 @@
                                  CornerRadius="360"
                                  VerticalOptions="CenterAndExpand"
                                  HorizontalOptions="Center"         
-                                 BackgroundColor="#D1D5FA"
+                                 BackgroundColor="#5ED7F2"
                                  Padding="-6,-6,-6,0"
                                  Margin="-21,120,-25,0"
                                  Command="{Binding ParentCommand}">
@@ -92,7 +93,7 @@
 
                 </Label>
 
-                <Label Text=" Gaurdian"
+                <Label Text=" Guardian"
                        TextColor="#5C6898"
                        Margin="-20,305,-28.5,0"
                        FontFamily="Roboto-Regular.ttf"

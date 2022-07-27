@@ -10,17 +10,18 @@
              >
     <!--<xct:LazyView x:Name="lazyView" x:TypeArguments="controls:InsightsControl" />-->
     <StackLayout>
-    <Frame BackgroundColor="Transparent">
+
+       <Frame BackgroundColor="Transparent">
             <Label Text="Mental Health is real! Children exhibit different behaviors that are often associated with mental heath"
-                   FontFamily="Montserrat-SemiBold.ttf"
+                   FontFamily="Roboto-Regular.ttf"
                    HorizontalOptions="Center"
                    VerticalOptions="Center" 
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
-                   FontSize="18"
+                   FontSize="Subtitle"
                    Margin="0,40,0,10"/>
             
-    </Frame>
+       </Frame>
     <Grid  VerticalOptions="Center" Margin="0,10,0,10">
 
         <Grid.RowDefinitions>
@@ -34,15 +35,15 @@
 
         </Grid.ColumnDefinitions>
 
-        <BoxView Color="#5C6898" CornerRadius="20" Margin="10,15,0,5"  />
+            <BoxView Color="#5C6898" CornerRadius="20" Margin="10,15,0,5"  />
         <Label Text="What Is Mental Health?"
                HorizontalOptions="Center"
                VerticalOptions="Center" 
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
-                   FontFamily="Montserrat-SemiBold.ttf"
+                   FontFamily="NotoSans-Regular.ttf"
                    TextColor="White"
-                   FontSize="20"
+                   FontSize="18"
                    Padding="10,25,5,10"/>
 
         <!--Various Type Page-->
@@ -55,9 +56,9 @@
                HorizontalOptions="Center"
                VerticalOptions="Center"
                  BackgroundColor="Transparent"
-                   FontFamily="Montserrat-SemiBold.ttf"
+                   FontFamily="NotoSans-Bold.ttf"
                    TextColor="White"
-                   FontSize="20"
+                   FontSize="18"
                    Padding="0,20,9,10"
                 Command="{Binding VariousTypeBtnCommand}"/>
 
@@ -68,9 +69,9 @@
                HorizontalOptions="Center"
                VerticalOptions="Center"
                    HorizontalTextAlignment="Center"
-                   FontFamily="Montserrat-SemiBold.ttf"
+                   FontFamily="NotoSans-Bold.ttf"
                    TextColor="White"
-                   FontSize="20"
+                   FontSize="18"
                    Padding="0,0,-5,10"/>
 
         <BoxView Grid.Row="1"
@@ -81,8 +82,8 @@
                Text="Influences"
                HorizontalOptions="Center"
                VerticalOptions="Center"
-                   FontFamily="Montserrat-SemiBold.ttf"
-                   HorizontalTextAlignment="Center"
+                   FontFamily="NotoSans-Bold.ttf"
+                   HorizontalTextAlignment="Start"
                    VerticalTextAlignment="Center"
                    TextColor="White"
                    FontSize="20"
@@ -96,10 +97,10 @@
                Text="Solutions"
                HorizontalOptions="Center"
                VerticalOptions="Center"
-                   FontFamily="Montserrat-SemiBold.ttf"
+                   FontFamily="NotoSans-Bold.ttf"
                    BackgroundColor="Transparent"
                    TextColor="White"
-                   FontSize="20"
+                   FontSize="18"
                    Padding="0,0,2,15"
                 Command="{Binding SolutionsBtnCommand}"/>
 
