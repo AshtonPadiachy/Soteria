@@ -22,7 +22,7 @@
                              HeightRequest="60"
                              WidthRequest="350" 
                                TextColor="White"
-                                BackgroundColor="#D1D5FA"
+                                BackgroundColor="#5ED7F2"
                                 FontFamily="Roboto-Regular.ttf"  
                                 FontSize="Medium"
                             Clicked="EmergencyLineButton_Clicked"
