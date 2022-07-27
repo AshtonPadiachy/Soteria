@@ -68,6 +68,10 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<ProfilePageFlyout, ProfilePageFlyoutViewModel>();
             containerRegistry.RegisterForNavigation<ReportsPage, ReportsPageViewModel>();
             containerRegistry.RegisterForNavigation<LearnersPage, LearnersPageViewModel>();
+
+            containerRegistry.RegisterForNavigation<SolutionsPage, SolutionsPageViewModel>();
+            containerRegistry.RegisterForNavigation<WhatIsMentalHealthPage, WhatIsMentalHealthPageViewModel>();
+            containerRegistry.RegisterForNavigation<QuestionsToAskPage, QuestionsToAskPageViewModel>();
         }
     }
 }

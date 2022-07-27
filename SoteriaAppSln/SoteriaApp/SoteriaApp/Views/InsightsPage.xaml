@@ -35,16 +35,17 @@
 
         </Grid.ColumnDefinitions>
 
+        <!--what is mental-->
             <BoxView Color="#5C6898" CornerRadius="20" Margin="10,15,0,5"  />
-        <Label Text="What Is Mental Health?"
+        <Button Text="What Is Mental Health?"
                HorizontalOptions="Center"
                VerticalOptions="Center" 
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
+                BackgroundColor="Transparent"
                    FontFamily="NotoSans-Regular.ttf"
                    TextColor="White"
                    FontSize="18"
-                   Padding="10,25,5,10"/>
+                   Padding="10,25,5,10"
+                Command="{Binding WhatIsMentalHealthBtnCommand}"/>
 
         <!--Various Type Page-->
         <BoxView Grid.Column="1"
