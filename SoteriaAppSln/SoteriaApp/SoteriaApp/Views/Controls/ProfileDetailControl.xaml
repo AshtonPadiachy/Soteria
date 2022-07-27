@@ -5,6 +5,24 @@
              >
 
     <StackLayout>
+        
+        <Frame BackgroundColor="Transparent" Padding="12"
+               CornerRadius="0">
+            <StackLayout Orientation="Horizontal">
+                 <Image Source="teacher.png" HeightRequest="70"
+                       Aspect="AspectFit" HorizontalOptions="Start"/>
+                 <Label Padding="10,0,0,0" Text="Mrs Dalindyebo" HorizontalTextAlignment="Start"
+                       TextColor="Blue" FontSize="16" VerticalOptions="CenterAndExpand"/>
+                <Label Padding="-120,0,20,-130" Text="Educator" HorizontalTextAlignment="Start"
+                       TextColor="Blue" FontSize="16" VerticalOptions="CenterAndExpand"
+                       VerticalTextAlignment="Start" />
+                
+             
+
+            </StackLayout>
+
+        </Frame>
+       
 
         <Button x:Name="Learners"  Text="Learners"
                             HeightRequest="50" BackgroundColor="#5C6898"

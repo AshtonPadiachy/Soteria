@@ -8,8 +8,8 @@
 
     <StackLayout>
     <xct:LazyView x:Name="lazyView" x:TypeArguments="controls:ProfileDetailControl" />
-    
-        <Label Text="" />
+
+        
 
 
     </StackLayout>
