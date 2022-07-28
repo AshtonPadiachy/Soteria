@@ -2,7 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SoteriaApp.Views.ProfilePageFlyout"
-             Title="Flyout" >
+             Title="Flyout" 
+              xmlns:prism="http://prismlibrary.com" xmlns:converters="clr-namespace:SoteriaApp.Converters">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ItemTappedEventArgsConverter x:Key="SelectedItemConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
     <StackLayout>
 
@@ -25,7 +32,7 @@
               SeparatorVisibility="Default"
               SeparatorColor="#5C6898"
               HasUnevenRows="True"
-              ItemsSource="{Binding MenuItems}">
+              ItemsSource="{Binding MenuItems}" SelectionMode="None">
                  
                  
                  
@@ -68,7 +75,13 @@
                        </DataTemplate>
                       
                   </ListView.ItemTemplate>
-                 
+                <ListView.Behaviors>
+
+                    <prism:EventToCommandBehavior EventName="ItemTapped"
+                                          Command="{Binding MenuSelectedCommand}"
+                                         EventArgsConverter="{StaticResource SelectedItemConverter}"/>
+
+                </ListView.Behaviors>
                  
              </ListView>
           

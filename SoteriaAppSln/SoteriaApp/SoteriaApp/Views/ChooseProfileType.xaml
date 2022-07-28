@@ -4,144 +4,156 @@
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SoteriaApp.Views.ChooseProfileType">
-    <Frame BackgroundColor="Transparent">
+
+    <ContentPage.Content>
         
         <StackLayout BackgroundColor="Transparent">
-
-
             <Frame BackgroundColor="Transparent" Margin="0,10,1,0" >
-
                 <Label Text="Which role"
-                   HorizontalTextAlignment="Center"
+                   VerticalOptions="CenterAndExpand"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"
                    FontSize="Title"
                    TextColor="#5C6898"
-                       FontFamily="Roboto-Bold.ttf"
+                       FontFamily="FredokaOne-Regular.ttf"
                        CharacterSpacing="0.1">
-
                 </Label>
-
             </Frame>
-
             <Frame BackgroundColor="Transparent" Margin="0,-42,0,0">
-
                 <Label Text=" describes you ?"
-                   HorizontalTextAlignment="Center"
+                   VerticalOptions="CenterAndExpand"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"
                    FontSize="Title"
                    TextColor="#5C6898"
-                   FontFamily="Roboto-Bold.ttf"
+                   FontFamily="FredokaOne-Regular.ttf"
                        CharacterSpacing="0.1">
-
                 </Label>
-
             </Frame>
 
-           
-            <Grid BackgroundColor="Transparent">
+            <Frame BackgroundColor="Transparent">
+                <Grid RowSpacing="3"
+              ColumnSpacing="3"
+                 Margin="0,0,0,20"
+                 Padding="-100,0,-120,0"
+                  VerticalOptions="Center"
+                  HorizontalOptions="CenterAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="250" />
+                    <RowDefinition Height="150" />
+                    <RowDefinition Height="170" />
+                   
+                </Grid.RowDefinitions>
+                    
+                      <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="150" />
+                             <ColumnDefinition Width="150"/>
+                               <ColumnDefinition Width="150"/>
+                    
+                      </Grid.ColumnDefinitions>
+                  
 
-                <Frame BackgroundColor="Transparent" >
+                     <ImageButton Grid.Column="1"
+                                 x:Name="Educator"  Source="Educator"
+                                                 HeightRequest="100"
+                                                  WidthRequest="100"
+                                                   CornerRadius="360"
+                                                   VerticalOptions="StartAndExpand"
+                                                     HorizontalOptions="CenterAndExpand"
+                                                   BackgroundColor="#AAE1EB"
+                                                 Padding="-18,-18,-18,-18"
+                                                 Margin="-19,0,0,135"
+                                              Command="{Binding EducatorCommand}">
 
-                    <ImageButton x:Name="Educator"  Source="Educator"
-                                 HeightRequest="80"
-                                 WidthRequest="80"
+                     </ImageButton>
+
+                    <Frame BackgroundColor="Transparent" 
+                           HorizontalOptions="CenterAndExpand">
+                        <Label Text=" Educator "
+                                           Margin="135,100,-152.6,0"
+                                            FontFamily="Roboto-Regular.ttf"
+                                              VerticalOptions="StartAndExpand"
+                                                VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                        HorizontalOptions="CenterAndExpand"
+                                       FontSize="20"
+                                     TextColor="#5C6898" >
+                        </Label>
+                    </Frame>
+
+                    <ImageButton Grid.Row="1"
+                                 Grid.Column="1"
+                                 x:Name="Parents" Source="Family"
+                                 HeightRequest="100"
+                                 WidthRequest="100"
                                  CornerRadius="360"
                                  VerticalOptions="CenterAndExpand"
-                                 HorizontalOptions="StartAndExpand"
-                                 BackgroundColor="#A9DFE2"
-                                 Padding="-6,-6,-6,-6"
-                                 Margin="-19,120,0,0"
-                                 Command="{Binding EducatorCommand}">
+                                 HorizontalOptions="Center"
+                                 BackgroundColor="#5ED7F2"
+                                 Padding="-15,-15,-15,-5"
+                                 Margin="-19,-60,0,110"
+                                 Command="{Binding ParentCommand}">
+                    </ImageButton>
 
-                        
+                    <Frame BackgroundColor="Transparent">
+
+                        <Label Text=" Parent / Guardian "
+                                Margin="135,0,-152.6,-435"
+                               Padding="0,0,5,0"
+                                 FontFamily="Roboto-Regular.ttf"
+                                  VerticalOptions="CenterAndExpand"
+                                   VerticalTextAlignment="Center"
+                                    HorizontalTextAlignment="Center"
+                                      HorizontalOptions="CenterAndExpand"
+                                         FontSize="20"
+                                         TextColor="#5C6898" >
+                        </Label>
+
+                    </Frame>
+
+
+
+
+                    <ImageButton x:Name="Guest" 
+                                 Grid.Row="2"
+                                 Grid.Column="1"
+                                 Source="Guest"
+                                             HeightRequest="100"
+                                              WidthRequest="100"
+                                              CornerRadius="360"
+                                              VerticalOptions="EndAndExpand"
+                                 HorizontalOptions="CenterAndExpand"     
+                                            BackgroundColor="#FDB3CA"
+                                           Padding="-18,0,-10,0"
+                                           Margin="-19,0,0,75"
+                                          Command="{Binding GuestCommand}">
 
                     </ImageButton>
-                    
-                </Frame>
 
-                <Label Text=" Educator "
-                       Margin="5,290,0,0"
-                       FontFamily="Roboto-Regular.ttf"
-                       HorizontalOptions="StartAndExpand"
-                       FontSize="Subtitle"
-                       TextColor="#5C6898"
-                       >
-                    
-                    
-                </Label>
-
-                <ImageButton Source="Family" 
-                                 HeightRequest="80"
-                                 WidthRequest="80"
-                                 CornerRadius="360"
-                                 VerticalOptions="CenterAndExpand"
-                                 HorizontalOptions="Center"         
-                                 BackgroundColor="#D1D5FA"
-                                 Padding="-6,-6,-6,0"
-                                 Margin="-21,120,-25,0"
-                                 >
-
-                </ImageButton>
-
-                <Label Text=" Parent / " 
-                       Margin="-10,290,-18.5,0"
+                    <Frame BackgroundColor="Transparent">
+                        <Label Text=" Guest "
+                       Margin="135,0,-152.6,-826"
                        FontFamily="Roboto-Regular.ttf"
                        HorizontalOptions="CenterAndExpand"
-                       FontSize="Subtitle"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"
+                       FontSize="20"
                        TextColor="#5C6898"
                        >
-
-
-                </Label>
-
-                <Label Text=" Gaurdian"
-                       TextColor="#5C6898"
-                       Margin="-20,305,-28.5,0"
-                       FontFamily="Roboto-Regular.ttf"
-                       HorizontalOptions="CenterAndExpand"
-                       FontSize="Subtitle"
-                       Padding="0,10,10,0">
-                    
-                    
-                </Label>
-
-                <ImageButton Source="Guest" 
-                                 HeightRequest="80"
-                                 WidthRequest="80"
-                                 CornerRadius="360"
-                                 VerticalOptions="CenterAndExpand"
-                                 HorizontalOptions="End"         
-                                 BackgroundColor="#FDB3CA"
-                                 Padding="-6,-6,0,-6"
-                                 Margin="0,120,2,0"
-                                 >
-                    
-                </ImageButton>
-
-                <Label Text=" Guest " 
-                       Margin="0,290,-267,0"
-                       FontFamily="Roboto-Regular.ttf"
-                       HorizontalOptions="CenterAndExpand"
-                       FontSize="Subtitle"
-                       TextColor="#5C6898"
-                       >
-
-
-                </Label>
-
-
-
-
-
+                        </Label> 
+                        
+                        
+                        
+                        
+                        
+                    </Frame>
+                
             </Grid>
 
 
-
-
-
-
-
+           </Frame>
 
         </StackLayout>
-
-    </Frame>
-
+       
+    </ContentPage.Content>
 </ContentPage>

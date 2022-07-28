@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com" xmlns:views="clr-namespace:SoteriaApp.Views"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="SoteriaApp.Views.QuestionsToAskPage">
+    <StackLayout BackgroundColor="Transparent">
+
+        <!-- Questions to Ask Carousel -->
+
+        <CarouselView IndicatorView="{x:Reference tutorialIndicator}" BackgroundColor="Transparent" 
+                      IsSwipeEnabled="True" IsBounceEnabled="False" Loop="False" >
+
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+
+                    <Frame BackgroundColor="Transparent">
+                        <StackLayout Padding="20"  VerticalOptions="CenterAndExpand" 
+                                     HorizontalOptions="CenterAndExpand">
+                           
+                                <StackLayout Spacing="10" >
+                                    <Label Text="{Binding Title}" HorizontalTextAlignment="Center" 
+                                           TextColor="#5C6898" FontSize="25" FontAttributes="Bold"  
+                                           FontFamily="FredokaOne-Regular.ttf" CharacterSpacing="0.1"/>
+
+                                    <Label Text="{Binding Content}" VerticalTextAlignment="Center" 
+                                           HorizontalTextAlignment="Center" FontSize="Medium" TextColor="#5C6898" 
+                                           FontFamily="Roboto-Regular.ttf" CharacterSpacing="0.10"
+                                           />
+
+                                   
+                                </StackLayout>
+                           
+
+                        </StackLayout>
+
+                    </Frame>
+
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+
+            <CarouselView.ItemsSource>
+
+                <x:Array Type="{x:Type views:CarouselItem2}" >
+
+                    <views:CarouselItem2 Title="As Parent/Guardian" Content=" 1. How was your day today?
+ 	                                                                          2. Who did you play with today?
+ 	                                                                          3. Did anything happen in school that made you unhappy?
+ 	                                                                          4. Was anyone mean to you?
+ 	                                                                          5. Were you mean to someone in school?
+ 	                                                                          6. Are you still enjoying going to school? (Or something of that effect)
+ 	                                                                          7. What did you do in class today?
+ 	                                                                          8. What activity do you enjoying doing in class?" />
+                    
+                    <views:CarouselItem2 Title="As Teacher" Content="1. How was the rest of your day yesterday?
+                                                                   	 2. Did you do anything fun when you got home?
+	                                                                 3. Do you practice what we did in class when you get home?
+	                                                                 4. Which activities do you look forward to in class?
+	                                                                 5. Did you tell someone about your day?
+	                                                                 6. Who do you play with at home?
+	                                                                 7. What fun activities do you do at home? " />
+                    
+                </x:Array>
+            </CarouselView.ItemsSource>
+        </CarouselView>
+
+        <IndicatorView x:Name="tutorialIndicator" IndicatorColor="#A9DFE2" SelectedIndicatorColor="#5C6898" 
+                       IndicatorsShape="Circle" Margin="0,0,0,150" BackgroundColor="Transparent"/>
+    </StackLayout>
+</ContentPage>

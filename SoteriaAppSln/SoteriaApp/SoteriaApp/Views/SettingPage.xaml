@@ -26,7 +26,7 @@
                                >
                 <Button Text=" Account" x:Name="Account"
                        TextColor="White"
-                       BackgroundColor="#D1D5FA"
+                       BackgroundColor="#5ED7F2"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
                         Clicked="AccountButton_Clicked"
@@ -42,7 +42,7 @@
                              WidthRequest="50"  >
                 <Button Text=" Support " x:Name="Support"
                        TextColor="White"
-                       BackgroundColor="#A9DFE2"
+                       BackgroundColor="#AAE1EB"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
                         Clicked="Support_Clicked"/>
@@ -59,7 +59,7 @@
                 <Button Text=" Privacy and Policy"
                         x:Name="PrivacyAndPolicy"
                        TextColor="White"
-                       BackgroundColor="#D1D5FA"
+                       BackgroundColor="#5ED7F2"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
                         Clicked="PrivacyAndPolicy_Clicked"
@@ -76,7 +76,7 @@
                 <Button Text=" About Us "
                         x:Name="AboutUs"
                        TextColor="White"
-                       BackgroundColor="#A9DFE2"
+                       BackgroundColor="#AAE1EB"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
                         Clicked="AboutUs_Clicked"/>
@@ -110,7 +110,7 @@
                                     TextColor="white"
                                     FontFamily="Roboto-Regular.ttf"
                                     FontSize="Medium"
-                                    BackgroundColor="#D1D5FA"/>
+                                    BackgroundColor="#7D86AD"/>
                 </Frame>
                 <!-- Delete Account -->
                 <Label Text=" Delete Account"

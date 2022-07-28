@@ -29,7 +29,7 @@ namespace SoteriaApp.ViewModels
         
         private void OnLoginPageBtn()
         {
-            NavigationService.NavigateAsync("InsightsPage");
+            NavigationService.NavigateAsync("LandingTabbedPage");
         }
 
 
