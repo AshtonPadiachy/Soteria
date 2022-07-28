@@ -21,8 +21,4 @@
     <ProjectReference Include="..\SoteriaApp.Shared\SoteriaApp.Shared.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
 </Project>

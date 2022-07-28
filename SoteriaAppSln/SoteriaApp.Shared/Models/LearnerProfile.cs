@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -28,7 +29,7 @@ namespace SoteriaProjectWebApi.Models
         [ForeignKey("TeacherProfile")]
         public int TeacherProfileId { get; set; }
 
-       // public ICollection<TeacherProfile> TeacherProfiles { get; set; }
+        public ICollection <Report> Reports { get; set; }
         
 
 

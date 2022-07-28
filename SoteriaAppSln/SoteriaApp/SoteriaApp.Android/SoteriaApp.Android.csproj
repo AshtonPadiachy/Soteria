@@ -148,9 +148,9 @@
     <AndroidResource Include="Resources\drawable\InsightsTutorialmdpi.png" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <AndroidResource Include="Resources\drawable\teacher.png" />
-=======
+  </ItemGroup>
+  <ItemGroup>
     <AndroidResource Include="Resources\drawable\Educator.png" />
   </ItemGroup>
   <ItemGroup>
@@ -170,7 +170,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\showicon.png" />
->>>>>>> 0d32d6247675d1287d9a30959cc89750c0d8c607
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

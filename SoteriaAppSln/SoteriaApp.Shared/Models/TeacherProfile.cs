@@ -21,6 +21,9 @@ namespace SoteriaProjectWebApi.Models
         public int? AuthenticationId { get; set; }
         public Authentication? Authentications { get; set; }
         public ICollection<LearnerProfile> LearnerProfiles  { get; set; }
+        public ICollection<ParentProfile> ParentProfiles { get; set; }
+        public ICollection<Report> Reports { get; set; }
+        
 
 
     }

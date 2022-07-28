@@ -5,22 +5,11 @@
              >
 
     <StackLayout>
-<<<<<<< HEAD
-        <Frame BackgroundColor="Transparent" >
-
-            <Image Source="teacher">
-
-
-            </Image>
-
-        </Frame>
-        <Grid>
-            
-        </Grid>
+       
         
         
-        <Label Text="This is a detail page. To get the 'triple' line icon on each platform add a icon to each platform and update the 'Flyout' page with an Icon that references it."/>
-=======
+        
+
         
         <Frame BackgroundColor="Transparent" Padding="12"
                CornerRadius="0">
@@ -51,7 +40,7 @@
                             TextColor="White" CornerRadius="5" FontFamily="Roboto-Regular.ttf"
                             HorizontalOptions="Center" WidthRequest="320" Command="{Binding ReportsPageBtnCommand}"
              />
->>>>>>> 0d32d6247675d1287d9a30959cc89750c0d8c607
+
     </StackLayout>
     
 </ContentView>

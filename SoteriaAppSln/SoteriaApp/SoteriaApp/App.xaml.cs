@@ -26,7 +26,7 @@ namespace SoteriaApp
 
             if (prefs.Get("AlwaysShowTutorial", true) || tracking.IsFirstLaunchForCurrentVersion)
 
-                await NavigationService.NavigateAsync("ZonePage");
+                await NavigationService.NavigateAsync("TutorialPage");
             else
                 await NavigationService.NavigateAsync("LandingTabbedPage");
 
@@ -56,12 +56,12 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<SignInPage, SignInPageViewModel>();
             containerRegistry.RegisterForNavigation<ChooseProfileType, ChooseProfileTypeViewModel>();
             containerRegistry.RegisterForNavigation<ThankYouPage, ThankYouPageViewModel>();
-<<<<<<< HEAD
+
             containerRegistry.RegisterForNavigation<ReportPage, ReportPageViewModel>();
             containerRegistry.RegisterForNavigation<LearnerProfilePageContentPage, LearnerProfilePageViewModel>();
             containerRegistry.RegisterForNavigation<ProfilePage, ProfilePageViewModel>();
 
-=======
+
             containerRegistry.RegisterForNavigation<BlueZonesPage, BlueZonesPageViewModel>();
             containerRegistry.RegisterForNavigation<GreenZonesPage, GreenZonesPageViewModel>();
             containerRegistry.RegisterForNavigation<RedZonesPage, RedZonesPageViewModel>();
@@ -82,7 +82,7 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<SolutionsPage, SolutionsPageViewModel>();
             containerRegistry.RegisterForNavigation<WhatIsMentalHealthPage, WhatIsMentalHealthPageViewModel>();
             containerRegistry.RegisterForNavigation<QuestionsToAskPage, QuestionsToAskPageViewModel>();
->>>>>>> 0d32d6247675d1287d9a30959cc89750c0d8c607
+
         }
     }
 }

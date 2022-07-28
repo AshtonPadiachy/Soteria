@@ -36,6 +36,8 @@ namespace SoteriaProjectWebApi.Data
 
             }
 
+         //   if (!_context.Report.Any())
+
 
             
 

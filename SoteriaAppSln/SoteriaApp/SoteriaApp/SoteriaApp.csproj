@@ -55,13 +55,7 @@
   </ItemGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
     <ProjectReference Include="..\..\SoteriaApp.Shared\SoteriaApp.Shared.csproj" />
-=======
-    <Compile Update="Views\YellowZonePage.xaml.cs">
-      <DependentUpon>YellowZonePage.xaml</DependentUpon>
-    </Compile>
->>>>>>> 0d32d6247675d1287d9a30959cc89750c0d8c607
   </ItemGroup>
 
   <ItemGroup>
@@ -98,11 +92,10 @@
     <EmbeddedResource Update="Views\HelplinePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Update="Views\LearnerProfilePageContentPage.xaml">
-=======
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\LearnersPage.xaml">
->>>>>>> 0d32d6247675d1287d9a30959cc89750c0d8c607
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\LoginPage.xaml">
