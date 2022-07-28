@@ -73,7 +73,7 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<PtsdTypePage, PtsdTypePageViewModel>(); 
             containerRegistry.RegisterForNavigation<DbdTypePage, DbdTypePageViewModel>();
        
-            containerRegistry.RegisterForNavigation<ProfilePage, ProfilePageViewModel>();
+ //           containerRegistry.RegisterForNavigation<ProfilePage, ProfilePageViewModel>();
 
             containerRegistry.RegisterForNavigation<ProfilePageFlyout, ProfilePageFlyoutViewModel>();
             containerRegistry.RegisterForNavigation<ReportsPage, ReportsPageViewModel>();
