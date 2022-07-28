@@ -31,7 +31,7 @@ namespace SoteriaApp.ViewModels
 
         private void OnParent()
         {
-            NavigationService.NavigateAsync("LandingTabbedPage");
+            NavigationService.NavigateAsync("LoginPage");
         }
 
         private void OnGuest()
