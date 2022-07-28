@@ -5,14 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\bariol_bold-webfont.ttf" />
+    <None Remove="Fonts\bariol_light-webfont.ttf" />
+    <None Remove="Fonts\bariol_regular-webfont.ttf" />
     <None Remove="Fonts\FredokaOne-Regular.ttf" />
-    <None Remove="Fonts\Montserrat-Black.ttf" />
-    <None Remove="Fonts\Montserrat-Bold.ttf" />
-    <None Remove="Fonts\Montserrat-ExtraBold.ttf" />
-    <None Remove="Fonts\Montserrat-Medium.ttf" />
-    <None Remove="Fonts\Montserrat-Regular.ttf" />
-    <None Remove="Fonts\Montserrat-SemiBold.ttf" />
-    <None Remove="Fonts\Montserrat-Thin.ttf" />
     <None Remove="Fonts\NotoSans-Bold.ttf" />
     <None Remove="Fonts\NotoSans-Regular.ttf" />
     <None Remove="Fonts\OpenSans-Bold.ttf" />
@@ -30,30 +26,27 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Fonts\FredokaOne-Regular.ttf" />
-    <EmbeddedResource Include="Fonts\Montserrat-Black.ttf" />
-    <EmbeddedResource Include="Fonts\Montserrat-Bold.ttf" />
-    <EmbeddedResource Include="Fonts\Montserrat-ExtraBold.ttf" />
-    <EmbeddedResource Include="Fonts\Montserrat-Medium.ttf" />
-    <EmbeddedResource Include="Fonts\Montserrat-Regular.ttf" />
-    <EmbeddedResource Include="Fonts\Montserrat-SemiBold.ttf" />
-    <EmbeddedResource Include="Fonts\Montserrat-Thin.ttf" />
-    <EmbeddedResource Include="Fonts\NotoSans-Bold.ttf" />
-    <EmbeddedResource Include="Fonts\NotoSans-Regular.ttf" />
-    <EmbeddedResource Include="Fonts\OpenSans-Bold.ttf" />
-    <EmbeddedResource Include="Fonts\OpenSans-Light.ttf" />
-    <EmbeddedResource Include="Fonts\OpenSans-Regular.ttf" />
-    <EmbeddedResource Include="Fonts\OpenSans-Semibold.ttf" />
-    <EmbeddedResource Include="Fonts\Roboto-Bold.ttf" />
-    <EmbeddedResource Include="Fonts\Roboto-Light.ttf" />
-    <EmbeddedResource Include="Fonts\Roboto-Medium.ttf" />
-    <EmbeddedResource Include="Fonts\Roboto-Regular.ttf" />
-    <EmbeddedResource Include="Fonts\SourceSansPro-Bold.ttf" />
-    <EmbeddedResource Include="Fonts\Typo_Round_Light_Demo.otf" />
-    <EmbeddedResource Include="Fonts\Typo_Round_Regular_Demo.otf" />
+    <EmbeddedResource Include="Fonts\Bariol\bariol_bold-webfont.ttf" />
+    <EmbeddedResource Include="Fonts\Bariol\bariol_light-webfont.ttf" />
+    <EmbeddedResource Include="Fonts\Bariol\bariol_regular-webfont.ttf" />
+    <EmbeddedResource Include="Fonts\FredokaOne-Regular\FredokaOne-Regular.ttf" />
+    <EmbeddedResource Include="Fonts\NotoSans\NotoSans-Bold.ttf" />
+    <EmbeddedResource Include="Fonts\NotoSans\NotoSans-Regular.ttf" />
+    <EmbeddedResource Include="Fonts\OpenSans\OpenSans-Bold.ttf" />
+    <EmbeddedResource Include="Fonts\OpenSans\OpenSans-Light.ttf" />
+    <EmbeddedResource Include="Fonts\OpenSans\OpenSans-Regular.ttf" />
+    <EmbeddedResource Include="Fonts\OpenSans\OpenSans-Semibold.ttf" />
+    <EmbeddedResource Include="Fonts\Roboto\Roboto-Bold.ttf" />
+    <EmbeddedResource Include="Fonts\Roboto\Roboto-Light.ttf" />
+    <EmbeddedResource Include="Fonts\Roboto\Roboto-Medium.ttf" />
+    <EmbeddedResource Include="Fonts\Roboto\Roboto-Regular.ttf" />
+    <EmbeddedResource Include="Fonts\SourceSans\SourceSansPro-Bold.ttf" />
+    <EmbeddedResource Include="Fonts\Typo Round\Typo_Round_Light_Demo.otf" />
+    <EmbeddedResource Include="Fonts\Typo Round\Typo_Round_Regular_Demo.otf" />
   </ItemGroup>
 
   <ItemGroup>
+     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
      <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
     <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.4" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2478" />
@@ -62,9 +55,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Views\YellowZonePage.xaml.cs">
-      <DependentUpon>YellowZonePage.xaml</DependentUpon>
-    </Compile>
+    <ProjectReference Include="..\..\SoteriaApp.Shared\SoteriaApp.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -102,6 +93,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\HelplinePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\LearnerProfilePageContentPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\LearnersPage.xaml">
@@ -144,6 +138,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\ProfilePageFlyout.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ReportPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\SettingPage.xaml">

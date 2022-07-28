@@ -39,32 +39,38 @@
 
             <BoxView Grid.Column="1" 
                  Color="#EAF2F0" CornerRadius="20" Margin="5,15,10,5"   />
-            <Image Grid.Column="1"
+            <ImageButton Grid.Column="1"
                Source="happy.png"
                HorizontalOptions="Center"
                VerticalOptions="Center"
-               Margin="50,15,55,0"></Image>
+               Margin="50,15,55,0"
+                     BackgroundColor="Transparent"
+               Command="{Binding GreenZonesPageCommand}" ></ImageButton>
 
 
 
             <BoxView Grid.Row="1"
                  Color="#E6ECF6" CornerRadius="20"  Margin="10,5,0,15"    />
-            <Image Grid.Row="1"
+            <ImageButton Grid.Row="1"
                Source="sleepy.png"
                HorizontalOptions="Center"
                VerticalOptions="Center"
-               Margin="55,-10,45,0"></Image>
+               Margin="55,-10,45,0"
+                     BackgroundColor="Transparent"
+               Command ="{Binding BlueZonesPageCommand}"></ImageButton>
 
 
             <BoxView Grid.Row="1"
                  Grid.Column="1"
                  Color="#F6E3DE" CornerRadius="20"  Margin="5,5,10,15" />
-            <Image Grid.Row="1"
+            <ImageButton Grid.Row="1"
                Grid.Column="1"
                Source="angry.png"
                HorizontalOptions="Center"
                VerticalOptions="Center"
-               Margin="50,-5,55,0"></Image>
+               Margin="50,-5,55,0"
+                         BackgroundColor="Transparent"
+               Command="{Binding RedZonesPageCommand}"></ImageButton>
 
 
 

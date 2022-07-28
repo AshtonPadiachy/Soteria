@@ -1,25 +1,25 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SoteriaProjectWebApi.Models
 {
-    public class Reports
+    public class Report
     {
         [Required]
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 
-        public string ReportsId { get; set; }
+        public int ReportsId { get; set; }
 
        
         public string CommentOnZones { get; set; }
 
-        public string Date { get; set; } 
-
-        public string Time { get; set; }
+        public DateTime dateTime { get; set; } 
 
         [ForeignKey("LearnerProfile")]
-        public string LearnerId { get; set; }
+        public int LearnerId { get; set; }
 
         public int Participation { get; set; }
 
@@ -37,8 +37,8 @@ namespace SoteriaProjectWebApi.Models
         public Zone? Zone { get; set; }  
 
 
-        public ICollection<Zone> Zones { get; set; }    
-        public ICollection<TeacherProfile> Teachers { get; set; }
+       // public ICollection<Zone> Zones { get; set; }    
+        public ICollection<TeacherProfile> TeacherProfiles { get; set; }
 
        
 

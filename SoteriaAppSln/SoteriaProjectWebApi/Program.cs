@@ -11,6 +11,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Addss DbInitialiser to DI Container
+builder.Services.AddTransient<DbInitialiser>();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -25,5 +29,14 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+using var scope = app.Services.CreateScope();
+
+var services = scope.ServiceProvider;
+
+var initialiser = services.GetRequiredService<DbInitialiser>();
+
+initialiser.Run();
+
 
 app.Run();

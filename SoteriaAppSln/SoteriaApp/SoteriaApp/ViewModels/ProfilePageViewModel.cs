@@ -2,6 +2,9 @@
 using Prism.Mvvm;
 using Prism.Navigation;
 using SoteriaApp.Views;
+using SoteriaApp.Services.Interfaces;
+using SoteriaProjectWebApi.enums;
+using SoteriaProjectWebApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -13,45 +16,39 @@ namespace SoteriaApp.ViewModels
 {
     public class ProfilePageViewModel : ViewModelBase
     {
-        private DelegateCommand<ProfilePageFlyoutMenuItem> _menuSelectedCommand;
-        public DelegateCommand<ProfilePageFlyoutMenuItem> MenuSelectedCommand =>
-            _menuSelectedCommand ?? (_menuSelectedCommand = new DelegateCommand<ProfilePageFlyoutMenuItem>(ExecuteMenuSelectedCommand));
 
-        async void ExecuteMenuSelectedCommand(ProfilePageFlyoutMenuItem item)
+        DelegateCommand _createReportCommand;
+        ISoteriaService _soteriaService;
+        private void ExecuteDeleteLearnerCommand()
         {
-
-            var pageName = item.TargetType.Name;
-            await NavigationService.NavigateAsync("NavigationPage/" + pageName);
-
+            throw new NotImplementedException();
         }
 
-        public ObservableCollection<ProfilePageFlyoutMenuItem> MenuItems { get; set; }
-        public ProfilePageViewModel(INavigationService navigationService) : base(navigationService)
+        public DelegateCommand CreateReportCommand => _createReportCommand ?? (_createReportCommand = new DelegateCommand(ExecuteCreateReportCommand));
+
+        void ExecuteCreateReportCommand()
         {
-            ReportsPageBtnCommand = new Command(OnReportsPageBtn);
-            LearnersPageBtnCommand = new Command(OnLearnersPageBtn);
+            var report = new Report();
 
+            var zone = new Zone();
+            zone.ZoneId = (int)ZonesEnum.Red;
+            report.Zone = zone;
+        }
 
-            MenuItems = new ObservableCollection<ProfilePageFlyoutMenuItem>(new[]
+        void ExecuteCreateLearnerCommand()
             {
-                     new ProfilePageFlyoutMenuItem { Id = 0, Title = "Settings" ,TargetType = typeof(SettingPage)},
-                    new ProfilePageFlyoutMenuItem { Id = 1, Title = "Helpline" ,TargetType = typeof(HelplinePage)},
-                    new ProfilePageFlyoutMenuItem { Id = 1, Title = "Profile" ,TargetType = typeof(ProfilePageDetail)},
+                   
+            // TODO Change this to work from UI
+            var learnerProfile = new LearnerProfile();
 
-            });
+            learnerProfile.LearnerGender = (int)GenderEnum.Male;
+            learnerProfile.LearnerGrade = (int)GradeEnum.GradeThree;
+
+            _soteriaService.CreateNewLearnerProfile(learnerProfile);
         }
 
-        public ICommand ReportsPageBtnCommand { get; }
-        public ICommand LearnersPageBtnCommand { get; }
-
-        private void OnLearnersPageBtn()
+        public ProfilePageViewModel(INavigationService navigationService, ISoteriaService soteriaService) : base (navigationService)
         {
-            NavigationService.NavigateAsync("LearnersPage");
-        }
-
-        private void OnReportsPageBtn()
-        {
-            NavigationService.NavigateAsync("ReportsPage");
         }
 
 

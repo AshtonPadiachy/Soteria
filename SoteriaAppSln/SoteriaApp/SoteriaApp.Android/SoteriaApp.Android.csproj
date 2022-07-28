@@ -148,6 +148,9 @@
     <AndroidResource Include="Resources\drawable\InsightsTutorialmdpi.png" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable\teacher.png" />
+  </ItemGroup>
+  <ItemGroup>
     <AndroidResource Include="Resources\drawable\Educator.png" />
   </ItemGroup>
   <ItemGroup>

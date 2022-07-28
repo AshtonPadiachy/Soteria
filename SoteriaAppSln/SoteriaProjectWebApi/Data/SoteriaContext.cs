@@ -15,9 +15,9 @@ namespace SoteriaProjectWebApi.Data
         public DbSet<ParentProfile> ParentProfiles { get; set; }
         public DbSet<LearnerProfile> learnerProfiles { get; set; }
         public DbSet<Authentication> Authentications { get; set; }
-        public DbSet<Reports> Reports { get; set; } 
-
-
+        public DbSet<Report> Reports { get; set; } 
+        public DbSet<Zone> Zones { get; set; }  
+            
     }
 }
  

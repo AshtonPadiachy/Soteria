@@ -5,6 +5,11 @@
              >
 
     <StackLayout>
+       
+        
+        
+        
+
         
         <Frame BackgroundColor="Transparent" Padding="12"
                CornerRadius="0">
@@ -35,6 +40,7 @@
                             TextColor="White" CornerRadius="5" FontFamily="Roboto-Regular.ttf"
                             HorizontalOptions="Center" WidthRequest="320" Command="{Binding ReportsPageBtnCommand}"
              />
+
     </StackLayout>
     
 </ContentView>

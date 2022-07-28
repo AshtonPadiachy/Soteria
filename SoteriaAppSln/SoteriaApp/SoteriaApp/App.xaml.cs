@@ -1,5 +1,7 @@
 using Prism;
 using Prism.Ioc;
+using SoteriaApp.Services;
+using SoteriaApp.Services.Interfaces;
 using SoteriaApp.ViewModels;
 using SoteriaApp.Views;
 using Xamarin.Essentials.Implementation;
@@ -40,6 +42,8 @@ namespace SoteriaApp
             containerRegistry.RegisterSingleton<IVersionTracking, VersionTrackingImplementation>();
             containerRegistry.RegisterSingleton<IPreferences, PreferencesImplementation>();
 
+            containerRegistry.Register<ISoteriaService, SoteriaService>();
+
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<LandingTabbedPage, LandingTabbedPageViewModel>();
             containerRegistry.RegisterForNavigation<CommunityChat, CommunityChatViewModel>();
@@ -52,6 +56,12 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<SignInPage, SignInPageViewModel>();
             containerRegistry.RegisterForNavigation<ChooseProfileType, ChooseProfileTypeViewModel>();
             containerRegistry.RegisterForNavigation<ThankYouPage, ThankYouPageViewModel>();
+
+            containerRegistry.RegisterForNavigation<ReportPage, ReportPageViewModel>();
+            containerRegistry.RegisterForNavigation<LearnerProfilePageContentPage, LearnerProfilePageViewModel>();
+            containerRegistry.RegisterForNavigation<ProfilePage, ProfilePageViewModel>();
+
+
             containerRegistry.RegisterForNavigation<BlueZonesPage, BlueZonesPageViewModel>();
             containerRegistry.RegisterForNavigation<GreenZonesPage, GreenZonesPageViewModel>();
             containerRegistry.RegisterForNavigation<RedZonesPage, RedZonesPageViewModel>();

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SoteriaProjectWebApi.Models
@@ -10,16 +11,19 @@ namespace SoteriaProjectWebApi.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int TeacherProfileId { get; set; }
-        public string UserName { get; set; }
-        public string   TeacherName { get; set; }
+        public string Email { get; set; }
+        public string  TeacherName { get; set; }
         public string TeacherSurname { get; set; }
         public string TeacherCellNumber { get; set; }
 
         [ForeignKey("Authentication")]
 
-        public int AuthenticationId { get; set; }
+        public int? AuthenticationId { get; set; }
         public Authentication? Authentications { get; set; }
-        public ICollection<LearnerProfile> Learners  { get; set; }
+        public ICollection<LearnerProfile> LearnerProfiles  { get; set; }
+        public ICollection<ParentProfile> ParentProfiles { get; set; }
+        public ICollection<Report> Reports { get; set; }
+        
 
 
     }
