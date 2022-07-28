@@ -24,7 +24,7 @@ namespace SoteriaApp
 
             if (prefs.Get("AlwaysShowTutorial", true) || tracking.IsFirstLaunchForCurrentVersion)
 
-                await NavigationService.NavigateAsync("TutorialPage");
+                await NavigationService.NavigateAsync("ZonePage");
             else
                 await NavigationService.NavigateAsync("LandingTabbedPage");
 
