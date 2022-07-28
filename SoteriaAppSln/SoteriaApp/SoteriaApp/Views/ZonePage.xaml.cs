@@ -6,7 +6,7 @@ namespace SoteriaApp.Views
     {
         public ZonePage()
         {
-            InitializeComponent();
+             InitializeComponent();
         }
     }
 }

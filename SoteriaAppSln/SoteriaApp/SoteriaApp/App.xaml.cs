@@ -72,6 +72,8 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<SolutionsPage, SolutionsPageViewModel>();
             containerRegistry.RegisterForNavigation<WhatIsMentalHealthPage, WhatIsMentalHealthPageViewModel>();
             containerRegistry.RegisterForNavigation<QuestionsToAskPage, QuestionsToAskPageViewModel>();
+            containerRegistry.RegisterForNavigation<CopingWithDisorders, CopingWithDisordersViewModel>();
+            containerRegistry. RegisterForNavigation<ZonePage, ZonePageViewModel>();
         }
     }
 }

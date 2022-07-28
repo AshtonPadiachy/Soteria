@@ -11,16 +11,39 @@ namespace SoteriaApp.ViewModels
 {
     public class SolutionsPageViewModel : ViewModelBase
     {
+        private DelegateCommand _questionsBtnCommand;
+        public DelegateCommand QuestionsBtnCommand =>
+            _questionsBtnCommand ?? (_questionsBtnCommand = new DelegateCommand(OnQuestionsBtn));
+
+        
+
         public SolutionsPageViewModel(INavigationService navigationService): base(navigationService)
         {
-            QuestionsBtnCommand = new Command(OnQuestionsBtn);
+           
+
+            ColourZonesBtnCommand = new Command(OnColourZonesBtn);
+
+            CopingWithBtnCommand = new Command(OnCopingWithBtn);
         }
 
-        public ICommand QuestionsBtnCommand { get; }
+        public ICommand CopingWithBtnCommand { get; }
+        public ICommand ColourZonesBtnCommand { get; }
+       
+
+        private void OnCopingWithBtn()
+        {
+            NavigationService.NavigateAsync("CopingWithDisorders");
+        }
+        private void OnColourZonesBtn()
+        {
+            NavigationService.NavigateAsync("ZonePage");
+        }
 
         private void OnQuestionsBtn()
         {
             NavigationService.NavigateAsync("QuestionsToAskPage");
         }
+
+        
     }
 }

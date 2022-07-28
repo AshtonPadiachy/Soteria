@@ -22,14 +22,13 @@
                              Padding="0,1,0,0"
                              HasShadow="False"
                              HeightRequest="60"
-                             
                                >
-                <Button Text="Colour Zones of Regulation" x:Name="ColourZonesPageBtn"
+                <Button Text="Colour Zones of Regulation"
                        TextColor="White"
                        BackgroundColor="#5ED7F2"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
-                        
+                        Command="{Binding ColourZonesBtnCommand}"
                        />
             </Frame>
             <!-- Coping with Disorders -->
@@ -40,11 +39,12 @@
                              HasShadow="False"
                              HeightRequest="60"
                                >
-                <Button Text="Coping with Disorders" x:Name="Support"
+                <Button Text="Coping with Disorders"
                        TextColor="White"
                        BackgroundColor="#AAE1EB"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
+                        Command="{Binding CopingWithBtnCommand}"
                        />
             </Frame>
             <!-- Questions to ask children to open up -->
@@ -54,10 +54,11 @@
                              Padding="0,1,0,0"
                              HasShadow="False"
                              HeightRequest="60"
+                            
                              >
 
                 <Button Text=" Questions to ask children to open up"
-                        x:Name="PrivacyAndPolicy"
+                       
                        TextColor="White"
                        BackgroundColor="#5ED7F2"
                        FontFamily="Roboto-Regular.ttf"
