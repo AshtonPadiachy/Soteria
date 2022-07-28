@@ -5,14 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\bariol_bold-webfont.ttf" />
+    <None Remove="Fonts\bariol_light-webfont.ttf" />
+    <None Remove="Fonts\bariol_regular-webfont.ttf" />
     <None Remove="Fonts\FredokaOne-Regular.ttf" />
-    <None Remove="Fonts\Montserrat-Black.ttf" />
-    <None Remove="Fonts\Montserrat-Bold.ttf" />
-    <None Remove="Fonts\Montserrat-ExtraBold.ttf" />
-    <None Remove="Fonts\Montserrat-Medium.ttf" />
-    <None Remove="Fonts\Montserrat-Regular.ttf" />
-    <None Remove="Fonts\Montserrat-SemiBold.ttf" />
-    <None Remove="Fonts\Montserrat-Thin.ttf" />
     <None Remove="Fonts\NotoSans-Bold.ttf" />
     <None Remove="Fonts\NotoSans-Regular.ttf" />
     <None Remove="Fonts\OpenSans-Bold.ttf" />
@@ -30,27 +26,23 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Fonts\FredokaOne-Regular.ttf" />
-    <EmbeddedResource Include="Fonts\Montserrat-Black.ttf" />
-    <EmbeddedResource Include="Fonts\Montserrat-Bold.ttf" />
-    <EmbeddedResource Include="Fonts\Montserrat-ExtraBold.ttf" />
-    <EmbeddedResource Include="Fonts\Montserrat-Medium.ttf" />
-    <EmbeddedResource Include="Fonts\Montserrat-Regular.ttf" />
-    <EmbeddedResource Include="Fonts\Montserrat-SemiBold.ttf" />
-    <EmbeddedResource Include="Fonts\Montserrat-Thin.ttf" />
-    <EmbeddedResource Include="Fonts\NotoSans-Bold.ttf" />
-    <EmbeddedResource Include="Fonts\NotoSans-Regular.ttf" />
-    <EmbeddedResource Include="Fonts\OpenSans-Bold.ttf" />
-    <EmbeddedResource Include="Fonts\OpenSans-Light.ttf" />
-    <EmbeddedResource Include="Fonts\OpenSans-Regular.ttf" />
-    <EmbeddedResource Include="Fonts\OpenSans-Semibold.ttf" />
-    <EmbeddedResource Include="Fonts\Roboto-Bold.ttf" />
-    <EmbeddedResource Include="Fonts\Roboto-Light.ttf" />
-    <EmbeddedResource Include="Fonts\Roboto-Medium.ttf" />
-    <EmbeddedResource Include="Fonts\Roboto-Regular.ttf" />
-    <EmbeddedResource Include="Fonts\SourceSansPro-Bold.ttf" />
-    <EmbeddedResource Include="Fonts\Typo_Round_Light_Demo.otf" />
-    <EmbeddedResource Include="Fonts\Typo_Round_Regular_Demo.otf" />
+    <EmbeddedResource Include="Fonts\Bariol\bariol_bold-webfont.ttf" />
+    <EmbeddedResource Include="Fonts\Bariol\bariol_light-webfont.ttf" />
+    <EmbeddedResource Include="Fonts\Bariol\bariol_regular-webfont.ttf" />
+    <EmbeddedResource Include="Fonts\FredokaOne-Regular\FredokaOne-Regular.ttf" />
+    <EmbeddedResource Include="Fonts\NotoSans\NotoSans-Bold.ttf" />
+    <EmbeddedResource Include="Fonts\NotoSans\NotoSans-Regular.ttf" />
+    <EmbeddedResource Include="Fonts\OpenSans\OpenSans-Bold.ttf" />
+    <EmbeddedResource Include="Fonts\OpenSans\OpenSans-Light.ttf" />
+    <EmbeddedResource Include="Fonts\OpenSans\OpenSans-Regular.ttf" />
+    <EmbeddedResource Include="Fonts\OpenSans\OpenSans-Semibold.ttf" />
+    <EmbeddedResource Include="Fonts\Roboto\Roboto-Bold.ttf" />
+    <EmbeddedResource Include="Fonts\Roboto\Roboto-Light.ttf" />
+    <EmbeddedResource Include="Fonts\Roboto\Roboto-Medium.ttf" />
+    <EmbeddedResource Include="Fonts\Roboto\Roboto-Regular.ttf" />
+    <EmbeddedResource Include="Fonts\SourceSans\SourceSansPro-Bold.ttf" />
+    <EmbeddedResource Include="Fonts\Typo Round\Typo_Round_Light_Demo.otf" />
+    <EmbeddedResource Include="Fonts\Typo Round\Typo_Round_Regular_Demo.otf" />
   </ItemGroup>
 
   <ItemGroup>
@@ -63,7 +55,13 @@
   </ItemGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <ProjectReference Include="..\..\SoteriaApp.Shared\SoteriaApp.Shared.csproj" />
+=======
+    <Compile Update="Views\YellowZonePage.xaml.cs">
+      <DependentUpon>YellowZonePage.xaml</DependentUpon>
+    </Compile>
+>>>>>>> 0d32d6247675d1287d9a30959cc89750c0d8c607
   </ItemGroup>
 
   <ItemGroup>
@@ -73,19 +71,68 @@
     <EmbeddedResource Update="Controls\SignUpControl.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\AboutUsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\AnxietyTypesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\BlueZonesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\ChooseProfileType.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\DbdTypePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\DepressionTypePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\EmergencyLinesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\GreenZonesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\HelplinePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Update="Views\LearnerProfilePageContentPage.xaml">
+=======
+    <EmbeddedResource Update="Views\LearnersPage.xaml">
+>>>>>>> 0d32d6247675d1287d9a30959cc89750c0d8c607
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\LoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PrivacyAndPolicyPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PtsdTypePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\QuestionsToAskPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\RedZonesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\RegistrationPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ReportsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\VariousTypePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\WhatIsMentalHealthPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\YellowZonePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\ProfilePage.xaml">
@@ -113,6 +160,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\TutorialPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ZonePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

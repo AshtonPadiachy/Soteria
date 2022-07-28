@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="SoteriaApp.Views.RedZonesPage">
+
+
+
+    <StackLayout BackgroundColor="#F6E3DE">
+
+
+        <Label Text=" Red Zone" HorizontalTextAlignment="Center"  Padding="0,50,0,0"
+                                           TextColor="#E9311A" FontSize="45" 
+                                           FontFamily="FredokaOne-Regular.ttf"/>
+
+
+
+        <Label Text="Used to describe an extremely heightened state of alertness" HorizontalTextAlignment="Center"  Padding="60,0,60,50"
+                                           TextColor="#5C6898" FontSize="17" 
+                                           FontFamily="Montserrat-Bold.ttf"/>
+
+
+
+        <Label Text="Very Withdrawn" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Not Social with Others" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Angry and Irritable" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Easily triggered by others" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Involved in fights with others" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Uses strong language" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Out of control" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Not interacgtive in class" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Fearful" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Not expressive" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+
+
+
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="SoteriaApp.Views.SolutionsPage">
+
+    <Frame BackgroundColor="Transparent" Margin="0,0,0,5">
+        <StackLayout BackgroundColor="Transparent"
+                         VerticalOptions="Center"
+                         Padding="0,40,0,0"
+                         Spacing="15"
+                         Margin="15"
+                         HorizontalOptions="Center">
+
+
+            <!-- Colour Zones of Regulation -->
+
+            <Frame CornerRadius="10"
+                   BackgroundColor="Transparent"
+                             Margin="0"
+                             Padding="0,1,0,0"
+                             HasShadow="False"
+                             HeightRequest="60"
+                             
+                               >
+                <Button Text="Colour Zones of Regulation" x:Name="ColourZonesPageBtn"
+                       TextColor="White"
+                       BackgroundColor="#5ED7F2"
+                       FontFamily="Roboto-Regular.ttf"
+                       FontSize="Medium"
+                        
+                       />
+            </Frame>
+            <!-- Coping with Disorders -->
+            <Frame CornerRadius="10"
+                   BackgroundColor="Transparent"
+                             Margin="0"
+                             Padding="0,1,0,0"
+                             HasShadow="False"
+                             HeightRequest="60"
+                               >
+                <Button Text="Coping with Disorders" x:Name="Support"
+                       TextColor="White"
+                       BackgroundColor="#AAE1EB"
+                       FontFamily="Roboto-Regular.ttf"
+                       FontSize="Medium"
+                       />
+            </Frame>
+            <!-- Questions to ask children to open up -->
+            <Frame CornerRadius="10"
+                   BackgroundColor="Transparent"
+                             Margin="0"
+                             Padding="0,1,0,0"
+                             HasShadow="False"
+                             HeightRequest="60"
+                             >
+
+                <Button Text=" Questions to ask children to open up"
+                        x:Name="PrivacyAndPolicy"
+                       TextColor="White"
+                       BackgroundColor="#5ED7F2"
+                       FontFamily="Roboto-Regular.ttf"
+                       FontSize="Medium"
+                        Command="{Binding QuestionsBtnCommand}"
+                       />
+            </Frame>
+        </StackLayout>
+    </Frame>
+</ContentPage>

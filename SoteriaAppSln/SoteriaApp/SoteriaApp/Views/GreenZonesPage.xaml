@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="SoteriaApp.Views.GreenZonesPage">
+
+    <StackLayout BackgroundColor="#EAF2F0">
+
+
+        <Label Text=" Green Zone " HorizontalTextAlignment="Center"  Padding="0,50,0,0"
+                                           TextColor="#5A9C75" FontSize="45" 
+                                           FontFamily="FredokaOne-Regular.ttf"/>
+
+       <Label Text="Used to describe the ideal state of alertness" HorizontalTextAlignment="Center"  Padding="60,0,60,60"
+                                           TextColor="#5C6898" FontSize="17" 
+                                           FontFamily="Montserrat-Bold.ttf"/>
+
+
+        <Label Text="Child is in a state of happiness" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Excited to learn and creative" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Focused" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Good Attention Span" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Playful with other kids" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Interactive in Class" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+
+        <Label Text="Expressive" HorizontalTextAlignment="Center"  Padding="60,0,60,20"
+                                           TextColor="#5C6898" FontSize="16" 
+                                           FontFamily="Montserrat-SemiBold.ttf"/>
+    </StackLayout>
+
+</ContentPage>

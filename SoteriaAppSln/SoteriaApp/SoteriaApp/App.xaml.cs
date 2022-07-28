@@ -25,9 +25,15 @@ namespace SoteriaApp
             var tracking = Container.Resolve<IVersionTracking>();
 
             if (prefs.Get("AlwaysShowTutorial", true) || tracking.IsFirstLaunchForCurrentVersion)
-                await NavigationService.NavigateAsync("TutorialPage");
+
+                await NavigationService.NavigateAsync("ZonePage");
             else
                 await NavigationService.NavigateAsync("LandingTabbedPage");
+
+            
+           
+           
+
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -50,10 +56,33 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<SignInPage, SignInPageViewModel>();
             containerRegistry.RegisterForNavigation<ChooseProfileType, ChooseProfileTypeViewModel>();
             containerRegistry.RegisterForNavigation<ThankYouPage, ThankYouPageViewModel>();
+<<<<<<< HEAD
             containerRegistry.RegisterForNavigation<ReportPage, ReportPageViewModel>();
             containerRegistry.RegisterForNavigation<LearnerProfilePageContentPage, LearnerProfilePageViewModel>();
             containerRegistry.RegisterForNavigation<ProfilePage, ProfilePageViewModel>();
 
+=======
+            containerRegistry.RegisterForNavigation<BlueZonesPage, BlueZonesPageViewModel>();
+            containerRegistry.RegisterForNavigation<GreenZonesPage, GreenZonesPageViewModel>();
+            containerRegistry.RegisterForNavigation<RedZonesPage, RedZonesPageViewModel>();
+            containerRegistry.RegisterForNavigation<RegistrationPage, RegistrationPageViewModel>();
+
+            containerRegistry.RegisterForNavigation<VariousTypePage, VariousTypePageViewModel>();
+            containerRegistry.RegisterForNavigation<AnxietyTypesPage, AnxietyTypesPageViewModel>();
+            containerRegistry.RegisterForNavigation<DepressionTypePage, DepressionTypePageViewModel>();
+            containerRegistry.RegisterForNavigation<PtsdTypePage, PtsdTypePageViewModel>(); 
+            containerRegistry.RegisterForNavigation<DbdTypePage, DbdTypePageViewModel>();
+       
+            containerRegistry.RegisterForNavigation<ProfilePage, ProfilePageViewModel>();
+
+            containerRegistry.RegisterForNavigation<ProfilePageFlyout, ProfilePageFlyoutViewModel>();
+            containerRegistry.RegisterForNavigation<ReportsPage, ReportsPageViewModel>();
+            containerRegistry.RegisterForNavigation<LearnersPage, LearnersPageViewModel>();
+
+            containerRegistry.RegisterForNavigation<SolutionsPage, SolutionsPageViewModel>();
+            containerRegistry.RegisterForNavigation<WhatIsMentalHealthPage, WhatIsMentalHealthPageViewModel>();
+            containerRegistry.RegisterForNavigation<QuestionsToAskPage, QuestionsToAskPageViewModel>();
+>>>>>>> 0d32d6247675d1287d9a30959cc89750c0d8c607
         }
     }
 }

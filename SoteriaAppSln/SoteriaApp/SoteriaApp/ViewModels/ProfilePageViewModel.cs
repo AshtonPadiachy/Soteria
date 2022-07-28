@@ -1,25 +1,23 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
+using SoteriaApp.Views;
 using SoteriaApp.Services.Interfaces;
 using SoteriaProjectWebApi.enums;
 using SoteriaProjectWebApi.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace SoteriaApp.ViewModels
 {
     public class ProfilePageViewModel : ViewModelBase
     {
-        private ISoteriaService _soteriaService;
 
-        private DelegateCommand _createLearnerCommand;
-        
-        private DelegateCommand _createReportCommand;
-        public DelegateCommand CreateLearnerCommand =>
-            _createLearnerCommand ?? (_createLearnerCommand = new DelegateCommand(ExecuteCreateLearnerCommand));
-        //public DelegateCommand DeleteLearnerCommand => _deleteLearnerCommand ?? (_deleteLearnerCommand = new DelegateCommand(ExecuteDeleteLearnerCommand));
+
 
         private void ExecuteDeleteLearnerCommand()
         {
@@ -38,7 +36,10 @@ namespace SoteriaApp.ViewModels
         }
 
         void ExecuteCreateLearnerCommand()
-        {
+            {
+                     new ProfilePageFlyoutMenuItem { Id = 0, Title = "Settings" ,TargetType = typeof(SettingPage)},
+                    new ProfilePageFlyoutMenuItem { Id = 1, Title = "Helpline" ,TargetType = typeof(HelplinePage)},
+                    new ProfilePageFlyoutMenuItem { Id = 1, Title = "Profile" ,TargetType = typeof(ProfilePageDetail)},
 
             // TODO Change this to work from UI
             var learnerProfile = new LearnerProfile();
@@ -51,7 +52,8 @@ namespace SoteriaApp.ViewModels
 
         public ProfilePageViewModel(INavigationService navigationService, ISoteriaService soteriaService) : base (navigationService)
         {
-            _soteriaService = soteriaService;
         }
+
+
     }
 }

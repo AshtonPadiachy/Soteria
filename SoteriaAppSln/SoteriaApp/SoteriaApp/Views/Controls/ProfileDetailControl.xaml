@@ -1,9 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SoteriaApp.Views.Controls.ProfileDetailControl">
+             x:Class="SoteriaApp.Views.Controls.ProfileDetailControl"
+             >
 
     <StackLayout>
+<<<<<<< HEAD
         <Frame BackgroundColor="Transparent" >
 
             <Image Source="teacher">
@@ -18,6 +20,39 @@
         
         
         <Label Text="This is a detail page. To get the 'triple' line icon on each platform add a icon to each platform and update the 'Flyout' page with an Icon that references it."/>
+=======
+        
+        <Frame BackgroundColor="Transparent" Padding="12"
+               CornerRadius="0">
+            <StackLayout Orientation="Horizontal">
+                 <Image Source="teacher.png" HeightRequest="70"
+                       Aspect="AspectFit" HorizontalOptions="Start"/>
+                 <Label Padding="10,0,0,0" Text="Mrs Dalindyebo" HorizontalTextAlignment="Start"
+                       TextColor="Blue" FontSize="16" VerticalOptions="CenterAndExpand"/>
+                <Label Padding="-120,0,20,-130" Text="Educator" HorizontalTextAlignment="Start"
+                       TextColor="Blue" FontSize="16" VerticalOptions="CenterAndExpand"
+                       VerticalTextAlignment="Start" />
+                
+             
+
+            </StackLayout>
+
+        </Frame>
+       
+
+        <Button x:Name="Learners"  Text="Learners"
+                            HeightRequest="50" BackgroundColor="#AAE1EB"
+                            TextColor="White" CornerRadius="5" FontFamily="Roboto-Regular.ttf"
+                            HorizontalOptions="Center" WidthRequest="320" Command="{Binding LearnersPageBtnCommand}"
+                Margin="0,300,0,20"/>
+
+        <Button x:Name="Reports"  Text="Reports"
+                            HeightRequest="50" BackgroundColor="#7D86AD"
+                            TextColor="White" CornerRadius="5" FontFamily="Roboto-Regular.ttf"
+                            HorizontalOptions="Center" WidthRequest="320" Command="{Binding ReportsPageBtnCommand}"
+             />
+>>>>>>> 0d32d6247675d1287d9a30959cc89750c0d8c607
     </StackLayout>
     
 </ContentView>
+    

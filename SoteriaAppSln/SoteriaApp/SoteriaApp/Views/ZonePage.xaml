@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="SoteriaApp.Views.ZonePage">
+    <StackLayout>
+
+
+        <Label Text="Colour Zones of Regulation" HorizontalTextAlignment="Center"  Padding="0,50,0,60" Margin="50,0,50,0"
+                                           TextColor="#5C6898" FontSize="40" 
+                                           FontFamily="FredokaOne-Regular.ttf"/>
+
+
+
+
+
+        <Grid  VerticalOptions="Center" Margin="40,0,40,0">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150," />
+                <RowDefinition  Height="150"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width="150"/>
+            </Grid.ColumnDefinitions>
+
+
+            <BoxView Color="#ffffe8" CornerRadius="20" Margin="10,15,0,5"  />
+            <ImageButton x:Name="YellowZone" Source="angel.png"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Margin="55,15,45,0" Command="{Binding YellowZonesPageCommand}"/>
+
+
+
+
+            <BoxView Grid.Column="1" 
+                 Color="#EAF2F0" CornerRadius="20" Margin="5,15,10,5"   />
+            <ImageButton Grid.Column="1"
+               Source="happy.png"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Margin="50,15,55,0"
+                     BackgroundColor="Transparent"
+               Command="{Binding GreenZonesPageCommand}" ></ImageButton>
+
+
+
+            <BoxView Grid.Row="1"
+                 Color="#E6ECF6" CornerRadius="20"  Margin="10,5,0,15"    />
+            <ImageButton Grid.Row="1"
+               Source="sleepy.png"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Margin="55,-10,45,0"
+                     BackgroundColor="Transparent"
+               Command ="{Binding BlueZonesPageCommand}"></ImageButton>
+
+
+            <BoxView Grid.Row="1"
+                 Grid.Column="1"
+                 Color="#F6E3DE" CornerRadius="20"  Margin="5,5,10,15" />
+            <ImageButton Grid.Row="1"
+               Grid.Column="1"
+               Source="angry.png"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Margin="50,-5,55,0"
+                         BackgroundColor="Transparent"
+               Command="{Binding RedZonesPageCommand}"></ImageButton>
+
+
+
+        </Grid>
+
+    </StackLayout>
+
+</ContentPage>

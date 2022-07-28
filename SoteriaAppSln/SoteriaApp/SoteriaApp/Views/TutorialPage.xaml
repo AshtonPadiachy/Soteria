@@ -11,28 +11,29 @@
 
         <!-- Tutorial Carousel -->
 
-        <CarouselView IndicatorView="{x:Reference tutorialIndicator}" BackgroundColor="Transparent" >
+        <CarouselView IndicatorView="{x:Reference tutorialIndicator}" BackgroundColor="Transparent" 
+                      IsSwipeEnabled="True" IsBounceEnabled="False" Loop="False" >
+            
             <CarouselView.ItemTemplate>
                 <DataTemplate>
-
+                    
                     <Frame BackgroundColor="Transparent">
-
 
                         <StackLayout Padding="20"  VerticalOptions="CenterAndExpand" 
                                      HorizontalOptions="CenterAndExpand">
                             
-
                             <Frame BackgroundColor="Transparent" CornerRadius="25" HeightRequest="150">
 
-                                <StackLayout>
+                                <StackLayout Spacing="10" >
 
                                     <Label Text="{Binding Title}" HorizontalTextAlignment="Center" 
                                            TextColor="#5C6898" FontSize="25" FontAttributes="Bold"  
-                                           FontFamily="OpenSans-Semibold.ttf"/>
+                                           FontFamily="FredokaOne-Regular.ttf" CharacterSpacing="0.1"/>
 
                                     <Label Text="{Binding Content}" VerticalTextAlignment="Center" 
                                            HorizontalTextAlignment="Center" FontSize="Medium" TextColor="#5C6898" 
-                                           FontFamily="OpenSans-Regular.ttf" TextType="Html"/>
+                                           FontFamily="Roboto-Regular.ttf" TextType="Html" CharacterSpacing="0.10"
+                                           />
 
                                     <Label Text=" " HeightRequest="240"
                                            HorizontalOptions="CenterAndExpand" Margin="0,0,15,40" VerticalOptions="CenterAndExpand"
@@ -40,8 +41,6 @@
 
                                 </StackLayout>
                                 
-
-
                             </Frame>
 
                             <Frame BackgroundColor="Transparent">
@@ -52,27 +51,21 @@
                                            HorizontalOptions="CenterAndExpand" Margin="0,-15,8,40" VerticalOptions="CenterAndExpand"
                                            />
 
-
                                 </StackLayout>
 
-
                             </Frame>
-
-
-
 
                         </StackLayout>
 
                     </Frame>
 
-
-
                 </DataTemplate>
             </CarouselView.ItemTemplate>
 
             <CarouselView.ItemsSource>
-                <x:Array Type="{x:Type views:CarouselItem}">
-
+                
+                <x:Array Type="{x:Type views:CarouselItem}" >
+               
                     <views:CarouselItem Title="Introduction" Content="KidReady is a Mental Health app that focuses on the mental wellbeing of children in the early childhood development phase." Pictures="DepressedChildmdpi.png" />
                     <views:CarouselItem Title="Insights" Content="Discover more on Mental Health in early childhood development. "  Pictures="InsightsTutorialmdpi.png" />
                     <views:CarouselItem Title="Report" Content="Stay informed on your child's daily performance and behaviors." />

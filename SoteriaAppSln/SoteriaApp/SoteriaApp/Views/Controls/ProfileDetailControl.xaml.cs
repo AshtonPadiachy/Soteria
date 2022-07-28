@@ -8,5 +8,10 @@ namespace SoteriaApp.Views.Controls
         {
             InitializeComponent();
         }
+
+        private void Reports_Clicked(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

@@ -9,36 +9,37 @@
             <StackLayout BackgroundColor="Transparent"
                          VerticalOptions="Center"
                          Padding="0,200,0,0"
-                         Spacing="15"
-                         Margin="20"
-                         HorizontalOptions="Center">
+                         Spacing="5"
+                         Margin="5"
+                         HorizontalOptions="Center"
+                         >
                 <!--Emergency lines-->
-                <Frame
-                   BorderColor="#5C6898"
-                   CornerRadius="10"
-                    
-                     BackgroundColor="Transparent"
-                   HasShadow="True">
+                <Frame BackgroundColor="Transparent">
                     <Button x:Name="EmergencyLineButton" Text=" Emergency lines"
-                       TextColor="#5C6898"
-                        BackgroundColor="White"
-                       FontFamily="OpenSans-Regular.ttf"
-                       FontSize="Medium"
+                            CornerRadius="10"
+                             Margin="-5"
+                             Padding="0,1,0,0"
+                             HeightRequest="60"
+                             WidthRequest="350" 
+                               TextColor="White"
+                                BackgroundColor="#5ED7F2"
+                                FontFamily="Roboto-Regular.ttf"  
+                                FontSize="Medium"
                             Clicked="EmergencyLineButton_Clicked"
                        />
                 </Frame>
 
                 <!--Support Groups-->
-                <Frame 
-                        BorderColor="#5C6898"
-                        CornerRadius="10"
-                       
-                       BackgroundColor="Transparent"
-                        HasShadow="True">
+                <Frame BackgroundColor="Transparent">
                     <Button x:Name="SupportGroupsButton" Text=" Support Groups "
-                       TextColor="#5C6898"
-                        BackgroundColor="White"
-                       FontFamily="OpenSans-Regular.ttf"
+                            CornerRadius="10"
+                             Margin="-5"
+                             Padding="0,1,0,0"
+                             HeightRequest="60"
+                             WidthRequest="350" 
+                            TextColor="White"
+                       BackgroundColor="#FDB3CA"
+                       FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
                             Clicked="SupportGroupsButton_Clicked"
                        />
