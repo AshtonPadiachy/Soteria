@@ -1,13 +1,13 @@
 ﻿namespace SoteriaProjectWebApi.enums
 {
-    public enum LearnerProfileEnum
+    public enum GradeEnum
     {
          GradeOne = 1,
          GradeTwo = 2,
          GradeThree = 3,
          GradeFour = 4
     }
-    public enum LearnerGradeEnum
+    public enum GenderEnum
     {
         Male= 1,
         Female= 2

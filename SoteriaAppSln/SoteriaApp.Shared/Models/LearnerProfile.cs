@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SoteriaProjectWebApi.Models
@@ -12,20 +13,22 @@ namespace SoteriaProjectWebApi.Models
 
         public string LearnerName { get; set; }
         public string LearnerSurname { get; set; }
-        public Enum LearnerGender { get; set; }
+        public int LearnerGender { get; set; }
         public int LearnerAge { get; set; }
         public DateTime DateOfBirth { get; set; }
-        public string LearnerIdNumber { get; set; }
-        public Enum LearnerGrade { get; set; }
-        public int ParentId { get; set; }
+        public string IdNumber { get; set; }
+        public int LearnerGrade { get; set; }
         public string ParentName { get; set; }
         public string ParentSurname { get; set; }
-        public string ParentEmail { get; set; }
+        public string Email { get; set; }
         public int ParentAge { get; set; }
         public Enum MaritalStatus { get; set; }
         public string ParentCellNumber { get; set; }
 
-        public ICollection<TeacherProfile> Teachers { get; set; }
+        [ForeignKey("TeacherProfile")]
+        public int TeacherProfileId { get; set; }
+
+       // public ICollection<TeacherProfile> TeacherProfiles { get; set; }
         
 
 

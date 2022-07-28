@@ -3,7 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SoteriaApp.Views.Controls.ProfileDetailControl">
 
-    <StackLayout Padding="10">
+    <StackLayout>
+        <Frame BackgroundColor="Transparent" >
+
+            <Image Source="teacher">
+
+
+            </Image>
+
+        </Frame>
+        <Grid>
+            
+        </Grid>
+        
+        
         <Label Text="This is a detail page. To get the 'triple' line icon on each platform add a icon to each platform and update the 'Flyout' page with an Icon that references it."/>
     </StackLayout>
     

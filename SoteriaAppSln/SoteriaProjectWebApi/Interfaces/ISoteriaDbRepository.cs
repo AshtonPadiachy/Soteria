@@ -4,37 +4,45 @@ namespace SoteriaProjectWebApi.Interfaces
 {
     public interface ISoteriaDbRepository
     {
-        TeacherProfile CreateNewProfile(TeacherProfile teacherProfile);
+        TeacherProfile CreateNewTeacherProfile(TeacherProfile teacherProfile);
         ParentProfile CreateNewParentProfile(ParentProfile parentProfile);
         LearnerProfile CreateNewLearnerProfile(LearnerProfile learnerProfile);
-        Reports CreateNewReport(Reports report);    
-        bool DoesTeacherProfileExitByEmail (string email);
-        bool DoesTeacherProfileExitByUserName(string userName);
-        bool DoesTeacherProfileExitByPassword (string password);
-        bool DoesParentProfileExistByEmail (string email);
-        bool DoesParentProfileExistByPassword (string password);    
-        List<TeacherProfile> GetAllTeacherProfiles( bool fullfetch = true);
-        TeacherProfile GetTeacherProfileById(int teacherprofileId);
+        Report CreateNewReport(Report report);
+        bool DoesTeacherProfileExistByEmail(string email);
+        bool DoesTeacherProfileExistById(int teacherprofileId);
+
+        bool DoesParentProfileExistByEmail(string email);
+        bool DoesParentProfileExistById(int parentprofileId);
+      
+        bool DoesLearnerProfileExistById(int learnerId);
+        bool DoesLearnerProfileExistbyIdNumber(string idNumber);
+
+        List<TeacherProfile> GetAllTeacherProfiles(bool fullfetch = true);
+        List<ParentProfile> GetAllParentProfiles(bool fullfetch = true);
+        List<LearnerProfile> GetAllLearnerProfiles();
         ParentProfile GetParentProfileById(int parentprofileId);
+       
+       // IList<TeacherProfile> GetTeacherProfilesByProfileId(int teacherprofileId);
+       // IList<ParentProfile> GetParentProfileByProfileId(int parentprofileId);
+        IList<LearnerProfile> GetLearnerProfilesByTearcherProfileId(int teacherprofileId);
+       
+        TeacherProfile GetTeacherProfileByEmail(string email, bool fullfFetch = true);
+        TeacherProfile GetTeacherProfileById(int teacherProfileId, bool fullFetch = true);
+        //TeacherProfile GetTeacherProfilebyPassword(string password, bool fullfetch = true);
+        ParentProfile GetParentProfileByEmail(string email, bool fullFetch = true);
+        ParentProfile GetParentProfileId(int parentprofileId, bool fullFetch = true);
+       // ParentProfile GetParentProfilePassword(int password, bool fullfetch = true);
 
-        IList<TeacherProfile> GetTeacherProfilesByProfileId(int teacherprofileId);
-        IList<ParentProfile> GetParentProfileByProfileId(int parentprofileId);
-        IList<LearnerProfile> GetLearnerProfilesByLearnerId (int learnerId); 
-        TeacherProfile GetTeacherProfileByEmail (string email, bool fullfetch = true);
-        TeacherProfile GetTeacherProfilebyId(int teacherprofileId, bool fullfetch = true);
-        TeacherProfile GetTeacherProfilebyPassword (string password, bool fullfetch = true);    
-        ParentProfile GetParentProfileByEmail(string email, bool fullfetch = true);
-        ParentProfile GetParentProfileId(int parentprofileId, bool fullfetch = true); 
-        ParentProfile GetParentProfilePassword(int password, bool fullfetch = true); 
+        LearnerProfile GetLearnerProfileById(int learnerId, bool fullFetch = true);
+       // LearnerProfile GetLearnerProfileByName(string learnername, bool fullfetch = true);
+        LearnerProfile GetLearnerProfileByIdNumber(string IdNumber, bool fullFetch = true);
+     
+        //IList<Reports> GetReportsByLearnerProfile(int LearnerProfileId);
+        IList<Report> GetReportsByDateTime( DateTime dateTime);
+        IList<Report> GetReportsByLearnerId(int learnerId);
+        Report GetReportsById(int reportsId);
+        bool PerformAuthenticationCheck(string email, string password);
 
-        LearnerProfile GetLearnerProfileById(string learnerId, bool fullfetch = true);
-        LearnerProfile GetLearnerProfileByName (string learnername, bool fullfetch = true);    
-        LearnerProfile GetLearnerProfileByIdNumber (string IdNumber, bool fullfetch = true);
-        IList<Reports> GetReportsByLearnerId( int learnerId);
-        IList<Reports> GetReportsByLearnerIdAndDat( int learnerId, DateTime date );
-        Reports GetReportsById(int transactionId);
-        bool PerformAuthenticationCheck ( string email, string password );
-        
 
 
 
