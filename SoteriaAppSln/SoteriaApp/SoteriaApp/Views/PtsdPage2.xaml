@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="SoteriaApp.Views.PtsdPage2">
+    <WebView Source="https://www.mayoclinic.org/diseases-conditions/post-traumatic-stress-disorder/symptoms-causes/syc-20355967#:~:text=Post%2Dtraumatic%20stress%20disorder%20(PTSD)%20is%20a%20mental%20health,uncontrollable%20thoughts%20about%20the%20event"></WebView>
+</ContentPage>

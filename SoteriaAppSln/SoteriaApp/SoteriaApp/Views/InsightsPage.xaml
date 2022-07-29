@@ -35,7 +35,7 @@
 
         </Grid.ColumnDefinitions>
 
-        <!--what is mental-->
+        <!--What is mental health-->
             <BoxView Color="#5C6898" CornerRadius="20" Margin="10,15,0,5"  />
         <Button Text="What Is Mental Health?"
                HorizontalOptions="Center"
@@ -65,30 +65,32 @@
 
         <BoxView Grid.Row="1"
                  Color="#5C6898" CornerRadius="20"  Margin="10,5,0,15"    />
-        <Label Grid.Row="1"
+        <Button Grid.Row="1"
                Text="Signs and Symptoms"
                HorizontalOptions="Center"
                VerticalOptions="Center"
-                   HorizontalTextAlignment="Center"
+                   BackgroundColor="Transparent"
                    FontFamily="NotoSans-Bold.ttf"
                    TextColor="White"
                    FontSize="18"
-                   Padding="0,0,-5,10"/>
+                   Padding="0,0,-5,10"
+                Command="{Binding SignsAndSymptomsBtnCommand}"
+               />
 
         <BoxView Grid.Row="1"
                  Grid.Column="1"
                  Color="#5C6898" CornerRadius="20"  Margin="5,5,10,15" />
-        <Label Grid.Row="1"
+        <Button Grid.Row="1"
                Grid.Column="1"
                Text="Influences"
                HorizontalOptions="Center"
                VerticalOptions="Center"
                    FontFamily="NotoSans-Bold.ttf"
-                   HorizontalTextAlignment="Start"
-                   VerticalTextAlignment="Center"
+                  BackgroundColor="Transparent"
                    TextColor="White"
                    FontSize="20"
-                   Padding="0,0,0,10"/>
+                   Padding="0,0,0,10"
+                Command="{Binding InfluencesBtnCommand}"/>
 
         <BoxView Grid.Row="2"
                  Grid.ColumnSpan="2"

@@ -84,6 +84,10 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<QuestionsToAskPage, QuestionsToAskPageViewModel>();
             containerRegistry.RegisterForNavigation<CopingWithDisorders, CopingWithDisordersViewModel>();
             containerRegistry. RegisterForNavigation<ZonePage, ZonePageViewModel>();
+            containerRegistry.RegisterForNavigation<SignsAndSymptomsPage, SignsAndSymptomsPageViewModel>();
+            containerRegistry.RegisterForNavigation<InfluencesPage, InfluencesPageViewModel>();
+            containerRegistry.RegisterForNavigation<PtsdPage2, PtsdPage2ViewModel>();
+            containerRegistry.RegisterForNavigation<AnxietyTypePage2, AnxietyTypePage2ViewModel>();
         }
     }
 }
