@@ -90,6 +90,7 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<AnxietyTypePage2, AnxietyTypePage2ViewModel>();
             containerRegistry.RegisterForNavigation<LearnerDetailsPage, LearnerDetailsPageViewModel>();
             containerRegistry.RegisterForNavigation<EmptyLearnersClassListPage, EmptyLearnersClassListPageViewModel>();
+            containerRegistry.RegisterForNavigation<PupilReportPage, PupilReportPageViewModel>();
         }
     }
 }
