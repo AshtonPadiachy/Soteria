@@ -3,20 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="SoteriaApp.Views.LearnerDetailsPage">
-
+             x:Class="SoteriaApp.Views.EmptyLearnersClassListPage">
 
     <StackLayout>
 
-
-        <Label Text="Learner Profile" HorizontalTextAlignment="Center"  Padding="60,40,60,20"
+        <Label Text="Learners" HorizontalTextAlignment="Center"  Padding="60,40,60,20"
                                            TextColor="#5C6898" FontSize="20" 
                                            FontFamily="FredokaOne-Regular.ttf"/>
 
 
 
-
     </StackLayout>
-    
   
 </ContentPage>
