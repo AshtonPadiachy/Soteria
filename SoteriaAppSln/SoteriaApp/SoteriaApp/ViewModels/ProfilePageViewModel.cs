@@ -17,6 +17,16 @@ namespace SoteriaApp.ViewModels
     public class ProfilePageViewModel : ViewModelBase
     {
 
+        public ObservableCollection<ProfilePageFlyoutMenuItem> MenuItems { get; set; }
+        private DelegateCommand<ProfilePageFlyoutMenuItem> _menuSelectedCommand;
+        public DelegateCommand<ProfilePageFlyoutMenuItem> MenuSelectedCommand =>
+            _menuSelectedCommand ?? (_menuSelectedCommand = new DelegateCommand<ProfilePageFlyoutMenuItem>(ExecuteMenuSelectedCommand));
+        async void ExecuteMenuSelectedCommand(ProfilePageFlyoutMenuItem item)
+        {
+            var pageName = item.TargetType.Name;
+            await NavigationService.NavigateAsync("NavigationPage/" + pageName);
+        }
+
         ISoteriaService _soteriaService;
 
         DelegateCommand _createReportCommand;
@@ -39,8 +49,8 @@ namespace SoteriaApp.ViewModels
         }
 
         void ExecuteCreateLearnerCommand()
-            {
-                   
+        {
+
             // TODO Change this to work from UI
             var learnerProfile = new LearnerProfile();
 
@@ -50,8 +60,14 @@ namespace SoteriaApp.ViewModels
             _soteriaService.CreateNewLearnerProfile(learnerProfile);
         }
 
-        public ProfilePageViewModel(INavigationService navigationService, ISoteriaService soteriaService) : base (navigationService)
+        public ProfilePageViewModel(INavigationService navigationService, ISoteriaService soteriaService) : base(navigationService)
         {
+            MenuItems = new ObservableCollection<ProfilePageFlyoutMenuItem>(new[]
+            {
+                    new ProfilePageFlyoutMenuItem { Id = 0, Title = "Settings" ,TargetType = typeof(SettingPage)},
+                    new ProfilePageFlyoutMenuItem { Id = 1, Title = "Helpline" ,TargetType = typeof(HelplinePage)},
+                    new ProfilePageFlyoutMenuItem { Id = 2, Title = "Profile" ,TargetType = typeof(ProfilePageDetail)},
+            });
 
             LearnersPageBtnCommand = new Command(OnLearnersPageBtn);
             ReportsPageBtnCommand = new Command(OnReportsPageBtn);
@@ -67,5 +83,11 @@ namespace SoteriaApp.ViewModels
         {
             NavigationService.NavigateAsync("PupilReportPage");
         }
+
+
+
+    
+
+
     }
 }
