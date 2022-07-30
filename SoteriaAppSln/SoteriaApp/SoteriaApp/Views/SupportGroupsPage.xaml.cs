@@ -15,7 +15,7 @@ namespace SoteriaApp.Views
         public SupportGroupsPage()
         {
             InitializeComponent();
-            BrowserLink.Source = "https://ecdan.org/psychosocial-support/";
+            BrowserLink.Source = "https://ecdanbeta.com/groups/";
         }
     }
 }
