@@ -17,27 +17,27 @@ namespace SoteriaApp.ViewModels
     public class ProfilePageViewModel : ViewModelBase
     {
 
-        DelegateCommand _createReportCommand;
-        DelegateCommand _createLearnerCommand;
-        ISoteriaService _soteriaService;
-        public DelegateCommand CreateLearnerCommand => _createLearnerCommand ?? (_createLearnerCommand = new DelegateCommand(ExecuteCreateLearnerCommand));
-        public DelegateCommand CreateReportCommand => _createReportCommand ?? (_createReportCommand = new DelegateCommand(ExecuteCreateReportCommand));
-
-
         public ObservableCollection<ProfilePageFlyoutMenuItem> MenuItems { get; set; }
-
         private DelegateCommand<ProfilePageFlyoutMenuItem> _menuSelectedCommand;
         public DelegateCommand<ProfilePageFlyoutMenuItem> MenuSelectedCommand =>
             _menuSelectedCommand ?? (_menuSelectedCommand = new DelegateCommand<ProfilePageFlyoutMenuItem>(ExecuteMenuSelectedCommand));
-
         async void ExecuteMenuSelectedCommand(ProfilePageFlyoutMenuItem item)
         {
-
             var pageName = item.TargetType.Name;
             await NavigationService.NavigateAsync("NavigationPage/" + pageName);
-
         }
 
+        ISoteriaService _soteriaService;
+
+        DelegateCommand _createReportCommand;
+
+        DelegateCommand _createLearnerCommand;
+        public DelegateCommand CreateReportCommand => _createReportCommand ?? (_createReportCommand = new DelegateCommand(ExecuteCreateReportCommand));
+        public DelegateCommand CreateLearnerCommand => _createLearnerCommand ?? (_createLearnerCommand = new DelegateCommand(ExecuteCreateLearnerCommand));
+
+        public Command LearnersPageBtnCommand { get; }
+
+        public Command ReportsPageBtnCommand { get; }
 
         void ExecuteCreateReportCommand()
         {
@@ -50,8 +50,8 @@ namespace SoteriaApp.ViewModels
         }
 
         void ExecuteCreateLearnerCommand()
-            {
-                   
+        {
+
             // TODO Change this to work from UI
             var learnerProfile = new LearnerProfile();
 
@@ -62,18 +62,33 @@ namespace SoteriaApp.ViewModels
             _soteriaService.CreateNewLearnerProfile(learnerProfile);
         }
 
-        public ProfilePageViewModel(INavigationService navigationService, ISoteriaService soteriaService) : base (navigationService)
+        public ProfilePageViewModel(INavigationService navigationService, ISoteriaService soteriaService) : base(navigationService)
         {
-          
-                MenuItems = new ObservableCollection<ProfilePageFlyoutMenuItem>(new[]
-                {
+            MenuItems = new ObservableCollection<ProfilePageFlyoutMenuItem>(new[]
+            {
                     new ProfilePageFlyoutMenuItem { Id = 0, Title = "Settings" ,TargetType = typeof(SettingPage)},
                     new ProfilePageFlyoutMenuItem { Id = 1, Title = "Helpline" ,TargetType = typeof(HelplinePage)},
                     new ProfilePageFlyoutMenuItem { Id = 2, Title = "Profile" ,TargetType = typeof(ProfilePageDetail)},
+            });
 
-                });
-            
+            LearnersPageBtnCommand = new Command(OnLearnersPageBtn);
+            ReportsPageBtnCommand = new Command(OnReportsPageBtn);
         }
+
+        private void OnLearnersPageBtn()
+        {
+            NavigationService.NavigateAsync("EmptyLearnersClassListPage");
+
+        }
+
+        private void OnReportsPageBtn()
+        {
+            NavigationService.NavigateAsync("PupilReportPage");
+        }
+
+
+
+    
 
 
     }

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="SoteriaApp.Views.SignsAndSymptomsPage">
+    <StackLayout>
+        <Frame BackgroundColor="Transparent">
+            <StackLayout BackgroundColor="Transparent"
+                         VerticalOptions="Center"
+                         Padding="0,100,0,0"
+                         Spacing="15"
+                         Margin="20"
+                         HorizontalOptions="Center">
+                <!--PTSD-->
+                <Frame BackgroundColor="Transparent">
+
+                    <Button x:Name="PtsdBtn" Text="PTSD"
+                               CornerRadius="10"
+                             Margin="-5"
+                             Padding="0,1,0,0"
+                             HeightRequest="60"
+                             WidthRequest="350" 
+                            TextColor="White"
+                       BackgroundColor="#5ED7F2"
+                       FontFamily="Roboto-Regular.ttf"
+                       FontSize="Medium"
+                           Command="{Binding PtsdType2BtnCommand}"
+                            
+                       />
+                </Frame>
+
+                <!--Anxiety-->
+                <Frame BackgroundColor="Transparent">
+
+                    <Button x:Name="AnxBtn" Text="Anxiety"
+                            CornerRadius="10"
+                             Margin="-5"
+                             Padding="0,1,0,0"
+                             HeightRequest="60"
+                             WidthRequest="350" 
+                            TextColor="White"
+                       BackgroundColor="#AAE1EB"
+                       FontFamily="Roboto-Regular.ttf"
+                       FontSize="Medium"
+                         Command="{Binding AnxietyType3BtnCommand}"
+                           
+                       />
+                </Frame>
+
+                <!--Depression-->
+                <Frame BackgroundColor="Transparent">
+
+                    <Button x:Name="DepBtn" Text="Depression"
+                            CornerRadius="10"
+                             Margin="-5"
+                             Padding="0,1,0,0"
+                             HeightRequest="60"
+                             WidthRequest="350" 
+                            TextColor="White"
+                       BackgroundColor="#5ED7F2"
+                       FontFamily="Roboto-Regular.ttf"
+                       FontSize="Medium"
+                           Command="{Binding DepTypeBtnCommand}"
+                           
+                       />
+                </Frame>
+
+                <!--Disruptive Behaviour Disorder-->
+                <Frame BackgroundColor="Transparent">
+                    <Button x:Name="SupportGroupsButton" Text="Disruptive Behaviour Disorder"
+                            CornerRadius="10"
+                             Margin="-5"
+                             Padding="0,1,0,0"
+                             HeightRequest="60"
+                             WidthRequest="350" 
+                            TextColor="White"
+                       BackgroundColor="#AAE1EB"
+                       FontFamily="Roboto-Regular.ttf"
+                       FontSize="Medium"
+                           Command="{Binding DbdType2BtnCommand}" 
+                           
+                       />
+                </Frame>
+
+
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>

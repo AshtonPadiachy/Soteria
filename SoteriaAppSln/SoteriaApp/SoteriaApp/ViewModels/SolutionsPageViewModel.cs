@@ -15,19 +15,21 @@ namespace SoteriaApp.ViewModels
         public DelegateCommand QuestionsBtnCommand =>
             _questionsBtnCommand ?? (_questionsBtnCommand = new DelegateCommand(OnQuestionsBtn));
 
-        
+        private DelegateCommand _colourZonesBtnCommand;
+        public DelegateCommand ColourZonesBtnCommand =>
+            _colourZonesBtnCommand ?? (_colourZonesBtnCommand = new DelegateCommand(OnColourZonesBtn));
+
+        private DelegateCommand _copingWithBtnCommand;
+        public DelegateCommand CopingWithBtnCommand =>
+            _copingWithBtnCommand ?? (_copingWithBtnCommand = new DelegateCommand(OnCopingWithBtn));
+
+      
 
         public SolutionsPageViewModel(INavigationService navigationService): base(navigationService)
         {
            
 
-            ColourZonesBtnCommand = new Command(OnColourZonesBtn);
-
-            CopingWithBtnCommand = new Command(OnCopingWithBtn);
         }
-
-        public ICommand CopingWithBtnCommand { get; }
-        public ICommand ColourZonesBtnCommand { get; }
        
 
         private void OnCopingWithBtn()

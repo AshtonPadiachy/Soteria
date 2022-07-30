@@ -43,7 +43,7 @@
 
                 <x:Array Type="{x:Type views:CarouselItem2}" >
 
-                    <views:CarouselItem2 Title="As Parent/Guardian" Content=" 1. How was your day today?
+                    <views:CarouselItem2 Title="As a Parent/Guardian" Content=" 1. How was your day today?
  	                                                                          2. Who did you play with today?
  	                                                                          3. Did anything happen in school that made you unhappy?
  	                                                                          4. Was anyone mean to you?
@@ -52,7 +52,7 @@
  	                                                                          7. What did you do in class today?
  	                                                                          8. What activity do you enjoying doing in class?" />
                     
-                    <views:CarouselItem2 Title="As Teacher" Content="1. How was the rest of your day yesterday?
+                    <views:CarouselItem2 Title="As a Teacher" Content="1. How was the rest of your day yesterday?
                                                                    	 2. Did you do anything fun when you got home?
 	                                                                 3. Do you practice what we did in class when you get home?
 	                                                                 4. Which activities do you look forward to in class?

@@ -12,22 +12,56 @@
     <StackLayout>
 
        <Frame BackgroundColor="Transparent">
-            <Label Text="Mental Health is real! Children exhibit different behaviors that are often associated with mental heath"
-                   FontFamily="Roboto-Regular.ttf"
+            <Label Text=" Insights "
+                   FontFamily="FredokaOne-Regular.ttf"
+                   VerticalOptions="CenterAndExpand"
+                   VerticalTextAlignment="Center"
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   TextColor="#5C6898"
+                   FontSize="35"
+                   Margin="0,55,0,0">
+                
+                
+            </Label>
+            
+       </Frame>
+
+        <StackLayout BackgroundColor="Transparent">
+
+
+            <Label Text=" ALERT ALERT ! "
+                   FontFamily="FredokaOne-Regular.ttf"
                    HorizontalOptions="Center"
                    VerticalOptions="Center" 
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
                    FontSize="Subtitle"
-                   Margin="0,40,0,10"/>
-            
-       </Frame>
-    <Grid  VerticalOptions="Center" Margin="0,10,0,10">
+                   Margin="0,-15,0,65"
+                   TextColor="#5C6898"/>
+
+            <Label Text=" Mental Health is real! Children exhibit different behaviors that are often associated with mental heath"
+                   FontFamily="Roboto-Regular.ttf"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" 
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   FontSize="Medium"
+                   Margin="0,-50,0,35"
+                   TextColor="#5C6898">
+                
+                
+                
+            </Label>
+
+        </StackLayout>
+
+      <Grid  VerticalOptions="Center" Margin="0,-20,0,30">
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="200," />
-            <RowDefinition  Height="200"/>
-            <RowDefinition Height="100" />
+            <RowDefinition Height="140," />
+            <RowDefinition  Height="140"/>
+            <RowDefinition Height="80" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -35,7 +69,7 @@
 
         </Grid.ColumnDefinitions>
 
-        <!--what is mental-->
+        <!--What is mental health-->
             <BoxView Color="#5C6898" CornerRadius="20" Margin="10,15,0,5"  />
         <Button Text="What Is Mental Health?"
                HorizontalOptions="Center"
@@ -65,30 +99,32 @@
 
         <BoxView Grid.Row="1"
                  Color="#5C6898" CornerRadius="20"  Margin="10,5,0,15"    />
-        <Label Grid.Row="1"
+        <Button Grid.Row="1"
                Text="Signs and Symptoms"
                HorizontalOptions="Center"
                VerticalOptions="Center"
-                   HorizontalTextAlignment="Center"
+                   BackgroundColor="Transparent"
                    FontFamily="NotoSans-Bold.ttf"
                    TextColor="White"
                    FontSize="18"
-                   Padding="0,0,-5,10"/>
+                   Padding="0,0,-5,10"
+                Command="{Binding SignsAndSymptomsBtnCommand}"
+               />
 
         <BoxView Grid.Row="1"
                  Grid.Column="1"
                  Color="#5C6898" CornerRadius="20"  Margin="5,5,10,15" />
-        <Label Grid.Row="1"
+        <Button Grid.Row="1"
                Grid.Column="1"
                Text="Influences"
                HorizontalOptions="Center"
                VerticalOptions="Center"
                    FontFamily="NotoSans-Bold.ttf"
-                   HorizontalTextAlignment="Start"
-                   VerticalTextAlignment="Center"
+                  BackgroundColor="Transparent"
                    TextColor="White"
                    FontSize="20"
-                   Padding="0,0,0,10"/>
+                   Padding="0,0,0,10"
+                Command="{Binding InfluencesBtnCommand}"/>
 
         <BoxView Grid.Row="2"
                  Grid.ColumnSpan="2"

@@ -73,7 +73,7 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<PtsdTypePage, PtsdTypePageViewModel>(); 
             containerRegistry.RegisterForNavigation<DbdTypePage, DbdTypePageViewModel>();
        
-            containerRegistry.RegisterForNavigation<ProfilePage, ProfilePageViewModel>();
+ //           containerRegistry.RegisterForNavigation<ProfilePage, ProfilePageViewModel>();
 
             containerRegistry.RegisterForNavigation<ProfilePageFlyout, ProfilePageFlyoutViewModel>();
             containerRegistry.RegisterForNavigation<ReportsPage, ReportsPageViewModel>();
@@ -84,6 +84,13 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<QuestionsToAskPage, QuestionsToAskPageViewModel>();
             containerRegistry.RegisterForNavigation<CopingWithDisorders, CopingWithDisordersViewModel>();
             containerRegistry. RegisterForNavigation<ZonePage, ZonePageViewModel>();
+            containerRegistry.RegisterForNavigation<SignsAndSymptomsPage, SignsAndSymptomsPageViewModel>();
+            containerRegistry.RegisterForNavigation<InfluencesPage, InfluencesPageViewModel>();
+            containerRegistry.RegisterForNavigation<PtsdPage2, PtsdPage2ViewModel>();
+            containerRegistry.RegisterForNavigation<AnxietyTypePage2, AnxietyTypePage2ViewModel>();
+            containerRegistry.RegisterForNavigation<LearnerDetailsPage, LearnerDetailsPageViewModel>();
+            containerRegistry.RegisterForNavigation<EmptyLearnersClassListPage, EmptyLearnersClassListPageViewModel>();
+            containerRegistry.RegisterForNavigation<PupilReportPage, PupilReportPageViewModel>();
         }
     }
 }

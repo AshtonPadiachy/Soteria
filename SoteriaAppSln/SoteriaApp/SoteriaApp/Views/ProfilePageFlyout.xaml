@@ -2,8 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SoteriaApp.Views.ProfilePageFlyout"
-             Title="Flyout" 
-              xmlns:prism="http://prismlibrary.com" xmlns:converters="clr-namespace:SoteriaApp.Converters">
+             Title="Flyout"  
+              xmlns:prism="http://prismlibrary.com" 
+             xmlns:converters="clr-namespace:SoteriaApp.Converters"
+              >
 
     <ContentPage.Resources>
         <ResourceDictionary>

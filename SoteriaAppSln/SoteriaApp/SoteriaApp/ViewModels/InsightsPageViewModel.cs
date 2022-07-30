@@ -11,6 +11,24 @@ namespace SoteriaApp.ViewModels
 {
     public class InsightsPageViewModel : ViewModelBase
     {
+        //button for signs and symptoms page
+        private DelegateCommand _signsAndSymptomsBtnCommand;
+        public DelegateCommand SignsAndSymptomsBtnCommand =>
+            _signsAndSymptomsBtnCommand ?? (_signsAndSymptomsBtnCommand = new DelegateCommand(OnSignsAndSymptomsBtn));
+        private void OnSignsAndSymptomsBtn()
+        {
+            NavigationService.NavigateAsync("SignsAndSymptomsPage");
+        }
+
+        //button for influences page
+        private DelegateCommand _influencesBtnCommand;
+        public DelegateCommand InfluencesBtnCommand =>
+            _influencesBtnCommand ?? (_influencesBtnCommand = new DelegateCommand(OnInfluencesBtn));
+
+        private void OnInfluencesBtn()
+        {
+            NavigationService.NavigateAsync("InfluencesPage");
+        }
         public InsightsPageViewModel(INavigationService nav) : base(nav)
         {
             Title = "Insights";
@@ -41,5 +59,7 @@ namespace SoteriaApp.ViewModels
         {
             NavigationService.NavigateAsync("VariousTypePage");
         }
+
+        
     }
 }
