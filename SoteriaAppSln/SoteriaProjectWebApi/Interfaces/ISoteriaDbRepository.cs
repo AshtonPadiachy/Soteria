@@ -17,7 +17,7 @@ namespace SoteriaProjectWebApi.Interfaces
         bool DoesLearnerProfileExistById(int learnerId);
         bool DoesLearnerProfileExistbyIdNumber(string idNumber);
 
-        List<TeacherProfile> GetAllTeacherProfiles(bool fullfetch = true);
+        List<TeacherProfile> GetAllTeacherProfiles( bool fullfetch = true);
         List<ParentProfile> GetAllParentProfiles(bool fullfetch = true);
         List<LearnerProfile> GetAllLearnerProfiles();
         ParentProfile GetParentProfileById(int parentprofileId);

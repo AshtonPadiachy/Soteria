@@ -251,7 +251,7 @@ namespace SoteriaProjectWebApi.Data
             return false;
         }
 
-        public TeacherProfile CreateNewProfile(TeacherProfile teacherProfile)
+        public teacherProfile CreateNewProfile(teacherProfile teacherProfile)
         {
             throw new NotImplementedException();
         }

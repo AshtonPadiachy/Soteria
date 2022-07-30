@@ -18,13 +18,26 @@ namespace SoteriaApp.ViewModels
     {
 
         DelegateCommand _createReportCommand;
+        DelegateCommand _createLearnerCommand;
         ISoteriaService _soteriaService;
-        private void ExecuteDeleteLearnerCommand()
+        public DelegateCommand CreateLearnerCommand => _createLearnerCommand ?? (_createLearnerCommand = new DelegateCommand(ExecuteCreateLearnerCommand));
+        public DelegateCommand CreateReportCommand => _createReportCommand ?? (_createReportCommand = new DelegateCommand(ExecuteCreateReportCommand));
+
+
+        public ObservableCollection<ProfilePageFlyoutMenuItem> MenuItems { get; set; }
+
+        private DelegateCommand<ProfilePageFlyoutMenuItem> _menuSelectedCommand;
+        public DelegateCommand<ProfilePageFlyoutMenuItem> MenuSelectedCommand =>
+            _menuSelectedCommand ?? (_menuSelectedCommand = new DelegateCommand<ProfilePageFlyoutMenuItem>(ExecuteMenuSelectedCommand));
+
+        async void ExecuteMenuSelectedCommand(ProfilePageFlyoutMenuItem item)
         {
-            throw new NotImplementedException();
+
+            var pageName = item.TargetType.Name;
+            await NavigationService.NavigateAsync("NavigationPage/" + pageName);
+
         }
 
-        public DelegateCommand CreateReportCommand => _createReportCommand ?? (_createReportCommand = new DelegateCommand(ExecuteCreateReportCommand));
 
         void ExecuteCreateReportCommand()
         {
@@ -33,6 +46,7 @@ namespace SoteriaApp.ViewModels
             var zone = new Zone();
             zone.ZoneId = (int)ZonesEnum.Red;
             report.Zone = zone;
+          
         }
 
         void ExecuteCreateLearnerCommand()
@@ -43,12 +57,22 @@ namespace SoteriaApp.ViewModels
 
             learnerProfile.LearnerGender = (int)GenderEnum.Male;
             learnerProfile.LearnerGrade = (int)GradeEnum.GradeThree;
+            learnerProfile.MaritalStatus = (int)MaritalStatusEnum.Single;
 
             _soteriaService.CreateNewLearnerProfile(learnerProfile);
         }
 
         public ProfilePageViewModel(INavigationService navigationService, ISoteriaService soteriaService) : base (navigationService)
         {
+          
+                MenuItems = new ObservableCollection<ProfilePageFlyoutMenuItem>(new[]
+                {
+                    new ProfilePageFlyoutMenuItem { Id = 0, Title = "Settings" ,TargetType = typeof(SettingPage)},
+                    new ProfilePageFlyoutMenuItem { Id = 1, Title = "Helpline" ,TargetType = typeof(HelplinePage)},
+                    new ProfilePageFlyoutMenuItem { Id = 2, Title = "Profile" ,TargetType = typeof(ProfilePageDetail)},
+
+                });
+            
         }
 
 

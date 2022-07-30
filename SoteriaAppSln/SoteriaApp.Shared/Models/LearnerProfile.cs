@@ -23,7 +23,7 @@ namespace SoteriaProjectWebApi.Models
         public string ParentSurname { get; set; }
         public string Email { get; set; }
         public int ParentAge { get; set; }
-        public Enum MaritalStatus { get; set; }
+        public int MaritalStatus { get; set; }
         public string ParentCellNumber { get; set; }
 
         [ForeignKey("TeacherProfile")]

@@ -10,7 +10,7 @@ namespace SoteriaApp.Services
     {
         public void CreateNewLearnerProfile(LearnerProfile learnerProfile)
         {
-            ///  DO SOME HTTP STUFF
+            ///  DO SOME HTTP STUFF COPY AND PASTE FROM AUTHENTICATIOSERVICE CODE
         }
     }
 }

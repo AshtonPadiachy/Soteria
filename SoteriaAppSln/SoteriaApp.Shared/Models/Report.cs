@@ -38,7 +38,7 @@ namespace SoteriaProjectWebApi.Models
 
 
        // public ICollection<Zone> Zones { get; set; }    
-        public ICollection<TeacherProfile> TeacherProfiles { get; set; }
+        //public ICollection<TeacherProfile> TeacherProfiles { get; set; }
 
        
 

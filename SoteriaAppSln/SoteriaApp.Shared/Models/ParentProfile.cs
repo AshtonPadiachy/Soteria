@@ -20,6 +20,10 @@ namespace SoteriaProjectWebApi.Models
         public int MaritalStatus { get; set; }
         public string ParentCellNumber { get; set; }
 
+        [ForeignKey("profiletype")]
+        public int ProfileTypeId { get; set; }
+        public ProfileType ProfileTypes { get; set; }
+
 
         [ForeignKey("Authentication")]
 
