@@ -5,12 +5,50 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SoteriaApp.Views.PupilReportPage">
 
-    <StackLayout>
-        
-        
-        
-        
-        
-    </StackLayout>
+    <Frame BackgroundColor="Transparent">
+
+        <Grid BackgroundColor="Transparent">
+
+            <StackLayout BackgroundColor="Transparent">
+                
+                
+                    <Button ImageSource="Reportsicon"
+                             HeightRequest="100"
+                                 WidthRequest="100"
+                                 CornerRadius="360"
+                                 VerticalOptions="CenterAndExpand"
+                                 HorizontalOptions="Center"
+                         Margin="0,250,0,-50"
+                             BackgroundColor="#5ED7F2"
+                         Command="{Binding PupilReportsBtnCommand}"
+                         >
+
+
+                    </Button>
+                
+                <Frame BackgroundColor="Transparent">
+
+                    <Label Text=" Add Reports"
+                           Margin="0,250,0,-50"
+                           FontSize="Medium"
+                           FontFamily="Roboto-Regular.ttf"
+                           TextColor="#5C6898"
+                           VerticalOptions="Center"
+                           VerticalTextAlignment="Center"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center">
+
+
+                    </Label>
+
+                </Frame>
+
+
+            </StackLayout>
+
+            
+            
+        </Grid>
+    </Frame>
   
 </ContentPage>
