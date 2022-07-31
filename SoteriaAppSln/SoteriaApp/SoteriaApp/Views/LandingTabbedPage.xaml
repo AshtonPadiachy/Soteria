@@ -8,8 +8,8 @@
             android:TabbedPage.ToolbarPlacement="Bottom"
             NavigationPage.HasNavigationBar="True" 
             BarBackgroundColor="White"
-            SelectedTabColor="DarkSlateGray"
-            UnselectedTabColor="#5C6898"
+            SelectedTabColor="#5C6898"
+            UnselectedTabColor="Gray"
             BarTextColor="#5C6898">
 
     <views:CommunityChat/>

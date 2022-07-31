@@ -8,6 +8,7 @@
     <None Remove="Fonts\bariol_bold-webfont.ttf" />
     <None Remove="Fonts\bariol_light-webfont.ttf" />
     <None Remove="Fonts\bariol_regular-webfont.ttf" />
+    <None Remove="Fonts\bebas-neue\BebasNeue-Regular.ttf" />
     <None Remove="Fonts\FredokaOne-Regular.ttf" />
     <None Remove="Fonts\NotoSans-Bold.ttf" />
     <None Remove="Fonts\NotoSans-Regular.ttf" />
@@ -29,6 +30,7 @@
     <EmbeddedResource Include="Fonts\Bariol\bariol_bold-webfont.ttf" />
     <EmbeddedResource Include="Fonts\Bariol\bariol_light-webfont.ttf" />
     <EmbeddedResource Include="Fonts\Bariol\bariol_regular-webfont.ttf" />
+    <EmbeddedResource Include="Fonts\bebas-neue\BebasNeue-Regular.ttf" />
     <EmbeddedResource Include="Fonts\FredokaOne-Regular\FredokaOne-Regular.ttf" />
     <EmbeddedResource Include="Fonts\NotoSans\NotoSans-Bold.ttf" />
     <EmbeddedResource Include="Fonts\NotoSans\NotoSans-Regular.ttf" />

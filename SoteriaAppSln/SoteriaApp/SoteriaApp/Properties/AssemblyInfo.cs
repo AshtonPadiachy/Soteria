@@ -19,3 +19,5 @@ using Xamarin.Forms.Xaml;
 [assembly: ExportFont("bariol_bold-webfont.ttf", Alias = "bariol_bold")]
 [assembly: ExportFont("bariol_light-webfont.ttf", Alias = "Roboto-light")]
 [assembly: ExportFont("bariol_regular-webfont.ttf", Alias = "Roboto-Regular")]
+
+[ assembly: ExportFont("BebasNeue - Regular.ttf", Alias = "BebasNeue - Regular")]

@@ -22,6 +22,9 @@ namespace SoteriaApp.ViewModels
         {
             NavigationService.NavigateAsync("LandingTabbedPage");
         }
+
+        
     }
+
 
 }

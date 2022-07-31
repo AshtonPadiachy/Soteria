@@ -5,31 +5,48 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SoteriaApp.Views.PupilReportPage">
 
-    <Frame BackgroundColor="Transparent">
+    <StackLayout BackgroundColor="Transparent">
 
-        <Grid BackgroundColor="Transparent">
+        <Grid BackgroundColor="Transparent" VerticalOptions="CenterAndExpand" 
+                  HorizontalOptions="Center" >
 
-            <StackLayout BackgroundColor="Transparent">
-                
-                
-                    <Button ImageSource="Reportsicon"
-                             HeightRequest="100"
-                                 WidthRequest="100"
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150," />
+                <RowDefinition  Height="150"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width="150"/>
+            </Grid.ColumnDefinitions>
+
+            <BoxView BackgroundColor="Transparent" VerticalOptions="CenterAndExpand" 
+                  HorizontalOptions="Center" HeightRequest="80" WidthRequest="90"   >
+
+            </BoxView>
+
+            <StackLayout BackgroundColor="Transparent"  Margin="90,55,-90,-30">
+
+
+                <Button  ImageSource="Reportsicon"
+                                 
+                                 Margin="50"
+                           HeightRequest="80"
+                                 WidthRequest="90"
                                  CornerRadius="360"
                                  VerticalOptions="CenterAndExpand"
                                  HorizontalOptions="Center"
-                         Margin="0,250,0,-50"
-                             BackgroundColor="#5ED7F2"
-                         Command="{Binding PupilReportsBtnCommand}"
-                         >
+                       
+                             BackgroundColor="Transparent"
+                         Command="{Binding PupilReportsBtnCommand}">
+
+                </Button>
 
 
-                    </Button>
-                
-                <Frame BackgroundColor="Transparent">
+                <Frame BackgroundColor="Transparent" Margin="-5,-75,-5,75" >
 
-                    <Label Text=" Add Reports"
-                           Margin="0,250,0,-50"
+                        <Label Text=" Add Reports"
+                               
                            FontSize="Medium"
                            FontFamily="Roboto-Regular.ttf"
                            TextColor="#5C6898"
@@ -39,16 +56,16 @@
                            HorizontalTextAlignment="Center">
 
 
-                    </Label>
+                        </Label>
 
-                </Frame>
+                    </Frame>
 
+                
 
             </StackLayout>
 
-            
-            
         </Grid>
-    </Frame>
+   
+    </StackLayout>
   
 </ContentPage>

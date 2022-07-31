@@ -19,8 +19,8 @@
                    HorizontalOptions="CenterAndExpand"
                    HorizontalTextAlignment="Center"
                    TextColor="#5C6898"
-                   FontSize="35"
-                   Margin="0,55,0,0">
+                   FontSize="40"
+                   Margin="0,45,0,15">
                 
                 
             </Label>
@@ -36,113 +36,127 @@
                    VerticalOptions="Center" 
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
-                   FontSize="Subtitle"
-                   Margin="0,-15,0,65"
+                   FontSize="Medium"
+                   Margin="0,-20,0,35"
                    TextColor="#5C6898"/>
 
-            <Label Text=" Mental Health is real! Children exhibit different behaviors that are often associated with mental heath"
-                   FontFamily="Roboto-Regular.ttf"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center" 
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
-                   FontSize="Medium"
-                   Margin="0,-50,0,35"
-                   TextColor="#5C6898">
+            <Frame BackgroundColor="Transparent" HasShadow="True">
+                <Label Text="Mental health in children is just as IMPORTANT as they are the FUTURE. "
+                      FontFamily="Roboto-Regular.ttf"
+                       HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand" 
+                          HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                       FontSize="Body"
+                      Margin="0,-35,0,10"
+                     TextColor="#5C6898">
                 
                 
                 
-            </Label>
+                </Label>
+
+            </Frame>
+
 
         </StackLayout>
+        
+        <Frame BackgroundColor="Transparent" Padding="-131,10,-25,-5"  >
 
-      <Grid  VerticalOptions="Center" Margin="0,-20,0,30">
+            <Grid  VerticalOptions="Center" Margin="150,-20,-100,45" >
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="140," />
-            <RowDefinition  Height="140"/>
-            <RowDefinition Height="80" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="172," />
+                    <RowDefinition  Height="172"/>
+                    <RowDefinition Height="92" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="175" />
+                    <ColumnDefinition Width="175"/>
 
-        </Grid.ColumnDefinitions>
+                </Grid.ColumnDefinitions>
 
-        <!--What is mental health-->
-            <BoxView Color="#5C6898" CornerRadius="20" Margin="10,15,0,5"  />
-        <Button Text="What Is Mental Health?"
+                <!--What is mental health-->
+                <BoxView Color="#5C6898" CornerRadius="20" Margin="10,15,0,5" />
+                <Button Text="What Is Mental Health?"
+                       
                HorizontalOptions="Center"
                VerticalOptions="Center" 
+                       
                 BackgroundColor="Transparent"
-                   FontFamily="NotoSans-Regular.ttf"
+                   FontFamily="Robot-Medium.ttf"
                    TextColor="White"
                    FontSize="18"
                    Padding="10,25,5,10"
                 Command="{Binding WhatIsMentalHealthBtnCommand}"/>
 
-        <!--Various Type Page-->
-        <BoxView Grid.Column="1"
-                 Color="#5C6898" CornerRadius="20" Margin="5,15,10,5"   />
-        <Button Grid.Column="1"
+                <!--Various Type Page-->
+                <BoxView Grid.Column="1"
+                 Color="#FDB3CA" CornerRadius="20" Margin="5,15,10,5"   />
+                <Button Grid.Column="1"
                 x:Name="VariousTypeBtn"
                Text="Various 
                       Types"
                HorizontalOptions="Center"
                VerticalOptions="Center"
                  BackgroundColor="Transparent"
-                   FontFamily="NotoSans-Bold.ttf"
+                   FontFamily="BebasNeue-Regular.ttf"
                    TextColor="White"
                    FontSize="18"
                    Padding="0,20,9,10"
                 Command="{Binding VariousTypeBtnCommand}"/>
 
-        <BoxView Grid.Row="1"
-                 Color="#5C6898" CornerRadius="20"  Margin="10,5,0,15"    />
-        <Button Grid.Row="1"
+                <BoxView Grid.Row="1"
+                 Color="#AAE1EB" CornerRadius="20"  Margin="10,5,0,15"    />
+                <Button Grid.Row="1"
                Text="Signs and Symptoms"
                HorizontalOptions="Center"
                VerticalOptions="Center"
                    BackgroundColor="Transparent"
-                   FontFamily="NotoSans-Bold.ttf"
+                   FontFamily="BebasNeue-Regular.ttf"
                    TextColor="White"
                    FontSize="18"
                    Padding="0,0,-5,10"
                 Command="{Binding SignsAndSymptomsBtnCommand}"
                />
 
-        <BoxView Grid.Row="1"
+                <BoxView Grid.Row="1"
                  Grid.Column="1"
                  Color="#5C6898" CornerRadius="20"  Margin="5,5,10,15" />
-        <Button Grid.Row="1"
+                <Button Grid.Row="1"
                Grid.Column="1"
                Text="Influences"
                HorizontalOptions="Center"
                VerticalOptions="Center"
-                   FontFamily="NotoSans-Bold.ttf"
+                   FontFamily="BebasNeue-Regular.ttf"
                   BackgroundColor="Transparent"
                    TextColor="White"
                    FontSize="20"
                    Padding="0,0,0,10"
                 Command="{Binding InfluencesBtnCommand}"/>
 
-        <BoxView Grid.Row="2"
+                <BoxView Grid.Row="2"
                  Grid.ColumnSpan="2"
-                 Color="#5C6898" CornerRadius="20" Margin="9,-5,9,10"  />
-        <Button Grid.Row="2"
-               Grid.ColumnSpan="2"
+                 Color="#5ED7F2
+" CornerRadius="20" Margin="9,-5,9,10"  />
+                <Button Grid.Row="2"   
+               Grid.ColumnSpan="2"   
                Text="Solutions"
                HorizontalOptions="Center"
                VerticalOptions="Center"
-                   FontFamily="NotoSans-Bold.ttf"
+                   FontFamily="BebasNeue-Regular.ttf"
                    BackgroundColor="Transparent"
                    TextColor="White"
                    FontSize="18"
                    Padding="0,0,2,15"
                 Command="{Binding SolutionsBtnCommand}"/>
 
-    </Grid>
+            </Grid>
 
+
+
+        </Frame>
+     
+  
     </StackLayout>
 
 </ContentPage>

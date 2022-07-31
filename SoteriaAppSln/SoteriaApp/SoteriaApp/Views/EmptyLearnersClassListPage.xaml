@@ -5,14 +5,67 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SoteriaApp.Views.EmptyLearnersClassListPage">
 
-    <StackLayout>
+    <StackLayout BackgroundColor="Transparent">
 
-        <Label Text="Learners" HorizontalTextAlignment="Center"  Padding="60,40,60,20"
-                                           TextColor="#5C6898" FontSize="20" 
-                                           FontFamily="FredokaOne-Regular.ttf"/>
+        <Grid BackgroundColor="Transparent" VerticalOptions="CenterAndExpand" 
+                  HorizontalOptions="Center" >
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150," />
+                <RowDefinition  Height="150"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width="150"/>
+            </Grid.ColumnDefinitions>
+
+            <BoxView BackgroundColor="Transparent" VerticalOptions="CenterAndExpand" 
+                  HorizontalOptions="Center" HeightRequest="80" WidthRequest="90"   >
+
+            </BoxView>
+
+            <StackLayout BackgroundColor="Transparent"  Margin="90,55,-90,-30">
 
 
+                <Button  ImageSource="AddLearnericon"
+                                 
+                                 Margin="50"
+                           HeightRequest="90"
+                                 WidthRequest="90"
+                                 CornerRadius="360"
+                                 VerticalOptions="CenterAndExpand"
+                                 HorizontalOptions="Center"
+                       
+                             BackgroundColor="Transparent"
+                         Command="{Binding EmptyLearnersClassListPageBtnCommand}">
+
+                </Button>
+
+
+                <Frame BackgroundColor="Transparent" Margin="-5,-80,-5,80" >
+
+                    <Label Text=" Add Learners"
+                               
+                           FontSize="Medium"
+                           FontFamily="Roboto-Regular.ttf"
+                           TextColor="#5C6898"
+                           VerticalOptions="Center"
+                           VerticalTextAlignment="Center"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center">
+
+
+                    </Label>
+
+                </Frame>
+
+
+
+            </StackLayout>
+
+        </Grid>
 
     </StackLayout>
-  
+
 </ContentPage>
