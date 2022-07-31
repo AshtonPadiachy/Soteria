@@ -4,43 +4,66 @@
              x:Class="SoteriaApp.Views.Controls.ProfileDetailControl"
              >
 
-    <StackLayout>
-       
-        
-        
-        
+    <StackLayout BackgroundColor="Transparent">
 
-        
-        <Frame BackgroundColor="Transparent" Padding="12"
-               CornerRadius="0">
-            <StackLayout Orientation="Horizontal">
-                 <Image Source="teacher.png" HeightRequest="70"
-                       Aspect="AspectFit" HorizontalOptions="Start"/>
-                 <Label Padding="10,0,0,0" Text="Mrs Dalindyebo" HorizontalTextAlignment="Start"
-                       TextColor="Blue" FontSize="16" VerticalOptions="CenterAndExpand"/>
-                <Label Padding="-120,0,20,-130" Text="Educator" HorizontalTextAlignment="Start"
-                       TextColor="Blue" FontSize="16" VerticalOptions="CenterAndExpand"
-                       VerticalTextAlignment="Start" />
+        <Frame BackgroundColor="Transparent" HorizontalOptions="Center" 
+               VerticalOptions="CenterAndExpand" Margin="0,20,0,0" >
+
+            <Image Source="teacher">
                 
-             
-
-            </StackLayout>
-
+                
+            </Image>
+            
         </Frame>
-       
 
-        <Button x:Name="Learners"  Text="Learners"
-                            HeightRequest="50" BackgroundColor="#AAE1EB"
-                            TextColor="White" CornerRadius="5" FontFamily="Roboto-Regular.ttf"
-                            HorizontalOptions="Center" WidthRequest="320" Command="{Binding LearnersPageBtnCommand}"
-                Margin="0,300,0,20"/>
+        <Label Margin="0,-8,0,10" Padding="0,0,0,10" Text="Mrs Dalindyebo" HorizontalTextAlignment="Center"
+                       FontSize="Medium"
+                           FontFamily="Roboto-Medium.ttf"
+                           TextColor="#5C6898" VerticalOptions="CenterAndExpand"
+               VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" />
 
-        <Button x:Name="Reports"  Text="Reports"
-                            HeightRequest="50" BackgroundColor="#7D86AD"
-                            TextColor="White" CornerRadius="5" FontFamily="Roboto-Regular.ttf"
-                            HorizontalOptions="Center" WidthRequest="320" Command="{Binding ReportsPageBtnCommand}"
-             />
+        <Label Margin="0,-23,0,23" Padding="0,0,0,15" Text="Educator" HorizontalTextAlignment="Center"
+                       FontSize="Subtitle"
+                           FontFamily="Roboto-Regular.ttf"
+                           TextColor="#7D86AD" VerticalOptions="CenterAndExpand"
+               VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" />
 
+        <Label Margin="0,-40,0,40" Padding="0,0,0,30" Text="edit info" HorizontalTextAlignment="Center"
+                       FontSize="Small"
+                           FontFamily="Roboto-Regular.ttf"
+                           TextColor="DeepSkyBlue" VerticalOptions="CenterAndExpand"
+               VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" />
+
+        <StackLayout BackgroundColor="Transparent" HorizontalOptions="Center" 
+               VerticalOptions="CenterAndExpand" Margin="0,-20,0,65" Spacing="5">
+
+            <Button x:Name="Learners"  Text="Learners" 
+                            HeightRequest="65" BackgroundColor="#FDB3CA"
+                            TextColor="White" CornerRadius="5" 
+                FontFamily="Roboto-Regular.ttf"
+                            HorizontalOptions="Center" 
+                WidthRequest="320" Command="{Binding LearnersPageBtnCommand}"
+                Margin="0,50,0,50"/>
+
+
+            <Frame BackgroundColor="Transparent" Margin="0,-35,0,70">
+
+                <Button x:Name="Reports"  Text="Reports"
+                            HeightRequest="60" BackgroundColor="#7D86AD"
+                            TextColor="White" CornerRadius="5" 
+                FontFamily="Roboto-Regular.ttf"
+                            HorizontalOptions="Center" 
+                WidthRequest="320" Command="{Binding ReportsPageBtnCommand}"
+                 Margin="0,0,0,100" />
+
+            </Frame>
+
+           
+
+
+
+        </StackLayout>
+        
     </StackLayout>
     
 </ContentView>

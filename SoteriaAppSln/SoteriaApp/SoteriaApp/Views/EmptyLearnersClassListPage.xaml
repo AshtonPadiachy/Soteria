@@ -43,7 +43,7 @@
                 </Button>
 
 
-                <Frame BackgroundColor="Transparent" Margin="-5,-80,-5,80" >
+                <Frame BackgroundColor="Transparent" Margin="-5,-85,-5,90" >
 
                     <Label Text=" Add Learners"
                                
