@@ -25,6 +25,8 @@ namespace SoteriaApp.Views
 
 //            BindingContext = new ProfilePageFlyoutViewModel();
 //            ListView = MenuItemsListView;
+
+
         }
 
     }

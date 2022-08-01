@@ -65,7 +65,7 @@
                                             Text="{Binding Title}" 
                                             FontSize="24" 
                                             TextColor="#5C6898" 
-                                            FontFamily="OpenSans-Regular.ttf"
+                                            FontFamily="Roboto-Regular.ttf"
                                             />
 
                                  </StackLayout>
