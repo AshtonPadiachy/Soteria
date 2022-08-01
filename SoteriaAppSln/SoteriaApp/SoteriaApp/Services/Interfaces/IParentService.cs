@@ -2,11 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SoteriaApp.Services.Interfaces
 {
-    public interface ISoteriaService
+    public interface IParentService
     {
-        void CreateNewLearnerProfile(LearnerProfile learnerProfile);
+        Task<ParentProfile> CreateProfile(ParentProfile ParentProfile);
     }
+}
 }

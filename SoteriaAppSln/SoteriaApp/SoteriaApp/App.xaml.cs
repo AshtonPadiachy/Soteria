@@ -42,7 +42,7 @@ namespace SoteriaApp
             containerRegistry.RegisterSingleton<IVersionTracking, VersionTrackingImplementation>();
             containerRegistry.RegisterSingleton<IPreferences, PreferencesImplementation>();
 
-            containerRegistry.Register<ISoteriaService, SoteriaService>();
+            containerRegistry.Register<ISoteriaService, LearnerService>();
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<LandingTabbedPage, LandingTabbedPageViewModel>();
