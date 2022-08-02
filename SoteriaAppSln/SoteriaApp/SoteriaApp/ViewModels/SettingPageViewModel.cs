@@ -10,6 +10,7 @@ namespace SoteriaApp.ViewModels
 {
     public class SettingPageViewModel : ViewModelBase
     {
+       
         private readonly IPreferences _preferences;
 
         public SettingPageViewModel(INavigationService navigationService, IPreferences preferences)

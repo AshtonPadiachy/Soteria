@@ -21,7 +21,8 @@
                              Margin="0"
                              Padding="0,1,0,0"
                              HasShadow="False"
-                             HeightRequest="60"
+                             HeightRequest="90"
+                            WidthRequest="320"
                                >
                 <Button Text="Colour Zones of Regulation"
                        TextColor="White"
@@ -37,11 +38,12 @@
                              Margin="0"
                              Padding="0,1,0,0"
                              HasShadow="False"
-                             HeightRequest="60"
+                              HeightRequest="90"
+                            WidthRequest="320"
                                >
                 <Button Text="Coping with Disorders"
                        TextColor="White"
-                       BackgroundColor="#AAE1EB"
+                       BackgroundColor="#5ED7F2"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
                         Command="{Binding CopingWithBtnCommand}"
@@ -53,7 +55,8 @@
                              Margin="0"
                              Padding="0,1,0,0"
                              HasShadow="False"
-                             HeightRequest="60"
+                             HeightRequest="90"
+                             WidthRequest="320"
                             
                              >
 

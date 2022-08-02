@@ -28,7 +28,7 @@
             </Grid.ColumnDefinitions>
 
 
-            <BoxView Color="#ffffe8" CornerRadius="20" Margin="10,15,0,5"  />
+            <BoxView Color="Yellow" CornerRadius="20" Margin="10,15,0,5"  />
             <ImageButton x:Name="YellowZone" Source="angel.png"
                HorizontalOptions="Center"
                VerticalOptions="Center"
@@ -39,7 +39,7 @@
 
 
             <BoxView Grid.Column="1" 
-                 Color="#EAF2F0" CornerRadius="20" Margin="5,15,10,5"   />
+                 Color="LightGreen" CornerRadius="20" Margin="5,15,10,5"   />
             <ImageButton Grid.Column="1"
                Source="happy.png"
                HorizontalOptions="Center"
@@ -51,7 +51,7 @@
 
 
             <BoxView Grid.Row="1"
-                 Color="#E6ECF6" CornerRadius="20"  Margin="10,5,0,15"    />
+                 Color="lightblue" CornerRadius="20"  Margin="10,5,0,15"    />
             <ImageButton Grid.Row="1"
                Source="sleepy.png"
                HorizontalOptions="Center"
@@ -63,7 +63,7 @@
 
             <BoxView Grid.Row="1"
                  Grid.Column="1"
-                 Color="#F6E3DE" CornerRadius="20"  Margin="5,5,10,15" />
+                 Color="LightPink" CornerRadius="20"  Margin="5,5,10,15" />
             <ImageButton Grid.Row="1"
                Grid.Column="1"
                Source="angry.png"
