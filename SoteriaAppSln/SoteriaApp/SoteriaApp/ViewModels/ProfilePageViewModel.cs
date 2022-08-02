@@ -27,7 +27,7 @@ namespace SoteriaApp.ViewModels
             await NavigationService.NavigateAsync("NavigationPage/" + pageName);
         }
 
-        ISoteriaService _soteriaService;
+        ILearnerService _learnerService;
 
         DelegateCommand _createReportCommand;
 
@@ -59,10 +59,10 @@ namespace SoteriaApp.ViewModels
             learnerProfile.LearnerGrade = (int)GradeEnum.GradeThree;
             learnerProfile.MaritalStatus = (int)MaritalStatusEnum.Single;
 
-            _soteriaService.CreateNewLearnerProfile(learnerProfile);
+            _learnerService.CreateProfile(learnerProfile);
         }
 
-        public ProfilePageViewModel(INavigationService navigationService, ISoteriaService soteriaService) : base(navigationService)
+        public ProfilePageViewModel(INavigationService navigationService) : base(navigationService)
         {
             MenuItems = new ObservableCollection<ProfilePageFlyoutMenuItem>(new[]
             {

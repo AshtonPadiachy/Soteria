@@ -10,5 +10,5 @@ namespace SoteriaApp.Services.Interfaces
     {
         Task<ParentProfile> CreateProfile(ParentProfile ParentProfile);
     }
-}
+
 }

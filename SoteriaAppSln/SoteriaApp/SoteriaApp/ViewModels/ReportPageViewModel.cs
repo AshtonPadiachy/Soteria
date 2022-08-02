@@ -10,7 +10,7 @@ namespace SoteriaApp.ViewModels
 {
     public class ReportPageViewModel : ViewModelBase
     {
-        private ISoteriaService _soteriaservice;
+      
 
 
         public ReportPageViewModel(INavigationService navigationService) : base(navigationService)

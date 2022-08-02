@@ -13,7 +13,7 @@ namespace SoteriaApp.ViewModels
     {
 
    
-        ISoteriaService _soteriaService;
+       // ISoteriaService _soteriaService;
         public ObservableCollection<ProfilePageFlyoutMenuItem> MenuItems { get; set; }
         private DelegateCommand<ProfilePageFlyoutMenuItem> _menuSelectedCommand;
         public DelegateCommand<ProfilePageFlyoutMenuItem> MenuSelectedCommand =>

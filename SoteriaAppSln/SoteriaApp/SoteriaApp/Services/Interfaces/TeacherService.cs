@@ -23,12 +23,12 @@ namespace SoteriaApp.Services.Interfaces
 
         public async Task<TeacherProfile> CreateProfile(TeacherProfile teacherProfile)
         {
-            Uri uri = new Uri(_appConfiguration.SoteriaServerUrl + "api/teacherProfile");
+            Uri uri = new Uri(_appConfiguration.SoteriaServerUrl + "api/TeacherProfile");
 
             try
             {
-                var profile = new TeacherProfile() {teacherProfile};
-                string requestJson = JsonConvert.SerializeObject(profile);
+                
+                string requestJson = JsonConvert.SerializeObject(teacherProfile);
 
                 StringContent content = new StringContent(requestJson, Encoding.UTF8, "application/json");
 

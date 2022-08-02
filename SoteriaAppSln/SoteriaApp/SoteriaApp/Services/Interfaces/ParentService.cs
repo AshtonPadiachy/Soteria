@@ -27,8 +27,8 @@ namespace SoteriaApp.Services.Interfaces
 
             try
             {
-                var profile = new ParentProfile() {parentProfile};
-                string requestJson = JsonConvert.SerializeObject(profile);
+               
+                string requestJson = JsonConvert.SerializeObject(parentProfile);
 
                 StringContent content = new StringContent(requestJson, Encoding.UTF8, "application/json");
 
