@@ -8,5 +8,7 @@ namespace SoteriaApp.Views
         {
             InitializeComponent();
         }
+
+        SearchBar searchBar = new SearchBar { Placeholder = "Type a search keyword ..." };
     }
 }
