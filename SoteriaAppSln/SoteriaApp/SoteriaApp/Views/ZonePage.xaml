@@ -32,6 +32,7 @@
             <ImageButton x:Name="YellowZone" Source="angel.png"
                HorizontalOptions="Center"
                VerticalOptions="Center"
+               BackgroundColor="Transparent"
                Margin="55,15,45,0" Command="{Binding YellowZonesPageCommand}"/>
 
 

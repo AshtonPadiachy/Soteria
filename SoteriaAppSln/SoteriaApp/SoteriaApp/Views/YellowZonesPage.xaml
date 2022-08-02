@@ -3,15 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="SoteriaApp.Views.PrismContentPage1">
-
-
+             x:Class="SoteriaApp.Views.YellowZonesPage">
     <StackLayout BackgroundColor="#ffffe8">
-            
+
         <Label Text=" Yellow Zone " HorizontalTextAlignment="Center"  Padding="0,50,0,0"
                                            TextColor="#ECBD00" FontSize="45" 
                                            FontFamily="FredokaOne-Regular.ttf"/>
-        
+
 
 
 
