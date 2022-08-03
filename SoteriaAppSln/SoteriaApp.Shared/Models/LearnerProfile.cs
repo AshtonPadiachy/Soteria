@@ -29,6 +29,8 @@ namespace SoteriaProjectWebApi.Models
         [ForeignKey("TeacherProfile")]
         public int TeacherProfileId { get; set; }
 
+        public TeacherProfile TeacherProfile { get; set; }
+
         public ICollection <Report> Reports { get; set; }
         
 

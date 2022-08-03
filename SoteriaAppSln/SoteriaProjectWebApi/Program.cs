@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using SoteriaProjectWebApi.Data;
+using SoteriaProjectWebApi.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+
+builder.Services.AddScoped<ISoteriaDbRepository, SoteriaDbRepository>();
 
 // Addss DbInitialiser to DI Container
 builder.Services.AddTransient<DbInitialiser>();

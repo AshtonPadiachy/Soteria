@@ -52,6 +52,34 @@ namespace SoteriaProjectWebApi.Data
                 _context.SaveChanges();
             }
 
+            var teacherProfile = new TeacherProfile();
+
+
+            if (!_context.TeacherProfiles.Any())
+            {
+                teacherProfile.Email = "janejoe@hudson.co.za";
+                teacherProfile.TeacherName = "Jane";
+                teacherProfile.TeacherSurname = "Joe";
+                teacherProfile.TeacherCellNumber = "0823566877";
+                teacherProfile.ProfileTypeId = 1;
+
+                var profile = new Authentication();
+                profile.Email = "janejoe@hudson.co.za";
+                profile.Password = "123456#";
+                profile.Enabled = true;
+                profile.ProfileTypeId = 1;
+
+
+                _context.Authentications.Add(profile);
+
+                teacherProfile.LearnerProfiles = new List<LearnerProfile>();
+
+                _context.TeacherProfiles.Add(teacherProfile);
+
+                _context.SaveChanges();
+
+            }
+
             var learnerProfile = new LearnerProfile();
 
 
@@ -69,40 +97,20 @@ namespace SoteriaProjectWebApi.Data
                 learnerProfile.ParentAge = 56;
                 learnerProfile.MaritalStatus = 2;
                 learnerProfile.ParentCellNumber = "0723904705";
+                learnerProfile.TeacherProfile = teacherProfile;
+
 
                 _context.LearnerProfiles.Add(learnerProfile);
 
-                _context.SaveChanges();
-
-
-            }
-
-            if (!_context.TeacherProfiles.Any())
-            {
-                var teacherProfile = new TeacherProfile();
-                teacherProfile.Email = "janejoe@hudson.co.za";
-                teacherProfile.TeacherName = "Jane";
-                teacherProfile.TeacherSurname = "Joe";
-                teacherProfile.TeacherCellNumber = "0823566877";
-                teacherProfile.ProfileTypeId = 1;
-
-                var profile = new Authentication();
-                profile.Email = "janejoe@hudson.co,za";
-                profile.Password = "123456#";
-                profile.Enabled = true;
-
-                teacherProfile.LearnerProfiles = new List<LearnerProfile>();
                 teacherProfile.LearnerProfiles.Add(learnerProfile);
 
-                _context.TeacherProfiles.Add(teacherProfile);
-
-                _context.Authentications.Add(profile);
-
 
                 _context.SaveChanges();
 
 
             }
+
+
 
             if (!_context.ParentProfiles.Any())
             {
@@ -119,6 +127,7 @@ namespace SoteriaProjectWebApi.Data
                 profile.Email = "hlubijozi@gmail.com";
                 profile.Password = "12345#";
                 profile.Enabled = true;
+                profile.ProfileTypeId = 2;
 
                 _context.ParentProfiles.Add(parentProfile);
                 _context.Authentications.Add(profile);

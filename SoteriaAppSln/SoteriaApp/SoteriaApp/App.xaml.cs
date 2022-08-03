@@ -43,6 +43,8 @@ namespace SoteriaApp
             containerRegistry.RegisterSingleton<IPreferences, PreferencesImplementation>();
 
             containerRegistry.Register<ILearnerService, LearnerService>();
+            containerRegistry.Register<IAuthentication, AuthenticationService>();
+            containerRegistry.Register<IAppConfiguration, AppConfigurationService>();
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<LandingTabbedPage, LandingTabbedPageViewModel>();

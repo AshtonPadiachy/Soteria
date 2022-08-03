@@ -104,7 +104,7 @@ namespace SoteriaProjectWebApi.Data
         {
             if (fullfetch)
             {
-                var parentprofile = _soteriaContext.ParentProfiles.Include(p => p.TeacherProfiles).ToList();
+                var parentprofile = _soteriaContext.ParentProfiles.ToList();
                 return parentprofile;
             }
             else
@@ -119,7 +119,7 @@ namespace SoteriaProjectWebApi.Data
         {
             if (fullfetch)
             {
-                var parentprofile = _soteriaContext.ParentProfiles.Where(p => p.Email == email).Include(p => p.TeacherProfiles).FirstOrDefault();
+                var parentprofile = _soteriaContext.ParentProfiles.Where(p => p.Email == email).FirstOrDefault();
                 return parentprofile;
             }
             else
@@ -133,7 +133,7 @@ namespace SoteriaProjectWebApi.Data
         {
             if (fullfetch)
             {
-                var parentprofile = _soteriaContext.ParentProfiles.Where(p => p.ParentProfileId == parentprofileId).Include(p => p.TeacherProfiles).FirstOrDefault();
+                var parentprofile = _soteriaContext.ParentProfiles.Where(p => p.ParentProfileId == parentprofileId).FirstOrDefault();
                 return parentprofile;
 
             }
@@ -151,7 +151,7 @@ namespace SoteriaProjectWebApi.Data
         #region LearnerProfile
         public LearnerProfile CreateNewLearnerProfile(LearnerProfile learnerProfile)
         {
-            _soteriaContext.learnerProfiles.Add(learnerProfile);
+            _soteriaContext.LearnerProfiles.Add(learnerProfile);
             _soteriaContext.SaveChanges();
 
             return learnerProfile;
@@ -159,17 +159,17 @@ namespace SoteriaProjectWebApi.Data
         }
         public bool DoesLearnerProfileExistById(int learnerId)
         {
-            return _soteriaContext.learnerProfiles.Any(l => l.LearnerId == learnerId);
+            return _soteriaContext.LearnerProfiles.Any(l => l.LearnerId == learnerId);
         }
         public bool DoesLearnerProfileExitByIdNumber(string IdNumber)
         {
-            return _soteriaContext.learnerProfiles.Any(learner => learner.IdNumber == IdNumber);
+            return _soteriaContext.LearnerProfiles.Any(learner => learner.IdNumber == IdNumber);
 
         }
         public List<LearnerProfile> GetAllLearnerProfiles()
         {
            
-                var learnerprofile = _soteriaContext.learnerProfiles.ToList();
+                var learnerprofile = _soteriaContext.LearnerProfiles.ToList();
                 return learnerprofile;
             
         }
@@ -177,13 +177,13 @@ namespace SoteriaProjectWebApi.Data
         {
             if (fullFetch)
             {
-                var learnerProfile = _soteriaContext.learnerProfiles.Where(l => l.LearnerId == learnerId).Include(l => l.LearnerId).FirstOrDefault();
+                var learnerProfile = _soteriaContext.LearnerProfiles.Where(l => l.LearnerId == learnerId).Include(l => l.LearnerId).FirstOrDefault();
                 return learnerProfile;
             }
             else
             {
                 ;
-                var learnerProfile = _soteriaContext.learnerProfiles.Where(l => l.LearnerId == learnerId).FirstOrDefault();
+                var learnerProfile = _soteriaContext.LearnerProfiles.Where(l => l.LearnerId == learnerId).FirstOrDefault();
                 return learnerProfile;
             }
         }
@@ -191,12 +191,12 @@ namespace SoteriaProjectWebApi.Data
         {
             if (fullfetch)
             {
-                var learnerprofile = _soteriaContext.learnerProfiles.Where(l => l.IdNumber == idNumber).FirstOrDefault();
+                var learnerprofile = _soteriaContext.LearnerProfiles.Where(l => l.IdNumber == idNumber).FirstOrDefault();
                 return learnerprofile;
             }
             else
             {
-                var learnerprofile = _soteriaContext.learnerProfiles.Where(_ => _.IdNumber == idNumber).FirstOrDefault();
+                var learnerprofile = _soteriaContext.LearnerProfiles.Where(_ => _.IdNumber == idNumber).FirstOrDefault();
                 return learnerprofile;
 
             }
@@ -204,7 +204,7 @@ namespace SoteriaProjectWebApi.Data
         }
         public IList<LearnerProfile> GetLearnerProfilesByTeacherProfileId(int teacherprofileId)
         {
-            var learnerprofiles = _soteriaContext.learnerProfiles.Where(l => l.TeacherProfileId == teacherprofileId).ToList();
+            var learnerprofiles = _soteriaContext.LearnerProfiles.Where(l => l.TeacherProfileId == teacherprofileId).ToList();
             return learnerprofiles;
         }
         #endregion
@@ -243,7 +243,7 @@ namespace SoteriaProjectWebApi.Data
         public bool PerformAuthenticationCheck(string email, string password)
         {
             var person = _soteriaContext.Authentications.Where(a => a.Email == email && a.Password == password).FirstOrDefault();
-            if (person! == null)
+            if (person != null)
             {
                 return true;
             }
@@ -251,7 +251,7 @@ namespace SoteriaProjectWebApi.Data
             return false;
         }
 
-        public teacherProfile CreateNewProfile(teacherProfile teacherProfile)
+        public TeacherProfile CreateNewProfile(TeacherProfile teacherProfile)
         {
             throw new NotImplementedException();
         }

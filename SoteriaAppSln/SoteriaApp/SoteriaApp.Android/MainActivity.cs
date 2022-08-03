@@ -3,6 +3,8 @@ using Android.Content.PM;
 using Android.OS;
 using Prism;
 using Prism.Ioc;
+using SoteriaApp.Droid.Services;
+using SoteriaApp.Services.Interfaces;
 
 namespace SoteriaApp.Droid
 {
@@ -31,6 +33,9 @@ namespace SoteriaApp.Droid
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
             // Register any platform specific implementations
+
+            containerRegistry.Register<IHttpNativeHandler, NoSslAndroidHandler>();
+
         }
         // public App()
         // {

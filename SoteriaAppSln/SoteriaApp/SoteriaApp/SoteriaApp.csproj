@@ -4,6 +4,14 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>$(DefineConstants)TRACE;LOCALSERVER</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>$(DefineConstants)TRACE;LOCALSERVER</DefineConstants>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Remove="Fonts\bariol_bold-webfont.ttf" />
     <None Remove="Fonts\bariol_light-webfont.ttf" />
