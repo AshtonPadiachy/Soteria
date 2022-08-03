@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace SoteriaApp.Services.Interfaces
 {
-    public  interface ITeacherService
+    public interface IReportService
     {
-        Task<TeacherProfile> CreateProfile(TeacherProfile teacherProfile);
-    } 
+        Task<Report> CreateReport (Report report);
+    }
 }

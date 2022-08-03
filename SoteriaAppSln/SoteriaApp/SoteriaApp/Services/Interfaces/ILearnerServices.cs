@@ -1,4 +1,5 @@
-﻿using SoteriaProjectWebApi.Models;
+﻿
+using SoteriaProjectWebApi.Models;
 using System.Threading.Tasks;
 
 namespace SoteriaApp.Services.Interfaces
