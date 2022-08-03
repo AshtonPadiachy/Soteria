@@ -23,10 +23,10 @@
                                            TextColor="#5C6898" FontSize="25" FontAttributes="Bold"  
                                            FontFamily="FredokaOne-Regular.ttf" CharacterSpacing="0.1"/>
 
-                                    <Label Text="{Binding Content}" VerticalTextAlignment="Center" 
-                                           HorizontalTextAlignment="Center" FontSize="Medium" TextColor="#5C6898" 
+                                    <Label Text="{Binding Content}" VerticalTextAlignment="Center" VerticalOptions="Center"
+                                           HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="Medium" TextColor="#5C6898" 
                                            FontFamily="Roboto-Regular.ttf" CharacterSpacing="0.10"
-                                           />
+                                           LineBreakMode="NoWrap" MaxLines="8"/>
 
                                    
                                 </StackLayout>
