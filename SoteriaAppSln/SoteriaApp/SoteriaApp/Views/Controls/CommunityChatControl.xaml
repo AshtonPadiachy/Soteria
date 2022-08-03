@@ -2,9 +2,40 @@
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SoteriaApp.Views.Controls.CommunityChatControl">
-  <ContentView.Content>
-      <StackLayout>
-          <Label Text="Hello Xamarin.Forms!" />
-      </StackLayout>
-  </ContentView.Content>
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <!-- Place new controls here -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start" Margin="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="7*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Text="&lt;" WidthRequest="50" x:Name="btnBack" Clicked="BtnBack_Clicked"
+                Grid.Column="0" Grid.Row="0" FontAttributes="Bold" FontSize="Small" HeightRequest="40"
+                BackgroundColor="#f2f2f2" TextColor="#7D86AD" HorizontalOptions="Start"
+                VerticalOptions="Center"/>
+            <Entry x:Name="entryURL" HorizontalOptions="FillAndExpand" VerticalOptions="Start"
+                Text="https://www.mentalhealthforum.net/forum/"
+                HeightRequest="45" Grid.Row="0" Grid.Column="1" Completed="EntryURL_Completed"/>
+
+            <Button x:Name="btnLoad" Text="GO" HorizontalOptions="Start" Grid.Row="0"
+                WidthRequest="50" FontSize="Small" BackgroundColor="#7D86AD" TextColor="#fff"
+                HeightRequest="40" VerticalOptions="Center"
+                Grid.Column="2" IsVisible="True" Clicked="BtnLoad_Clicked"/>
+
+            <ActivityIndicator x:Name="activityIndicator" Grid.Row="0" Color="#7D86AD"
+                HorizontalOptions="Center" VerticalOptions="Center"
+                Grid.Column="2" IsVisible="False" HeightRequest="35" WidthRequest="35"/>
+        </Grid>
+
+        <WebView Grid.Row="1" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+
+        Navigating="MyWebView_Navigating" x:Name="myWebView" Navigated="MyWebView_Navigated"/>
+    </Grid>
 </ContentView>
