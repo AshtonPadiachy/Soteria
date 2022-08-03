@@ -2,9 +2,9 @@
 
 namespace SoteriaApp.Views
 {
-    public partial class PrismContentPage1 : ContentPage
+    public partial class YellowZonesPage : ContentPage
     {
-        public PrismContentPage1()
+        public YellowZonesPage()
         {
             InitializeComponent();
         }

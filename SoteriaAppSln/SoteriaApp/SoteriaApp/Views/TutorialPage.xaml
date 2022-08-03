@@ -43,17 +43,15 @@
                                 
                             </Frame>
 
-                            <Frame BackgroundColor="Transparent">
+                            
 
-                                <StackLayout>
+                                
 
                                     <Image Source="{Binding Pictures}" HeightRequest="225" Aspect="AspectFill"
-                                           HorizontalOptions="CenterAndExpand" Margin="0,-15,8,40" VerticalOptions="CenterAndExpand"
+                                           HorizontalOptions="CenterAndExpand" Margin="-3,-2,7,35" VerticalOptions="CenterAndExpand"
                                            />
 
-                                </StackLayout>
-
-                            </Frame>
+                              
 
                         </StackLayout>
 
@@ -66,10 +64,10 @@
                 
                 <x:Array Type="{x:Type views:CarouselItem}" >
                
-                    <views:CarouselItem Title="Introduction" Content="KidReady is a Mental Health app that focuses on the mental wellbeing of children in the early childhood development phase." Pictures="DepressedChildmdpi.png" />
-                    <views:CarouselItem Title="Insights" Content="Discover more on Mental Health in early childhood development. "  Pictures="InsightsTutorialmdpi.png" />
-                    <views:CarouselItem Title="Report" Content="Stay informed on your child's daily performance and behaviors." />
-                    <views:CarouselItem Title="Zones of Regulation" Content="&lt;span style=&quot;color: blue;&quot;&gt;Blue&lt;/span&gt; ,&lt;span style=&quot;color:#16B900;&quot;&gt;Green&lt;/span&gt;,&lt;span style=&quot;color: #EBEB00;&quot;&gt;Yellow&lt;/span&gt;, and &lt;span style=&quot;color: Red;&quot;&gt;Red&lt;/span&gt; are the 4 colours of alertness and emotion that assists educators to identify the feelings and level of alertness in children."  />
+                    <views:CarouselItem Title="Introduction" Content="KidReady is a Mental Health app that focuses on the mental wellbeing of children in the early childhood development phase." Pictures="DepressedChild.png" />
+                    <views:CarouselItem Title="Insights" Content="Discover more on Mental Health in early childhood development. "  Pictures="InsightsTutorial.png" />
+                    <views:CarouselItem Title="Report" Content="Stay informed on your child's daily performance and behaviors." Pictures="Reports"/>
+                    <views:CarouselItem Title="Zones of Regulation" Content="&lt;span style=&quot;color: blue;&quot;&gt;Blue&lt;/span&gt; ,&lt;span style=&quot;color:#16B900;&quot;&gt;Green&lt;/span&gt;,&lt;span style=&quot;color: #EBEB00;&quot;&gt;Yellow&lt;/span&gt;, and &lt;span style=&quot;color: Red;&quot;&gt;Red&lt;/span&gt; are the 4 colours of alertness and emotion that assists educators to identify the feelings and level of alertness in children."  Pictures="ZoneTutorial"/>
 
                 </x:Array>
             </CarouselView.ItemsSource>

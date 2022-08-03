@@ -28,10 +28,11 @@
             </Grid.ColumnDefinitions>
 
 
-            <BoxView Color="LightYellow" CornerRadius="20" Margin="10,15,0,5"  />
+            <BoxView Color="Yellow" CornerRadius="20" Margin="10,15,0,5"  />
             <ImageButton x:Name="YellowZone" Source="angel.png"
                HorizontalOptions="Center"
                VerticalOptions="Center"
+               BackgroundColor="Transparent"
                Margin="55,15,45,0" Command="{Binding YellowZonesPageCommand}"/>
 
 
@@ -62,7 +63,7 @@
 
             <BoxView Grid.Row="1"
                  Grid.Column="1"
-                 Color="MediumVioletRed" CornerRadius="20"  Margin="5,5,10,15" />
+                 Color="LightPink" CornerRadius="20"  Margin="5,5,10,15" />
             <ImageButton Grid.Row="1"
                Grid.Column="1"
                Source="angry.png"

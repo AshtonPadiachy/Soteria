@@ -6,9 +6,9 @@ using System.Linq;
 
 namespace SoteriaApp.ViewModels
 {
-    public class PrismContentPage1ViewModel : BindableBase
+    public class YellowZonesPageViewModel : BindableBase
     {
-        public PrismContentPage1ViewModel()
+        public YellowZonesPageViewModel()
         {
 
         }

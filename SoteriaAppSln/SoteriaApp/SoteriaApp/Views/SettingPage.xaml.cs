@@ -28,5 +28,7 @@ namespace SoteriaApp.Views
         {
             Navigation.PushAsync(new AboutUsPage());
         }
+
+        
     }
 }
