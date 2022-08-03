@@ -21,7 +21,7 @@ namespace SoteriaApp.ViewModels
 
         private void OnPupilReportsBtn()
         {
-            NavigationService.NavigateAsync("GradeClassListPage");
+            NavigationService.NavigateAsync("ReportPage");
         }
     }
 

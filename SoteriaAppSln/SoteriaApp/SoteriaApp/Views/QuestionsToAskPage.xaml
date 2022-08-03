@@ -26,7 +26,7 @@
                                     <Label Text="{Binding Content}" VerticalTextAlignment="Center" VerticalOptions="Center"
                                            HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="Medium" TextColor="#5C6898" 
                                            FontFamily="Roboto-Regular.ttf" CharacterSpacing="0.10"
-                                           LineBreakMode="NoWrap" MaxLines="8"/>
+                                           />
 
                                    
                                 </StackLayout>
@@ -44,20 +44,33 @@
                 <x:Array Type="{x:Type views:CarouselItem2}" >
 
                     <views:CarouselItem2 Title="As a Parent/Guardian" Content=" 1. How was your day today?
+                                         
  	                                                                          2. Who did you play with today?
+                                         
  	                                                                          3. Did anything happen in school that made you unhappy?
+                                         
  	                                                                          4. Was anyone mean to you?
+                                         
  	                                                                          5. Were you mean to someone in school?
+                                         
  	                                                                          6. Are you still enjoying going to school? (Or something of that effect)
+                                         
  	                                                                          7. What did you do in class today?
+                                         
  	                                                                          8. What activity do you enjoying doing in class?" />
                     
                     <views:CarouselItem2 Title="As a Teacher" Content="1. How was the rest of your day yesterday?
+                                         
                                                                    	 2. Did you do anything fun when you got home?
+                                         
 	                                                                 3. Do you practice what we did in class when you get home?
+                                         
 	                                                                 4. Which activities do you look forward to in class?
+                                         
 	                                                                 5. Did you tell someone about your day?
+                                         
 	                                                                 6. Who do you play with at home?
+                                         
 	                                                                 7. What fun activities do you do at home? " />
                     
                 </x:Array>
