@@ -6,16 +6,44 @@
              x:Class="SoteriaApp.Views.ReportPage">
 
     <StackLayout BackgroundColor="Transparent">
-
-        <Frame BackgroundColor="Black">
-            <Image Source="">
-                
-                
-            </Image>
-            
+        <Frame BackgroundColor="Transparent" Margin="-10,0,20,0">
+            <Button BackgroundColor="Transparent"
+                    HeightRequest="40"
+                    WidthRequest="40" ImageSource="Shareicon" VerticalOptions="EndAndExpand"
+                   HorizontalOptions="End">
+            </Button>
         </Frame>
-        
-        
+        <Frame BackgroundColor="Transparent" Margin="0,-25,0,45">
+            <Image Source="ninja" HorizontalOptions="Center" VerticalOptions="Start">
+            </Image>
+        </Frame>
+        <Frame BackgroundColor="Transparent">
+            <Label Text=" David Jonkers "
+                   Margin="0,-70,0,70"
+                   TextColor="#5C6898"
+                   FontFamily="Roboto-Regular.ttf"
+                   FontSize="Large"
+                   HorizontalTextAlignment="Center"
+                   VerticalOptions="Center">
+            </Label>
+        </Frame>
+        <Frame BackgroundColor="Transparent">
+            <DatePicker TextColor="#5C6898"
+                        Margin="0,-65,0,65"
+                        VerticalOptions="Start"
+                        FontFamily="Roboto-Regular.ttf"
+                        >
+            </DatePicker >
+        </Frame>
+        <StackLayout>
+            <Frame BackgroundColor="Transparent">
+                <BoxView HeightRequest="40"
+                 WidthRequest="50"
+                 BackgroundColor="LightGray"
+                         Margin="0,-60,0,60"
+                         >
+                </BoxView>
+            </Frame>
+        </StackLayout>
     </StackLayout>
-  
 </ContentPage>

@@ -36,7 +36,8 @@
                     </Image>
                 </Grid>
                 <Grid>
-                    <Entry Placeholder="Password" HeightRequest="60"
+                    <Entry Placeholder="Password" HeightRequest="60" IsPassword="True"  
+                           
                        TextColor="DarkSlateGray" PlaceholderColor="#5C6898" Text="{Binding Password}"/>
                     <Image Source="Hiddenicon" Margin="265,0,0,0">
                     </Image>
