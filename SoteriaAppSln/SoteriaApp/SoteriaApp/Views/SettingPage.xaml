@@ -42,7 +42,7 @@
                              WidthRequest="50"  >
                 <Button Text=" Support " x:Name="Support"
                        TextColor="White"
-                       BackgroundColor="#7D86AD"
+                       BackgroundColor="#FDB3CA"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
                         Clicked="Support_Clicked"/>
@@ -76,7 +76,7 @@
                 <Button Text=" About Us "
                         x:Name="AboutUs"
                        TextColor="White"
-                       BackgroundColor="#7D86AD"
+                       BackgroundColor="#FDB3CA"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
                         Clicked="AboutUs_Clicked"/>
@@ -110,12 +110,12 @@
                                     TextColor="white"
                                     FontFamily="Roboto-Regular.ttf"
                                     FontSize="Medium"
-                                    BackgroundColor="#FDB3CA"
+                                    BackgroundColor="#5C6898"
                             />
                 </Frame>
                 <!-- Delete Account -->
                 <Label Text=" Delete Account"
-                               TextColor="#AAE1EB"
+                               TextColor="#5C6898"
                                 Padding="0,10,0,0">
                 </Label>
             </StackLayout>

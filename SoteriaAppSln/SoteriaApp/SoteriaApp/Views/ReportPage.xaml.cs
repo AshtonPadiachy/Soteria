@@ -8,5 +8,7 @@ namespace SoteriaApp.Views
         {
             InitializeComponent();
         }
+
+       
     }
 }

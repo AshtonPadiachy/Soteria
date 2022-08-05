@@ -5,6 +5,7 @@ using SoteriaApp.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xamarin.Forms;
 
 namespace SoteriaApp.ViewModels
 {
@@ -17,5 +18,19 @@ namespace SoteriaApp.ViewModels
         {
 
         }
+
+
+        public IList<string> ZonesOfRegulation
+        {
+            get
+            {
+                return new List<string> { " Green ", " Yellow ", " Blue ", " Red " };
+            }
+           
+        }
+
+
     }
 }
+
+

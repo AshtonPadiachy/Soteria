@@ -27,23 +27,38 @@
                    VerticalOptions="Center">
             </Label>
         </Frame>
+        
         <Frame BackgroundColor="Transparent">
-            <DatePicker TextColor="#5C6898"
-                        Margin="0,-65,0,65"
-                        VerticalOptions="Start"
-                        FontFamily="Roboto-Regular.ttf"
-                        >
-            </DatePicker >
+
+                <DatePicker 
+                            TextColor="#5C6898"
+                            Margin="0,-80,0,95"
+                            VerticalOptions="Start"
+                            FontFamily="Roboto-Regular.ttf">
+                    
+                    
+                </DatePicker>
+ 
         </Frame>
-        <StackLayout>
-            <Frame BackgroundColor="Transparent">
-                <BoxView HeightRequest="40"
-                 WidthRequest="50"
-                 BackgroundColor="LightGray"
-                         Margin="0,-60,0,60"
-                         >
-                </BoxView>
-            </Frame>
-        </StackLayout>
+
+        <Frame BackgroundColor="Transparent">
+
+            
+
+                <Picker Title=" Choose Colour Zone : "
+                        Margin="0,-90,0,100"
+                        TitleColor="#5C6898"
+                        FontFamily="Roboto-Regular.ttf"
+                        ItemsSource="{Binding ZonesOfRegulation}"
+                        SelectedItem="{Binding Mode=TwoWay}">
+
+                </Picker>
+
+
+
+
+
+        </Frame>
+        
     </StackLayout>
 </ContentPage>

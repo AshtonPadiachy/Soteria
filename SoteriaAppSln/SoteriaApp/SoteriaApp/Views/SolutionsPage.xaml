@@ -43,7 +43,7 @@
                                >
                 <Button Text="Coping with Disorders"
                        TextColor="White"
-                       BackgroundColor="#5ED7F2"
+                       BackgroundColor="#FDB3CA"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
                         Command="{Binding CopingWithBtnCommand}"
