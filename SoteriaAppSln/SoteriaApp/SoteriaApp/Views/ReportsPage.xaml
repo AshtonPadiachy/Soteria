@@ -4,7 +4,22 @@
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SoteriaApp.Views.ReportsPage">
-    
-    
-  
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame Margin="5" HorizontalOptions="CenterAndExpand" Padding="0" CornerRadius="10" >
+                <Image Source="{Binding ReportsList.NameofImage}" HeightRequest="260" WidthRequest="260"/>
+            </Frame>
+            <Label Text="Hello One Page"/>
+
+            
+
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+
 </ContentPage>

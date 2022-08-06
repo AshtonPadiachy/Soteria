@@ -95,6 +95,7 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<PupilReportPage, PupilReportPageViewModel>();
             containerRegistry.RegisterForNavigation<GradeClassListPage, GradeClassListPageViewModel>();
             containerRegistry.RegisterForNavigation<YellowZonesPage, YellowZonesPageViewModel>();
+            containerRegistry.RegisterForNavigation<LearnerReportsList, LearnerReportsListViewModel>();
         }
     }
 }
