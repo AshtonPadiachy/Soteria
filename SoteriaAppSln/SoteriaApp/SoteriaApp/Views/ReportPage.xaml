@@ -5,60 +5,54 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SoteriaApp.Views.ReportPage">
 
-    <StackLayout BackgroundColor="Transparent">
-        <Frame BackgroundColor="Transparent" Margin="-10,0,20,0">
-            <Button BackgroundColor="Transparent"
-                    HeightRequest="40"
-                    WidthRequest="40" ImageSource="Shareicon" VerticalOptions="EndAndExpand"
-                   HorizontalOptions="End">
-            </Button>
-        </Frame>
-        <Frame BackgroundColor="Transparent" Margin="0,-25,0,45">
-            <Image Source="ninja" HorizontalOptions="Center" VerticalOptions="Start">
-            </Image>
-        </Frame>
-        <Frame BackgroundColor="Transparent">
-            <Label Text=" David Jonkers "
-                   Margin="0,-70,0,70"
+    <Frame BackgroundColor="Transparent">
+        <StackLayout BackgroundColor="Transparent" Spacing="7">
+
+            <Frame     BackgroundColor="Transparent" Margin="-10,-10,20,55">
+                <Button BackgroundColor="Transparent"
+                         HeightRequest="40"
+                          WidthRequest="40" ImageSource="Shareicon" 
+                           VerticalOptions="EndAndExpand"
+                            HorizontalOptions="End">
+                </Button>
+            </Frame>
+
+            <Frame BackgroundColor="Transparent" Margin="0,-75,0,80">
+                <Image Source="ninja" HorizontalOptions="Center" VerticalOptions="Start">
+                </Image>
+            </Frame>
+            <Frame BackgroundColor="Transparent">
+                <Label Text=" David Jonkers "
+                   Margin="0,-100,0,100"
                    TextColor="#5C6898"
                    FontFamily="Roboto-Regular.ttf"
                    FontSize="Large"
                    HorizontalTextAlignment="Center"
                    VerticalOptions="Center">
-            </Label>
-        </Frame>
-        
-        <Frame BackgroundColor="Transparent">
+                </Label>
+            </Frame>
 
-                <DatePicker 
-                            TextColor="#5C6898"
-                            Margin="0,-80,0,95"
-                            VerticalOptions="Start"
-                            FontFamily="Roboto-Regular.ttf">
-                    
-                    
-                </DatePicker>
- 
-        </Frame>
+            <DatePicker 
+                     TextColor="#5C6898"
+                     Margin="0,-85,0,85"
+                     VerticalOptions="Start"
+                     FontFamily="Roboto-Regular.ttf">
 
-        <Frame BackgroundColor="Transparent">
 
-            
+            </DatePicker>
 
-                <Picker Title=" Choose Colour Zone : "
-                        Margin="0,-90,0,100"
+            <Picker Title=" Choose Colour Zone : "
+                        Margin="0,-70,0,70"
                         TitleColor="#5C6898"
                         FontFamily="Roboto-Regular.ttf"
                         ItemsSource="{Binding ZonesOfRegulation}"
                         SelectedItem="{Binding Mode=TwoWay}">
 
-                </Picker>
+            </Picker>
 
 
+        </StackLayout>
 
+    </Frame>
 
-
-        </Frame>
-        
-    </StackLayout>
 </ContentPage>
