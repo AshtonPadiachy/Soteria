@@ -6,7 +6,7 @@
              x:Class="SoteriaApp.Views.LearnerReportsList">
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="#000000" Padding="12" CornerRadius="0">
+            <Frame BackgroundColor="#5C6898" Padding="12" CornerRadius="0">
                 <StackLayout Orientation="Horizontal">
                     
 
