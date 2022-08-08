@@ -61,7 +61,7 @@
                        BackgroundColor="#5C6898"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
-                            
+                            Command="{Binding DepPage2Btn}"
                            
                        />
                 </Frame>
