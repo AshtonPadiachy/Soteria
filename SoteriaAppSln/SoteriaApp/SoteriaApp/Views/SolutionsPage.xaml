@@ -6,13 +6,15 @@
              x:Class="SoteriaApp.Views.SolutionsPage">
 
     <Frame BackgroundColor="Transparent" Margin="0,0,0,5">
+
+       
         <StackLayout BackgroundColor="Transparent"
                          VerticalOptions="Center"
                          Padding="0,40,0,0"
                          Spacing="15"
                          Margin="15"
                          HorizontalOptions="Center">
-
+            <Label Text=" INFLUENCES" HorizontalTextAlignment="Center" FontFamily="FredokaOne-Regular.ttf" TextColor="#5C6898" Margin="0,20,0,-50" FontSize="45"></Label>
 
             <!-- Colour Zones of Regulation -->
 
