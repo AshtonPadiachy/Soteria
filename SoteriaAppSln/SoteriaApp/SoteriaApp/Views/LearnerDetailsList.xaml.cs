@@ -22,6 +22,13 @@ namespace SoteriaApp.Views
 
             LearnersList.Add(learner);
 
+            learner = new LearnerDetailsListViewModel();
+            learner.NameOfLearner = "Olwethu Mapisa";
+            learner.NameofImage = "princess.png";
+
+            LearnersList.Add(learner);
+
+
             BindingContext = this;
         }
     }

@@ -28,7 +28,7 @@
                                         <ColumnDefinition Width=" *"/>
                                     </Grid.ColumnDefinitions>
                                     <Image Source="{Binding NameofImage}" Aspect="Fill" Grid.RowSpan="3" HeightRequest="50" WidthRequest="50" Margin ="2"/>
-                                    <Label Text="{Binding NameOfLearner}" FontSize="16" FontAttributes="Bold" Grid.Column="1"/>
+                                    <Label Text="{Binding NameOfLearner}" FontSize="20" FontAttributes="Bold" Grid.Column="1"/>
                                 </Grid>
                             </ViewCell>
                         </DataTemplate>
