@@ -37,7 +37,7 @@ namespace SoteriaApp.Views
 
             learner = new LearnerDetailsListViewModel();
             learner.NameOfLearner = "Asanda Dyibi";
-            learner.NameofImage = "boy.png";
+            learner.NameofImage = "girl.png";
 
             LearnersList.Add(learner);
 
