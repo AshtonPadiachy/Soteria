@@ -5,6 +5,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SoteriaApp.Views.VariousTypePage">
     <StackLayout>
+        <Label Text=" SOLUTIONS " HorizontalTextAlignment="Center" FontFamily="FredokaOne-Regular.ttf" TextColor="#5C6898" Margin="0,50,0,-50" FontSize="45"></Label>
         <Frame BackgroundColor="Transparent">
             <StackLayout BackgroundColor="Transparent"
                          VerticalOptions="Center"
