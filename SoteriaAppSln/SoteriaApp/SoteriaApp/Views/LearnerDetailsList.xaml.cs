@@ -41,6 +41,33 @@ namespace SoteriaApp.Views
 
             LearnersList.Add(learner);
 
+            learner = new LearnerDetailsListViewModel();
+            learner.NameOfLearner = "Thandi Msindo";
+            learner.NameofImage = "cutie.png";
+
+            LearnersList.Add(learner);
+
+            learner = new LearnerDetailsListViewModel();
+            learner.NameOfLearner = "Ashley Truter";
+            learner.NameofImage = "babyboy.png";
+
+            LearnersList.Add(learner);
+
+            learner = new LearnerDetailsListViewModel();
+            learner.NameOfLearner = "Liso Kutu";
+            learner.NameofImage = "youngman.png";
+
+            LearnersList.Add(learner);
+
+
+            learner = new LearnerDetailsListViewModel();
+            learner.NameOfLearner = "Avuza Mayoyo";
+            learner.NameofImage = "boyzin.png";
+
+            LearnersList.Add(learner);
+
+
+
 
             BindingContext = this;
         }
