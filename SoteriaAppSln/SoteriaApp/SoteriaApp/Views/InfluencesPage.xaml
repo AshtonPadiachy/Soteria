@@ -78,6 +78,7 @@
                        BackgroundColor="#FDB3CA"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
+                            Command="{Binding DbdPage2Btn }"
                             
                            
                        />

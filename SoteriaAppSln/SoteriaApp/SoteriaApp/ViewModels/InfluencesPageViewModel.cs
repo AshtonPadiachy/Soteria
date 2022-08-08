@@ -9,6 +9,14 @@ namespace SoteriaApp.ViewModels
 {
     public class InfluencesPageViewModel : ViewModelBase
     {
+        private DelegateCommand _dbdPage2Btn;
+        public DelegateCommand DbdPage2Btn =>
+            _dbdPage2Btn ?? (_dbdPage2Btn = new DelegateCommand(OnDbdPage2Btn));
+
+       private void OnDbdPage2Btn()
+        {
+            NavigationService.NavigateAsync("DbdPage2");
+        }
         private DelegateCommand _anxietyType2BtnCommand;
         public DelegateCommand AnxietyType2BtnCommand =>
 
