@@ -28,6 +28,19 @@ namespace SoteriaApp.Views
 
             LearnersList.Add(learner);
 
+            learner = new LearnerDetailsListViewModel();
+            learner.NameOfLearner = "Brandon Cloete";
+            learner.NameofImage = "boy.png";
+
+            LearnersList.Add(learner);
+
+
+            learner = new LearnerDetailsListViewModel();
+            learner.NameOfLearner = "Asanda Dyibi";
+            learner.NameofImage = "boy.png";
+
+            LearnersList.Add(learner);
+
 
             BindingContext = this;
         }
