@@ -26,7 +26,7 @@ namespace SoteriaApp
 
             if (prefs.Get("AlwaysShowTutorial", true) || tracking.IsFirstLaunchForCurrentVersion)
 
-                await NavigationService.NavigateAsync("TutorialPage");
+                await NavigationService.NavigateAsync("LearnerDetailsList");
             else
                 await NavigationService.NavigateAsync("LandingTabbedPage");
 
@@ -96,6 +96,7 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<GradeClassListPage, GradeClassListPageViewModel>();
             containerRegistry.RegisterForNavigation<YellowZonesPage, YellowZonesPageViewModel>();
             containerRegistry.RegisterForNavigation<LearnerReportsList, LearnerReportsListViewModel>();
+            containerRegistry.RegisterForNavigation<LearnerDetailsList, LearnerDetailsListViewModel>();
         }
     }
 }

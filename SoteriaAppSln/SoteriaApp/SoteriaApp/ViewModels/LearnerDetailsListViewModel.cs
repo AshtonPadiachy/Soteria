@@ -12,5 +12,9 @@ namespace SoteriaApp.ViewModels
         {
 
         }
+
+        public string NameOfLearner { get; set; }
+        public string NameofImage { get; set; }
+        public int LearnerGrade { get; set; }
     }
 }
