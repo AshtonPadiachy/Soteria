@@ -9,12 +9,12 @@ namespace SoteriaApp.ViewModels
 {
     public class LearnerDetailsPageViewModel : ViewModelBase
     {
-        //private DelegateCommand _learnerDetailsBtn;
-        //public DelegateCommand LearnerDetailsBtn =>
-         //   _learnerDetailsBtn ?? (_learnerDetailsBtn = new DelegateCommand(OnLearnerDetailsBtnCommand));
+        private DelegateCommand _learnerDetailsBtn;
+        public DelegateCommand LearnerDetailsBtn =>
+           _learnerDetailsBtn ?? (_learnerDetailsBtn = new DelegateCommand(OnLearnerDetailsBtnCommand));
         private void OnLearnerDetailsBtnCommand()
         {
-           // NavigationService.NavigateAsync("LearnerReportsList");
+           NavigationService.NavigateAsync("LearnerDetailsList");
         }
         public LearnerDetailsPageViewModel(INavigationService nav) : base(nav)
         {

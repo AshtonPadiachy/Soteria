@@ -93,7 +93,7 @@
                     <Button  x:Name="SaveDetails" Text="Save"
                             HeightRequest="50" BackgroundColor="#5C6898"
                             TextColor="White" CornerRadius="5" FontFamily="Roboto-Regular.ttf"
-                            HorizontalOptions="Center" WidthRequest="320" 
+                            HorizontalOptions="Center" WidthRequest="320" Command="{Binding LearnerDetailsBtn}"
                             />
                 </Frame>
             </StackLayout>
