@@ -60,6 +60,13 @@ namespace SoteriaApp.Views
             LearnersList.Add(learner);
 
 
+            learner = new LearnerDetailsListViewModel();
+            learner.NameOfLearner = "Avuza Mayoyo";
+            learner.NameofImage = "boyzin.png";
+
+            LearnersList.Add(learner);
+
+
 
 
             BindingContext = this;
