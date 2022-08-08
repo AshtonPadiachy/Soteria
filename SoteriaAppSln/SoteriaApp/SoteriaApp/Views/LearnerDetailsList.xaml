@@ -34,7 +34,13 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-               
+
+                <Button  ImageSource="AddLearnericon"
+                                 CornerRadius="360"
+                                 HorizontalOptions="EndAndExpand"
+                             BackgroundColor="Transparent" Command="{Binding LearnerDetailsBtn}"
+                >
+                </Button>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
