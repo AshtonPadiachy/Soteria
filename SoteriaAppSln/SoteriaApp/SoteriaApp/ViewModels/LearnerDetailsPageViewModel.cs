@@ -34,6 +34,7 @@ namespace SoteriaApp.ViewModels
         public string ParentGender { get; set; }
         public string MaritalStatus { get; set; }
         public string ParentCellNumber { get; set; }
+        public string CEMISnumber { get; set; }
     }
 
 
