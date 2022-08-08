@@ -30,15 +30,6 @@
         <StackLayout BackgroundColor="Transparent">
 
 
-            <Label Text=" ALERT ALERT ! "
-                   FontFamily="FredokaOne-Regular.ttf"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center" 
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
-                   FontSize="Medium"
-                   Margin="0,-20,0,35"
-                   TextColor="#5C6898"/>
 
             <Frame BackgroundColor="Transparent" HasShadow="True">
                 <Label Text="Mental health in children is just as IMPORTANT as they are the FUTURE. "
