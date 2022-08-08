@@ -4,21 +4,24 @@
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SoteriaApp.Views.SolutionsPage">
+    
+    <StackLayout BackgroundColor="Transparent">
 
-    <Frame BackgroundColor="Transparent" Margin="0,0,0,5">
+        <Label Text=" SOLUTIONS " HorizontalTextAlignment="Center" FontFamily="FredokaOne-Regular.ttf" TextColor="#5C6898" Margin="0,50,0,50" FontSize="45"></Label>
+        <Frame BackgroundColor="Transparent" Margin="0,0,0,5">
 
-       
-        <StackLayout BackgroundColor="Transparent"
+
+            <StackLayout BackgroundColor="Transparent"
                          VerticalOptions="Center"
                          Padding="0,40,0,0"
                          Spacing="15"
                          Margin="15"
                          HorizontalOptions="Center">
-            <Label Text=" INFLUENCES" HorizontalTextAlignment="Center" FontFamily="FredokaOne-Regular.ttf" TextColor="#5C6898" Margin="0,20,0,-50" FontSize="45"></Label>
 
-            <!-- Colour Zones of Regulation -->
 
-            <Frame CornerRadius="10"
+                <!-- Colour Zones of Regulation -->
+
+                <Frame CornerRadius="10"
                    BackgroundColor="Transparent"
                              Margin="0"
                              Padding="0,1,0,0"
@@ -26,16 +29,16 @@
                              HeightRequest="90"
                             WidthRequest="320"
                                >
-                <Button Text="Colour Zones of Regulation"
+                    <Button Text="Colour Zones of Regulation"
                        TextColor="White"
                        BackgroundColor="#5ED7F2"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
                         Command="{Binding ColourZonesBtnCommand}"
                        />
-            </Frame>
-            <!-- Coping with Disorders -->
-            <Frame CornerRadius="10"
+                </Frame>
+                <!-- Coping with Disorders -->
+                <Frame CornerRadius="10"
                    BackgroundColor="Transparent"
                              Margin="0"
                              Padding="0,1,0,0"
@@ -43,16 +46,16 @@
                               HeightRequest="90"
                             WidthRequest="320"
                                >
-                <Button Text="Coping with Disorders"
+                    <Button Text="Coping with Disorders"
                        TextColor="White"
                        BackgroundColor="#FDB3CA"
                        FontFamily="Roboto-Regular.ttf"
                        FontSize="Medium"
                         Command="{Binding CopingWithBtnCommand}"
                        />
-            </Frame>
-            <!-- Questions to ask children to open up -->
-            <Frame CornerRadius="10"
+                </Frame>
+                <!-- Questions to ask children to open up -->
+                <Frame CornerRadius="10"
                    BackgroundColor="Transparent"
                              Margin="0"
                              Padding="0,1,0,0"
@@ -62,7 +65,7 @@
                             
                              >
 
-                <Button Text=" Questions to ask children to open up"
+                    <Button Text=" Questions to ask children to open up"
                        
                        TextColor="White"
                        BackgroundColor="#5ED7F2"
@@ -70,7 +73,10 @@
                        FontSize="Medium"
                         Command="{Binding QuestionsBtnCommand}"
                        />
-            </Frame>
-        </StackLayout>
-    </Frame>
+                </Frame>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+    
+   
 </ContentPage>
