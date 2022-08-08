@@ -21,7 +21,7 @@ namespace SoteriaApp.ViewModels
 
         private void OnEmptyLearnersClassListBtn()
         {
-            NavigationService.NavigateAsync("LearnerDetailPage");
+            NavigationService.NavigateAsync("LearnerDetailsPage");
         }
     }
 }
