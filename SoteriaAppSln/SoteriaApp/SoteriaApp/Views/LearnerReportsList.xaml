@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com" xmlns:soteriaapp="clr-namespace:SoteriaApp.ViewModels" 
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="SoteriaApp.Views.LearnerReportsList">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#000000" Padding="12" CornerRadius="0">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="Manga.png" HeightRequest="50" Aspect="AspectFit" HorizontalOptions="Start"/>
+
+                    <Label Padding="10,0,0,0" Text="Class List" HorizontalTextAlignment="Start" TextColor="White" FontSize="16" VerticalOptions="CenterAndExpand"/>
+
+                </StackLayout>
+            </Frame>
+
+            <StackLayout>
+                <ListView x:Name="ReportsListPage" ItemsSource="{Binding ReportsList}" HasUnevenRows="True" ItemTapped="ReportsListPage_ItemTapped" SelectionMode="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="soteriaapp:LearnerReportsListViewModel">
+
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width=" *"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding NameofImage}" Aspect="Fill" Grid.RowSpan="3" HeightRequest="50" WidthRequest="50" Margin ="2"/>
+                                    <Label Text="{Binding TitleOfReport}" FontSize="16" FontAttributes="Bold" Grid.Column="1"/>
+                                    <Label Text="Latest" FontSize ="10" Grid.Row="2" Grid.Column="1" HorizontalOptions="Start"/>
+                                    <Label Text="{Binding LatestUpdate}" FontSize="10" Grid.Row="2" Grid.Column="1" HorizontalOptions="Center"/>
+                                    <Label Text="Number of Reports" FontSize ="10" Grid.Row="1" Grid.Column="1" HorizontalOptions="Start"/>
+                                    <Label Text="{Binding ReportNumbers}" FontSize="10" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center"/>
+
+                                </Grid>
+
+                            </ViewCell>
+
+                        </DataTemplate>
+
+                    </ListView.ItemTemplate>
+
+                </ListView>
+
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+  
+</ContentPage>

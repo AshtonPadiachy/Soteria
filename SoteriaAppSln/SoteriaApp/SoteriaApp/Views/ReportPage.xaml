@@ -3,62 +3,147 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="SoteriaApp.Views.ReportPage">
+             x:Class="SoteriaApp.Views.ReportPage"
+             >
 
-    <StackLayout BackgroundColor="Transparent">
-        <Frame BackgroundColor="Transparent" Margin="-10,0,20,0">
-            <Button BackgroundColor="Transparent"
-                    HeightRequest="40"
-                    WidthRequest="40" ImageSource="Shareicon" VerticalOptions="EndAndExpand"
-                   HorizontalOptions="End">
-            </Button>
-        </Frame>
-        <Frame BackgroundColor="Transparent" Margin="0,-25,0,45">
-            <Image Source="ninja" HorizontalOptions="Center" VerticalOptions="Start">
-            </Image>
-        </Frame>
-        <Frame BackgroundColor="Transparent">
-            <Label Text=" David Jonkers "
-                   Margin="0,-70,0,70"
+    <Frame BackgroundColor="Transparent">
+        <StackLayout BackgroundColor="Transparent" Spacing="7">
+
+            <Frame     BackgroundColor="Transparent" Margin="-10,-10,20,55">
+                <Button BackgroundColor="Transparent"
+                         HeightRequest="40"
+                          WidthRequest="40" ImageSource="Shareicon" 
+                           VerticalOptions="EndAndExpand"
+                            HorizontalOptions="End">
+                </Button>
+            </Frame>
+
+            <Frame BackgroundColor="Transparent" Margin="0,-75,0,80">
+                <Image Source="ninja" HorizontalOptions="Center" VerticalOptions="Start">
+                </Image>
+            </Frame>
+            <Frame BackgroundColor="Transparent">
+                <Label Text=" David Jonkers "
+                   Margin="0,-100,0,100"
                    TextColor="#5C6898"
                    FontFamily="Roboto-Regular.ttf"
                    FontSize="Large"
                    HorizontalTextAlignment="Center"
                    VerticalOptions="Center">
-            </Label>
-        </Frame>
-        
-        <Frame BackgroundColor="Transparent">
+                </Label>
+            </Frame>
 
-                <DatePicker 
-                            TextColor="#5C6898"
-                            Margin="0,-80,0,95"
-                            VerticalOptions="Start"
-                            FontFamily="Roboto-Regular.ttf">
-                    
-                    
-                </DatePicker>
- 
-        </Frame>
+            <DatePicker 
+                     TextColor="#5C6898"
+                     Margin="0,-90,0,90"
+                     VerticalOptions="Start"
+                     FontFamily="Roboto-Regular.ttf">
 
-        <Frame BackgroundColor="Transparent">
 
-            
+            </DatePicker>
 
-                <Picker Title=" Choose Colour Zone : "
-                        Margin="0,-90,0,100"
+            <Picker Title=" Choose Colour Zone : "
+                        Margin="0,-75,0,75"
                         TitleColor="#5C6898"
                         FontFamily="Roboto-Regular.ttf"
                         ItemsSource="{Binding ZonesOfRegulation}"
-                        SelectedItem="{Binding Mode=TwoWay}">
+                        SelectedItem="{Binding Mode=TwoWay}"
+                        TextColor="#5C6898">
 
-                </Picker>
+            </Picker>
+            
+            <!--Star Rating-->
+           
+                <StackLayout Orientation="Horizontal" x:Name="RatingBar"
+                          HorizontalOptions="Fill" Margin="0,-55,0,55" 
+                        >
+                <Label Text="★" FontSize="Title" x:Name="star1" StyleId="star1">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                 Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text="★" FontSize="Title" x:Name="star2" StyleId="star2">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                 Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text="★" FontSize="Title" x:Name="star3" StyleId="star3">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                 Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text="★" FontSize="Title" x:Name="star4" StyleId="star4">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                 Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text="★" FontSize="Title" x:Name="star5" StyleId="star5">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                 Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                  
+              </StackLayout>
+            
+            <!--Comments-->
+
+            <Editor  Text="Comment on Participation :" IsEnabled="True" IsVisible="true"  
+                     Placeholder="" FontSize="18" FontAttributes="None" 
+                             Margin="0,-40,0,40"       TextColor="#5C6898" >
+                 
+           
+            </Editor>
+
+            <!--Star Rating-->
+
+            <StackLayout Orientation="Horizontal" 
+                          HorizontalOptions="Fill" Margin="0,-25,0,25" 
+                        >
+                <Label Text="★" FontSize="Title" x:Name="star6" StyleId="star6">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                 Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text="★" FontSize="Title" x:Name="star7" StyleId="star7">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                 Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text="★" FontSize="Title" x:Name="star8" StyleId="star8">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                 Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text="★" FontSize="Title" x:Name="star9" StyleId="star9">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                 Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text="★" FontSize="Title" x:Name="star10" StyleId="star10">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                 Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+
+            </StackLayout>
 
 
 
 
 
-        </Frame>
-        
-    </StackLayout>
+
+        </StackLayout>
+
+    </Frame>
+
 </ContentPage>
