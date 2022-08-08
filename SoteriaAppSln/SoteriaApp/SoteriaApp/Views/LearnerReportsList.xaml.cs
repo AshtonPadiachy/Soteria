@@ -24,23 +24,23 @@ namespace SoteriaApp.Views
             report.TitleOfReport = "David Jonkers";
             report.ReportNumbers = 4;
             report.LatestUpdate = new DateTime(2021, 03, 07);
-            report.NameofImage = "pokespec.png";
+            report.NameofImage = "ninja.png";
 
             ReportsList.Add(report);
 
             report = new LearnerReportsListViewModel();
-            report.TitleOfReport = "Ash Levy";
+            report.TitleOfReport = "Olwethu Mapisa";
             report.ReportNumbers = 6;
             report.LatestUpdate = new DateTime(2021, 03, 07);
-            report.NameofImage = "pokespec.png";
+            report.NameofImage = "princess.png";
 
             ReportsList.Add(report);
 
             report = new LearnerReportsListViewModel();
-            report.TitleOfReport = "Dan Chase";
+            report.TitleOfReport = "Brandon Cloete";
             report.ReportNumbers = 7;
             report.LatestUpdate = new DateTime(2021, 03, 07);
-            report.NameofImage = "pokespec.png";
+            report.NameofImage = "boy.png";
 
             ReportsList.Add(report);
 

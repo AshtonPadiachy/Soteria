@@ -9,6 +9,8 @@ namespace SoteriaApp.ViewModels
 {
     public class LearnerDetailsPageViewModel : ViewModelBase
     {
+        
+
         private DelegateCommand _learnerDetailsBtn;
         public DelegateCommand LearnerDetailsBtn =>
            _learnerDetailsBtn ?? (_learnerDetailsBtn = new DelegateCommand(OnLearnerDetailsBtnCommand));

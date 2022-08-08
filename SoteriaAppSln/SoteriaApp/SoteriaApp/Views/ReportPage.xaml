@@ -266,9 +266,30 @@
 
                 </Editor>
 
-               
 
-                
+                <Frame HasShadow="True" BackgroundColor="Transparent" Grid.Row="14" Margin="0,-16,0,0" >
+                    <Button  x:Name="SaveDetails" Text="Save"
+                            HeightRequest="50" BackgroundColor="#5C6898"
+                            TextColor="White" CornerRadius="5" FontFamily="Roboto-Regular.ttf"
+                            HorizontalOptions="Center" WidthRequest="320" Command="{Binding SaveBtn}"
+                            />
+                </Frame>
+
+                <Frame HasShadow="True" BackgroundColor="Transparent" Grid.Row="14" Margin="0,-16,0,0" >
+                    <Button  x:Name="DeleteDetails" Text="Delete"
+                            HeightRequest="50" BackgroundColor="#5C6898"
+                            TextColor="White" CornerRadius="5" FontFamily="Roboto-Regular.ttf"
+                            HorizontalOptions="Center" WidthRequest="320" Command="{Binding DeleteBtn}"
+                            />
+                </Frame>
+
+                <Frame HasShadow="True" BackgroundColor="Transparent" Grid.Row="14" Margin="0,-16,0,0" >
+                    <Button  x:Name="CancelDetails" Text="Cancel"
+                            HeightRequest="50" BackgroundColor="#5C6898"
+                            TextColor="White" CornerRadius="5" FontFamily="Roboto-Regular.ttf"
+                            HorizontalOptions="Center" WidthRequest="320" Command="{Binding CancelBtn}"
+                            />
+                </Frame>
 
 
             </StackLayout>

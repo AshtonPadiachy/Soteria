@@ -109,6 +109,10 @@
                             HorizontalOptions="Center" WidthRequest="320" Command="{Binding LearnerDetailsBtn}"
                             />
                 </Frame>
+
+               
+
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
