@@ -1,52 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:prism="http://prismlibrary.com"
+             xmlns:prism="http://prismlibrary.com" xmlns:controls="clr-namespace:SoteriaApp.Views.Controls"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SoteriaApp.Views.ReportPage"
              >
     <ScrollView VerticalScrollBarVisibility="Always">
-        <Frame BackgroundColor="Transparent">
-        
-            <StackLayout BackgroundColor="Transparent" Spacing="7">
 
-            <Frame     BackgroundColor="Transparent" Margin="-10,-10,20,55">
-                <Button BackgroundColor="Transparent"
+        <StackLayout BackgroundColor="Transparent" Padding="20" Spacing="0" >
+
+            <Button BackgroundColor="Transparent"
                          HeightRequest="40"
                           WidthRequest="40" ImageSource="Shareicon" 
                            VerticalOptions="EndAndExpand"
                             HorizontalOptions="End">
-                </Button>
-            </Frame>
+            </Button>
 
-            <Frame BackgroundColor="Transparent" Margin="0,-75,0,80">
-                <Image Source="ninja" HorizontalOptions="Center" VerticalOptions="Start">
-                </Image>
-            </Frame>
-            <Frame BackgroundColor="Transparent">
-                <Label Text=" David Jonkers "
-                   Margin="0,-100,0,100"
+            <Image Source="ninja" HorizontalOptions="Center" VerticalOptions="Start">
+            </Image>
+            <Label Text=" David Jonkers "
+                   Margin="0,20,0,0"
                    TextColor="#5C6898"
                    FontFamily="Roboto-Regular.ttf"
                    FontSize="Large"
                    HorizontalTextAlignment="Center"
                    VerticalOptions="Center">
-                </Label>
-            </Frame>
-                
-              
-          
+            </Label>
+
+
+
             <DatePicker 
                      TextColor="#5C6898"
-                     Margin="0,-90,0,90"
                      VerticalOptions="Start"
-                     FontFamily="Roboto-Regular.ttf">
+                     FontFamily="Roboto-Regular.ttf"
+                    Margin="0,0,0,10">
 
 
             </DatePicker>
 
             <Picker Title=" Choose Colour Zone : "
-                        Margin="0,-75,0,75"
+                         Margin="0,0,0,10"
                         TitleColor="#5C6898"
                         FontFamily="Roboto-Regular.ttf"
                         ItemsSource="{Binding ZonesOfRegulation}"
@@ -54,251 +47,103 @@
                         TextColor="#5C6898">
 
             </Picker>
-            
+
             <!--Star Rating-->
             <Label Text="Participation :" 
                    TextColor="#5C6898"
-                   Margin="0,-60,0,60"
+                   Margin="0,0,0,5"
                    FontFamily="Roboto-Bold.ttf"
                    FontSize="Medium"
-                   
                    HorizontalTextAlignment="Start"></Label>
-            
-                <StackLayout Orientation="Horizontal" x:Name="RatingBar"
-                          HorizontalOptions="Start" Margin="0,-55,0,55" 
-                        >
-                <Label Text="★" FontSize="Large" x:Name="star1" StyleId="star1">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer
-                 Tapped="TapGestureRecognizer_Tapped"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text="★" FontSize="Large" x:Name="star2" StyleId="star2">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer
-                 Tapped="TapGestureRecognizer_Tapped"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text="★" FontSize="Large" x:Name="star3" StyleId="star3">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer
-                 Tapped="TapGestureRecognizer_Tapped"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text="★" FontSize="Large" x:Name="star4" StyleId="star4">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer
-                 Tapped="TapGestureRecognizer_Tapped"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text="★" FontSize="Large" x:Name="star5" StyleId="star5">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer
-                 Tapped="TapGestureRecognizer_Tapped"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                  
-              </StackLayout>
-            
+
+            <controls:RatingControl></controls:RatingControl>
+
             <!--Comments-->
 
             <Editor  Text="Comment on Participation :" IsEnabled="True" IsVisible="true"  
                      Placeholder="" FontSize="18" FontAttributes="None" 
-                             Margin="0,-45,0,45"       TextColor="#5C6898" >
-                 
-           
+                                    TextColor="#5C6898"  Margin="0,0,0,10" >
+
+
             </Editor>
 
             <!--Star Rating-->
 
-                <Label Text="Behaviour :" 
+            <Label Text="Behaviour :" 
                    TextColor="#5C6898"
-                   Margin="0,-40,0,40"
+                   Margin="0,0,0,5"
                    FontFamily="Roboto-Bold.ttf"
                    FontSize="Medium"
                   
                    HorizontalTextAlignment="Start"></Label>
 
-                <StackLayout Orientation="Horizontal" 
-                          HorizontalOptions="Start" Margin="0,-35,0,35"  
-                        >
-                <Label Text="★" FontSize="Large" x:Name="star6" StyleId="star6">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer
-                 Tapped="TapGestureRecognizer_Tapped"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text="★" FontSize="Large" x:Name="star7" StyleId="star7">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer
-                 Tapped="TapGestureRecognizer_Tapped"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text="★" FontSize="Large" x:Name="star8" StyleId="star8">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer
-                 Tapped="TapGestureRecognizer_Tapped"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text="★" FontSize="Large" x:Name="star9" StyleId="star9">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer
-                 Tapped="TapGestureRecognizer_Tapped"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text="★" FontSize="Large" x:Name="star10" StyleId="star10">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer
-                 Tapped="TapGestureRecognizer_Tapped"/>
-                    </Label.GestureRecognizers>
-                </Label>
-
-            </StackLayout>
+            <controls:RatingControl></controls:RatingControl>
 
             <Editor  Text="Comment on Behaviour :" IsEnabled="True" IsVisible="true"  
                      Placeholder="" FontSize="18" FontAttributes="None" 
-                             Margin="0,-35,0,35"       TextColor="#5C6898" >
+                                    TextColor="#5C6898"  Margin="0,0,0,10" >
 
 
             </Editor>
-                
 
-                <Label Text="Social Skills :" 
+
+            <Label Text="Social Skills :" 
                    TextColor="#5C6898"
-                   Margin="0,-20,0,20"
+                   Margin="0,0,0,5"
                    FontFamily="Roboto-Bold.ttf"
                    FontSize="Medium"
                        
                    HorizontalTextAlignment="Start"></Label>
 
-                <StackLayout Orientation="Horizontal" 
-                          HorizontalOptions="Start" Margin="0,3,0,3" 
-                        >
-                <Label Text="★" FontSize="Large" x:Name="star11" StyleId="star11">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer
-                 Tapped="TapGestureRecognizer_Tapped"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text="★" FontSize="Large" x:Name="star12" StyleId="star12">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer
-                 Tapped="TapGestureRecognizer_Tapped"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text="★" FontSize="Large" x:Name="star13" StyleId="star13">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer
-                 Tapped="TapGestureRecognizer_Tapped"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text="★" FontSize="Large" x:Name="star14" StyleId="star14">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer
-                 Tapped="TapGestureRecognizer_Tapped"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text="★" FontSize="Large" x:Name="star15" StyleId="star15">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer
-                 Tapped="TapGestureRecognizer_Tapped"/>
-                    </Label.GestureRecognizers>
-                </Label>
+            <controls:RatingControl></controls:RatingControl>
 
-            </StackLayout>
-
-                <Editor  Text="Comment on Social Skills :" IsEnabled="True" IsVisible="true"  
+            <Editor  Text="Comment on Social Skills :" IsEnabled="True" IsVisible="true"  
                      Placeholder="" FontSize="18" FontAttributes="None" 
-                             Margin="0,5,0,5"       TextColor="#5C6898" >
+                                    TextColor="#5C6898"  Margin="0,0,0,10" >
 
 
-                </Editor>
+            </Editor>
 
-                <Label Text="Creative Skills :" 
+            <Label Text="Creative Skills :" 
                    TextColor="#5C6898"
-                   Margin="0,-5,0,5"
+                   Margin="0,0,0,5"
                    FontFamily="Roboto-Bold.ttf"
                    FontSize="Medium"
                        
                    HorizontalTextAlignment="Start"
                        ></Label>
 
-                <StackLayout Orientation="Horizontal" 
-                          HorizontalOptions="Start" Margin="0,5,0,5" 
-                        >
-                    <Label Text="★" FontSize="Large" x:Name="star16" StyleId="star16">
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer
-                 Tapped="TapGestureRecognizer_Tapped"/>
-                        </Label.GestureRecognizers>
-                    </Label>
-                    <Label Text="★" FontSize="Large" x:Name="star17" StyleId="star17">
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer
-                 Tapped="TapGestureRecognizer_Tapped"/>
-                        </Label.GestureRecognizers>
-                    </Label>
-                    <Label Text="★" FontSize="Large" x:Name="star18" StyleId="star18">
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer
-                 Tapped="TapGestureRecognizer_Tapped"/>
-                        </Label.GestureRecognizers>
-                    </Label>
-                    <Label Text="★" FontSize="Large" x:Name="star19" StyleId="star19">
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer
-                 Tapped="TapGestureRecognizer_Tapped"/>
-                        </Label.GestureRecognizers>
-                    </Label>
-                    <Label Text="★" FontSize="Large" x:Name="star20" StyleId="star20">
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer
-                 Tapped="TapGestureRecognizer_Tapped"/>
-                        </Label.GestureRecognizers>
-                    </Label>
+            <controls:RatingControl></controls:RatingControl>
 
-                </StackLayout>
-
-                <Editor  Text="Comment on Creative Skills :" IsEnabled="True" IsVisible="true"  
+            <Editor  Text="Comment on Creative Skills :" IsEnabled="True" IsVisible="true"  
                      Placeholder="" FontSize="18" FontAttributes="None" 
-                             Margin="0,5,0,5"       TextColor="#5C6898" >
+                                    TextColor="#5C6898"  Margin="0,0,0,10" >
 
 
-                </Editor>
+            </Editor>
 
 
-                <Frame HasShadow="True" BackgroundColor="Transparent" Grid.Row="14" Margin="0,-16,0,0" >
-                    <Button  x:Name="SaveDetails" Text="Save"
+            <Button  x:Name="SaveDetails" Text="Save"  Margin="0,0,0,10"
                             HeightRequest="50" BackgroundColor="#5C6898"
                             TextColor="White" CornerRadius="5" FontFamily="Roboto-Regular.ttf"
-                            HorizontalOptions="Center" WidthRequest="320" Command="{Binding SaveBtn}"
+                            HorizontalOptions="Fill" Command="{Binding SaveBtn}"
                             />
-                </Frame>
 
-                <Frame HasShadow="True" BackgroundColor="Transparent" Grid.Row="14" Margin="0,-16,0,0" >
-                    <Button  x:Name="DeleteDetails" Text="Delete"
+            <Button  x:Name="DeleteDetails" Text="Delete"  Margin="0,0,0,10"
                             HeightRequest="50" BackgroundColor="#5C6898"
                             TextColor="White" CornerRadius="5" FontFamily="Roboto-Regular.ttf"
-                            HorizontalOptions="Center" WidthRequest="320" Command="{Binding DeleteBtn}"
+                            HorizontalOptions="Fill" Command="{Binding DeleteBtn}"
                             />
-                </Frame>
 
-                <Frame HasShadow="True" BackgroundColor="Transparent" Grid.Row="14" Margin="0,-16,0,0" >
-                    <Button  x:Name="CancelDetails" Text="Cancel"
+            <Button  x:Name="CancelDetails" Text="Cancel" Margin="0,0,0,10"
                             HeightRequest="50" BackgroundColor="#5C6898"
                             TextColor="White" CornerRadius="5" FontFamily="Roboto-Regular.ttf"
-                            HorizontalOptions="Center" WidthRequest="320" Command="{Binding CancelBtn}"
+                            HorizontalOptions="Fill" Command="{Binding CancelBtn}"
                             />
-                </Frame>
 
 
-            </StackLayout>
+        </StackLayout>
 
-           
-
-
-
-        </Frame>
 
     </ScrollView>
 </ContentPage>
