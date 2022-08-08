@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SoteriaApp.Views.Controls.RatingControl">
+
+
+    <StackLayout Orientation="Horizontal" 
+                          HorizontalOptions="Start"
+                        >
+        <Label Text="★" FontSize="30" x:Name="star1" StyleId="star1">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
+                 Tapped="TapGestureRecognizer_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Text="★" FontSize="30" x:Name="star2" StyleId="star2">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
+                 Tapped="TapGestureRecognizer_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Text="★" FontSize="30" x:Name="star3" StyleId="star3">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
+                 Tapped="TapGestureRecognizer_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Text="★" FontSize="30" x:Name="star4" StyleId="star4">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
+                 Tapped="TapGestureRecognizer_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Text="★" FontSize="30" x:Name="star5" StyleId="star5">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
+                 Tapped="TapGestureRecognizer_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+
+    </StackLayout>
+
+
+</ContentView>
