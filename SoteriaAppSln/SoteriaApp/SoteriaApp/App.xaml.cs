@@ -97,6 +97,7 @@ namespace SoteriaApp
             containerRegistry.RegisterForNavigation<YellowZonesPage, YellowZonesPageViewModel>();
             containerRegistry.RegisterForNavigation<DbdPage2, DbdPage2ViewModel>(); containerRegistry.RegisterForNavigation<LearnerReportsList, LearnerReportsListViewModel>();
             containerRegistry.RegisterForNavigation<LearnerDetailsList, LearnerDetailsListViewModel>();
+            containerRegistry.RegisterForNavigation<DepPage2, DepPage2ViewModel>();
         }
     }
 }
